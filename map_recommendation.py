@@ -36,11 +36,10 @@ def deleteAll(dictionary,f):
             del d[f]
     return dictionary
 
-def nextFeatureSuggestion(temp):
-    print 'Current question is asked from which feature?'
-    start = raw_input()
+def nextFeatureSuggestion(temp,feature):
+    # print 'Current question is asked from which feature?'
+    start = feature
     #print 'Question is being asked from this now'
-    
     try:
         next_feature = max(temp[start],key=temp[start].get)
         print 'Next best possible features to ask question from:'

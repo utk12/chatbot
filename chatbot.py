@@ -84,7 +84,6 @@ build_irrelevant_dict()
 # print(get_Rel_Frequency('weather'))
 # print(get_Irr_Frequency('weather'))
 #==============================================================================
-
 def get_Word_Score(word):
     #Handle the error when word is not in both he dictionaries DivisionByZeroError
     if((get_Rel_Frequency(word)+get_Irr_Frequency(word))==0):
@@ -123,7 +122,6 @@ def get_cosine(vec1,vec2):
     else:
         return float(numerator) / denominator
 #==============================================================================
-#=============================================================================
 #get most similar query
 def get_msim_query(str):
     max_cosine = -1

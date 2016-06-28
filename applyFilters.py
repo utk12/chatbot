@@ -3,20 +3,18 @@ from elasticsearch import Elasticsearch
 import json
 from update_question_features import convert_underscore_to_camelcase as toCamel
 
-
 es = Elasticsearch([{'host':'localhost','port':9200}])
 
 def getProjects(filters_dict):
 	body = prepareBody(filters_dict)
-	project_list = search(body)
+	project_list = es_search(body)
 	result = []
 	for i in xrange(len(project_list)):
 		result.append(project_list[i]['_id'])
 	return result
 	# project_list = applyUnitsFilter(project_list)
 
-def search(body):
-	# print json.dumps(body, indent=2)
+def es_search(body):
 	return es.search(index = 'projects', doc_type = 'data', body = body)['hits']['hits']
 
 def prepareBody(filters_dict):

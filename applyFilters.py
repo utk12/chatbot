@@ -3,6 +3,7 @@ from elasticsearch import Elasticsearch
 import json
 from update_question_features import convert_underscore_to_camelcase as toCamel
 
+
 def toCamel(text):
 	components = text.split('_')
 	return components[0] + "".join(x.title() for x in components[1:])

@@ -9,15 +9,15 @@ es = Elasticsearch([{'host':'localhost','port':9200}])
 def getProjects(filters_dict):
 	body = prepareBody(filters_dict)
 	project_list = search(body)
-	return project_list
+	result = []
+	for i in xrange(len(project_list)):
+		result.append(project_list[i]['_id'])
+	return result
 	# project_list = applyUnitsFilter(project_list)
 
-
-
 def search(body):
-	return es.search(index = 'chatbot', doc_type = 'projects', body = body)['hits']['hits']
-
-
+	# print json.dumps(body, indent=2)
+	return es.search(index = 'projects', doc_type = 'data', body = body)['hits']['hits']
 
 def prepareBody(filters_dict):
 	fliterMust = []
@@ -86,17 +86,17 @@ def prepareBody(filters_dict):
 			x = []
 			for j in filters_dict['project_details'][i]:
 				if j == 'city':
-					x.append({"match_phrase":{"projectDetails."+toCamel(i)+"."+toCamel(j) : filters_dict['project_details'][i][j]}})
+					x.append({"match_phrase":{"projectDetails."+toCamel(i)+".cityName" : filters_dict['project_details'][i][j]}})
 				elif j == 'zone':
 					y = {'bool':{'should' : []}}
 					for k in filters_dict['project_details'][i][j]:
-						y['bool']['should'].append({"match_phrase":{"projectDetails."+toCamel(i)+"."+toCamel(j) : k}})
+						y['bool']['should'].append({"match_phrase":{"projectDetails."+toCamel(i)+".zoneName" : k}})
 					x.append(y)
 				elif j == 'location':
 					y = {'bool':{'should' : []}}
 					for k in filters_dict['project_details'][i][j]:
 						
-						y['bool']['should'].append({"query_string":{"fields" : ["projectDetails."+toCamel(i)+"."+toCamel(j)+".*.name"], "query" : "\""+k+"\""}})
+						y['bool']['should'].append({"query_string":{"fields" : ["projectDetails."+toCamel(i)+".locations.*.locationName"], "query" : "\""+k+"\""}})
 					x.append(y)
 			details['bool']['must'].append({'bool' : {'must':x}})
 

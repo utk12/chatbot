@@ -1,0 +1,252 @@
+{
+    "9999": {
+        "projects": {
+            "-KLLdC7joRUmOsT11Efp": {
+                "status": "editable", 
+                "clubHouse": {
+                    "steamRoom": true, 
+                    "bar": true, 
+                    "aerobicsRooms": true, 
+                    "miniTheatre": true, 
+                    "gym": true, 
+                    "kidsZone": true, 
+                    "spa": true, 
+                    "danceRoom": true, 
+                    "guestrooms": true, 
+                    "operatingTimes": {
+                        "start": "8:00", 
+                        "holiday": {
+                            "sunday": true
+                        }, 
+                        "end": "22:00"
+                    }, 
+                    "multiPurposeHall": true
+                }, 
+                "buy": true, 
+                "versionCreatedDate": 1467111232150, 
+                "sportsActivities": {
+                    "cricket": true,
+                    "tennis": true,
+                    "multiPurposeCourt": true, 
+                    "skatingRink": true, 
+                    "tableTennis": true, 
+                    "badminton": true, 
+                    "baseball": true
+                }, 
+                "homeDelivery": {
+                    "restaurant": {
+                        "-KLLf_uX798e1yr3Da2k": {
+                            "contact": 909090, 
+                            "name": "jkhjk"
+                        }
+                    }
+                }, 
+                "projectDetails": {
+                    "approvedBankLoans": {
+                        "SBI": true, 
+                        "KOTAK": true
+                    }, 
+                    "landArea": 8, 
+                    "partners": {
+                        "architect": {
+                            "website": "kl", 
+                            "name": "jlk"
+                        }, 
+                        "landscapeDesigner": {
+                            "website": "jk", 
+                            "name": "kj"
+                        }, 
+                        "constructionCompany": {
+                            "website": "jklj", 
+                            "name": "lkjl"
+                        }
+                    }, 
+                    "builderId": 12345, 
+                    "greenArea": 8, 
+                    "projectName": "abc", 
+                    "builderName": "Vipul", 
+                    "floors": {
+                        "max": 8, 
+                        "min": 8
+                    }, 
+                    "carParking": true, 
+                    "address": {
+                        "cityName": "Gurgaon", 
+                        "locations": {
+                            "1010": {
+                                "locationName": "Sohna Road", 
+                                "locationId": 1010
+                            }, 
+                            "1020": {
+                                "locationName": "Sector 48", 
+                                "locationId": 1020
+                            }
+                        }, 
+                        "pincode": 8989, 
+                        "cityId": 9999, 
+                        "landmark": "abc", 
+                        "addressLine2": "hkjhjk", 
+                        "addressLine1": "bkhj", 
+                        "lat": 89, 
+                        "lng": 89, 
+                        "zoneId": 9090, 
+                        "zoneName": "MG Road"
+                    }, 
+                    "totalTowers": 89, 
+                    "projectType": {
+                        "servicedApartment": true, 
+                        "apartment": true, 
+                        "villa": true
+                    }, 
+                    "lifts": {
+                        "max": 8, 
+                        "min": 8
+                    }, 
+                    "totalUnits": 89
+                }, 
+                "societyShops": {
+                    "grocery": {
+                        "-KLLfLLUVFqXbAjQSFyx": {
+                            "contact": 900909, 
+                            "name": "bkjhjk"
+                        }
+                    }
+                }, 
+                "units": {
+                    "-KLLfoq1L_qrk0_fEz1p": {
+                        "specifications": {
+                            "flooringLivingDining": true, 
+                            "jacuzzi": true, 
+                            "kitchenOTG": true, 
+                            "kitchenAppliances": true, 
+                            "homeAutomation": true
+                        }, 
+                        "configurations": {
+                            "superArea": 9, 
+                            "carpetArea": 9, 
+                            "type": "hjkk", 
+                            "price": 89, 
+                            "pujaRoom": true, 
+                            "servantRoom": true, 
+                            "totalBedrooms": 9, 
+                            "totalWashrooms": 9, 
+                            "totalBalconies": 9, 
+                            "propertyType": "njk", 
+                            "familyLounge": true, 
+                            "totalHalls": 9
+                        }
+                    }
+                }, 
+                "connectivity": {
+                    "autoStand": {
+                        "lat": 8, 
+                        "distance": 8, 
+                        "lng": 8
+                    }, 
+                    "nearestExpressway": "8", 
+                    "railwayStation": {
+                        "lat": 8, 
+                        "distance": 8, 
+                        "lng": 8, 
+                        "offPeakTime": 8, 
+                        "peakTime": 8
+                    }, 
+                    "nearestMainRoad": "8", 
+                    "cabStand": {
+                        "lat": 8, 
+                        "distance": 8, 
+                        "lng": 8
+                    }, 
+                    "airport": {
+                        "lat": 8, 
+                        "distance": 8, 
+                        "lng": 8, 
+                        "offPeakTime": 8, 
+                        "peakTime": 8
+                    }, 
+                    "mainRoadDistance": 8, 
+                    "expresswayDistance": 8, 
+                    "metroStation": {
+                        "lat": 8, 
+                        "distance": 8, 
+                        "lng": 8, 
+                        "offPeakTime": 8, 
+                        "peakTime": 8
+                    }, 
+                    "busStand": {
+                        "lat": 8, 
+                        "distance": 8, 
+                        "lng": 8, 
+                        "offPeakTime": 8, 
+                        "peakTime": 8
+                    }
+                }, 
+                "admins": {
+                    "13131": true
+                }, 
+                "version": "1-1", 
+                "rwa": {
+                    "rules": "jkhbvhfggfjgkjlk", 
+                    "contactNumber": 9999999, 
+                    "contactName": "kjhkjhk"
+                }, 
+                "projectId": "-KLLdC7joRUmOsT11Efp", 
+                "projectStatus": "Ready To Move", 
+                "security": {
+                    "videoDoorPhone": true, 
+                    "mainGate": {
+                        "guards": true, 
+                        "cctv": true
+                    }, 
+                    "numberOfEntryOrExitPoints": "9", 
+                    "workerPass": true, 
+                    "tagsForVehicles": true, 
+                    "tower": {
+                        "accessControlled": true, 
+                        "guards": true, 
+                        "cctv": true
+                    }
+                }, 
+                "versionCreatedBy": 13131, 
+                "costing": {
+                    "cleaningUtensilsTwoTime": 6, 
+                    "cleaningUtensilsOneTime": 6, 
+                    "maintenanceChargesFixed": 66, 
+                    "maintenanceChargesVariable": 66, 
+                    "cookingChargeOneMeal": 6, 
+                    "powerBackupCharges": 66, 
+                    "maid24Hours": 6, 
+                    "carWashCharges": 6, 
+                    "maid12Hours": 6, 
+                    "moveInCharges": 66, 
+                    "moveOutCharges": 66, 
+                    "cookingChargeTwoMeals": 6
+                }
+            }, 
+            "-KLLMK6AGsUeVWYUGAed": {
+                "status": "editable", 
+                "buy": true, 
+                "projectDetails": {
+                    "builderName": "Vipul", 
+                    "builderId": 12345, 
+                    "projectName": "afa", 
+                    "address": {
+                        "cityId": 9999, 
+                        "landmark": "faf", 
+                        "zoneName": "MG Road", 
+                        "cityName": "Gurgaon", 
+                        "zoneId": 9090
+                    }
+                }, 
+                "versionCreatedDate": 1467106546158, 
+                "admins": {
+                    "13131": true
+                }, 
+                "version": "1-1", 
+                "projectId": "-KLLMK6AGsUeVWYUGAed", 
+                "projectStatus": "Under Construction", 
+                "versionCreatedBy": 13131
+            }
+        }
+    }
+}

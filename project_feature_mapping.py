@@ -13,7 +13,6 @@ def possession_matching(pos,p_features):
     p_features['possession']['children'][pos]['foundValue'] = 1
     return p_features
 
-
 def amenities_matching(p_data,p_features):
     sports = p_data['sportsActivities']
     club_house = p_data['clubHouse']
@@ -24,7 +23,6 @@ def amenities_matching(p_data,p_features):
         if key in club_house:
             p_features['amenities']['children'][key]['foundValue'] = club_house[key]
     return p_features
-
 
 def unit_details_matching(p_data,p_features):
     unit_ids = p_data['units']
@@ -161,10 +159,10 @@ if __name__ == '__main__':
 
     es = Elasticsearch([{'host':'localhost','port':9200}])
 
-    with open('project_data.json') as open_file:
+    with open('Data/project_data.json') as open_file:
         es.index(index='project_data_index',doc_type='project_data_doc',id=1,body=json.load(open_file))
 
-    with open('project_features.json') as open_file:
+    with open('Data/project_features.json') as open_file:
         es.index(index='project_features_index',doc_type='project_features_doc',id=1,body=json.load(open_file))
 
     project_data = es.get(index='project_data_index',doc_type='project_data_doc',id=1)
@@ -173,4 +171,4 @@ if __name__ == '__main__':
     project_features = es.get(index='project_features_index',doc_type='project_features_doc',id=1)
     project_features = project_features['_source']
 
-    project_features = all_project_feature_mapping(project_features)
+    project_features = all_project_feature_mapping(project_data,project_features)

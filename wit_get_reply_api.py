@@ -93,7 +93,7 @@ def interpret_wit_output(json_object):
 
 	return dict1
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
 	# entity = 'trial'
 	# values = ['1','2']
 	# create_new_entity_wit(entity,values)
@@ -103,3 +103,5 @@ def interpret_wit_output(json_object):
 	# entity = 'project_name'
 	# values = get_project_names()
 	# create_new_entity_wit(entity,values)
+	# message = 'I want an apartment having cricket facilities'
+	# print get_entities_from_msg_Wit(message)

@@ -5,7 +5,6 @@ import json
 import numpy as np
 
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
-
 def genRandString(n):
     return (''.join(choice(ascii_lowercase) for i in range(n)))
 
@@ -15,7 +14,7 @@ def getProjectId():
 def createProjectJSON(project):
     with open('Data/project_features.json', 'r') as f:
         data = f.read()
-    es.index(index='chatbot', doc_type='projects', id=project, body=data)
+    es.index(index='projects', doc_type='features', id=project, body=data)
 
 def getProjectDoc(project):
     body = {
@@ -25,7 +24,7 @@ def getProjectDoc(project):
             }
         }
     }
-    return es.search(index='chatbot', doc_type='projects', body = body)['hits']['hits'][0]['_source']
+    return es.search(index='projects', doc_type='features', body = body)['hits']['hits'][0]['_source']
 
 
 
@@ -33,7 +32,7 @@ def updateProjectJson(project, projectDict):
     body = {
         "doc" : projectDict
     }
-    es.update(index='chatbot',doc_type='projects',id=project,body=body)
+    es.update(index='projects',doc_type='features',id=project,body=body)
     
 
 def updateProject(project):

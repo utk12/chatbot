@@ -7,7 +7,7 @@ def getFeatures(witReply):
 	features = []
 	features += (getRelativeFeatures(witReply))
 	features += (getSecurityFeatures(witReply))
-	print witReply
+	# print witReply
 	for entity in witReply:
 		for feature in witReply[entity]:
 			f = extractFeatures(entity,feature)

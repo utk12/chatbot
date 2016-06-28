@@ -15,8 +15,8 @@ def getUserId():
 
 def createUserJSON(user):
 	with open('Data/user_features.json', 'r') as f:
-		data = f.read()
-	es.index(index='chatbot', doc_type='users', id=user, body=data)
+		data = json.loads(f.read())
+	es.index(index='users', doc_type='features', id=user, body=data)
 
 def getUserDoc(user):
 	body = {
@@ -26,7 +26,7 @@ def getUserDoc(user):
 			}
 		}
 	}
-	return es.search(index='chatbot', doc_type='users', body = body)['hits']['hits'][0]['_source']
+	return es.search(index='users', doc_type='features', body = body)['hits']['hits'][0]['_source']
 
 def get_feature_dictionary():
 	with open('Data/user_features.json', 'r') as f:
@@ -50,7 +50,7 @@ def updateJson(user, userDict):
 	body = {
 		"doc" : userDict
 	}
-	es.update(index='chatbot',doc_type='users',id=user,body=body)
+	es.update(index='users',doc_type='features',id=user,body=body)
 	
 
 

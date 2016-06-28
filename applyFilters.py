@@ -4,16 +4,13 @@ import json
 from update_question_features import convert_underscore_to_camelcase as toCamel
 
 
-def toCamel(text):
-	components = text.split('_')
-	return components[0] + "".join(x.title() for x in components[1:])
-
 es = Elasticsearch([{'host':'localhost','port':9200}])
 
 def getProjects(filters_dict):
 	body = prepareBody(filters_dict)
 	project_list = search(body)
-	project_list = applyUnitsFilter(project_list)
+	return project_list
+	# project_list = applyUnitsFilter(project_list)
 
 
 
@@ -172,5 +169,5 @@ filters_dict = {
 	}
 }
 
-print json.dumps(prepareBody(filters_dict), indent=2)
+# print json.dumps(prepareBody(filters_dict), indent=2)
 

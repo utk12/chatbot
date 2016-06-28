@@ -30,8 +30,7 @@ def wit_extract_filters(witReply):
 	filters['specifications'] = getSpecifications(witReply)
 	filters['other'], filters['configurations'] = getConfigurations(witReply)
 	filters['security'] = getSecurityFilters(witReply)
-	print json.dumps(filters, indent = 4)
-
+	return filters
 
 def getProjectDetails(witReply):
 	details = {}
@@ -166,4 +165,4 @@ def getConfigurations(witReply):
 
 
 
-wit_extract_filters({u'security': {u'cctv': True}, u'security_place': {u'tower': True}, u'project_type': {u'row house': True}, u'sentiment': {u'positive': True}, 'loc_city' : {'gurgaon':True}, 'address_zone' : {'sohna road':True}, 'amenities' : {'football':True}})
+# wit_extract_filters({u'security': {u'cctv': True}, u'security_place': {u'tower': True}, u'project_type': {u'row house': True}, u'sentiment': {u'positive': True}, 'loc_city' : {'gurgaon':True}, 'address_zone' : {'sohna road':True}, 'amenities' : {'football':True}})

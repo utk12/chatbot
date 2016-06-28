@@ -15,12 +15,6 @@ def getFeatures(witReply):
 				features.append(f)
 	return features
 
-def getFeatureList(entities):
-	list1 = []
-	for item in entities:
-		list1.append(item)
-	return list1
-
 def format_wit_reply(witReply):
 	reply = {}
 	for i in witReply:

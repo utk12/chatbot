@@ -27,12 +27,19 @@ def get_output_wit(message):
 	obj = json.loads(r.text)
 	return obj
 
-def get_entities_list_wit():
+def get_all_entities_list_wit():
 	headers = {'Authorization':'Bearer QZBAVFA3VWR3UBH4PDUCGWELMGIE2T4O'}
 	url = 'https://api.wit.ai/entities'
 	r = requests.get(url=url,headers = headers)
 	obj = r.text
 	return obj
+
+def get_entities_from_msg_Wit(message):
+	wit_reply = get_output_wit(message)
+	list1 = []
+	for item in wit_reply['entities']:
+		list1.append(item)
+	return list1
 
 def get_entities_json_wit(message):
 	json_object = get_output_wit(message)

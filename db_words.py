@@ -61,6 +61,17 @@ def databaseWords():
 				word_list.append(word.lower())
 	return list(set(word_list))
 
+def specialWords():
+	with open('Data/specialwords.txt', 'r') as f:
+		lines = f.readlines()
+	word_list = []
+	for line in lines:
+		line = ''.join(map(lambda x: x.lower() if not x.isupper() else " "+x.lower(), line))
+		for word in line.split():
+			if word not in stop:
+				word_list.append(word.lower())
+	return list(set(word_list))
+
 
 def add_to_roofpik_data(word_list):
 	with open('Data/roofpik_data.txt', 'a') as f:
@@ -88,8 +99,11 @@ def getRoofpikData():
 
 
 # print databaseWords()
-add_to_roofpik_data(databaseWords())
-add_to_roofpik_data(projectCSVData())
-add_to_roofpik_data(questionCSVData())
-removeDuplicate()
-update_count_json(getRoofpikData())
+# add_to_roofpik_data(databaseWords())
+# add_to_roofpik_data(projectCSVData())
+# add_to_roofpik_data(questionCSVData())
+# print specialWords()
+# add_to_roofpik_data(specialWords())
+# removeDuplicate()
+
+# update_count_json(getRoofpikData())

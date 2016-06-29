@@ -2,6 +2,7 @@
 import json
 import math
 import numpy as np
+import re
 from stringprocessing import *
 
 class EnglishCorrector():
@@ -23,29 +24,32 @@ class EnglishCorrector():
 		ans = ''
 		word_list = stringToWords(sentence,True)
 		for typed_word in word_list:
-			typed_word = typed_word.lower()
-			word_letter_freq = getDistribution(typed_word)
-			center_list = []
-			for i in range(self.n_clusters):
-				obj = {}
-				obj["cluster_label"] = i
-				obj["center_coords"] = self.cluster_centers[i]
-				obj["vector_dist"] = np.linalg.norm(word_letter_freq-obj["center_coords"])
-				center_list.append(obj)
-			center_list.sort(key=lambda x: x['vector_dist'], reverse=False)
-			# for item in center_list:
-			# 	print(item['vector_dist'])
-			words_to_check = []
-			for i in range(self.clusters_to_check):
-				cluster_label = center_list[i]["cluster_label"]
-				for node in self.clusters[str(cluster_label)]["points"]:
-					words_to_check.append(node["word"])
-			# ans[typed_word] = getBestMatch(typed_word,words_to_check,self.word_counts)
-			temp = getBestMatch(typed_word,words_to_check,self.word_counts)
-			typed_word_suggestions = []
-			for item in temp:
-				typed_word_suggestions.append(item["word"])
-			ans += typed_word_suggestions[0] + ' '
+			if not re.match(r"\d+",typed_word):
+				typed_word = typed_word.lower()
+				word_letter_freq = getDistribution(typed_word)
+				center_list = []
+				for i in range(self.n_clusters):
+					obj = {}
+					obj["cluster_label"] = i
+					obj["center_coords"] = self.cluster_centers[i]
+					obj["vector_dist"] = np.linalg.norm(word_letter_freq-obj["center_coords"])
+					center_list.append(obj)
+				center_list.sort(key=lambda x: x['vector_dist'], reverse=False)
+				# for item in center_list:
+				# 	print(item['vector_dist'])
+				words_to_check = []
+				for i in range(self.clusters_to_check):
+					cluster_label = center_list[i]["cluster_label"]
+					for node in self.clusters[str(cluster_label)]["points"]:
+						words_to_check.append(node["word"])
+				# ans[typed_word] = getBestMatch(typed_word,words_to_check,self.word_counts)
+				temp = getBestMatch(typed_word,words_to_check,self.word_counts)
+				typed_word_suggestions = []
+				for item in temp:
+					typed_word_suggestions.append(item["word"])
+				ans += typed_word_suggestions[0] + ' '
+			else:
+				ans += typed_word + ' '
 		return ans
 
 def getBestMatch(typed_word,words_to_check,word_counts):

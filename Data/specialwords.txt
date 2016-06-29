@@ -4,6 +4,8 @@ bhk
 3bhk
 4bhk
 5bhk
+6bhk
+7bhk
 ac
 vrv
 cctv

@@ -31,14 +31,44 @@ def applyUnitsFilter(project_list, filters_dict):
 					flag = 0
 					break
 			if flag == 1:
-				print configs
 				for config in configs:
 					if config == 'property_type':
-						print project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]	
-						for j in filters_dict['configurations'][config]:
-							if project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)] != toCamel(j):
+						x = [toCamel(j) for j in filters_dict['configurations'][config]]
+						if project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)] not in x:
+							flag = 0
+							break
+					elif config == 'type':
+						x = [toCamel(j) for j in filters_dict['configurations'][config]]
+						if ''.join(project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)].split()).lower() not in x:
+							flag = 0
+							break
+					elif config == 'price':
+						price = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
+						price_level = filters_dict['configurations']['price_level']
+						if price_level == 'high':
+							if price < price_level:
 								flag = 0
 								break
+						if price_level == 'low':
+							if price > price_level:
+								flag = 0
+								break
+					elif config == 'area':
+						area = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
+						area_level = filters_dict['configurations']['area_level']
+						if area_level == 'high':
+							if area < area_level:
+								flag = 0
+								break
+						elif area_level == 'low':
+							if area > area_level:
+								flag = 0
+								break
+					elif config == 'store_room' or config == 'servant_room':
+						if not project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]:
+							flag = 0
+							break
+
 			if flag == 1:
 				result.append(project_list[i])
 				break

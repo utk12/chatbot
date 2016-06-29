@@ -18,6 +18,7 @@ def getFiltersJson():
 					result[cat1][subcat][key] = ''
 			else:
 				result[cat1][subcat] = ''
+	# print json.dumps(result, indent=4)
 	return result
 
 filters_data = getFiltersJson()
@@ -113,9 +114,12 @@ def getConfigurations(witReply):
 	configurations = {}
 	if 'configurations' in witReply:
 		for i in witReply['configurations']:
+			print i
+			print filters_data['configurations']
 			if i in filters_data['other']:
 				others['i'] = True
 			elif i in filters_data['configurations']:
+				print i
 				configurations[i] = True
 	if 'project_type' in witReply:
 		configurations['property_type'] = {}

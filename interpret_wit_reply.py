@@ -21,7 +21,7 @@ def format_wit_reply(witReply):
 		x = '_'.join(i.split())
 		reply[x] = {}
 		for j in witReply[i]:
-			reply[x]['_'.join(j.split())] = witReply[i][j]
+			reply[x]['_'.join(str(j).split())] = witReply[i][j]
 	return reply
 
 def getRelativeFeatures(witReply):

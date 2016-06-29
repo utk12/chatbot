@@ -61,6 +61,12 @@ def amenities_matching(p_data,p_features):
 
     if 'clubHouse' in p_data:
         club_house = p_data['clubHouse']
+        if 'aerobicsRooms' in club_house:
+            club_house['aerobicsRoom'] = club_house['aerobicsRooms']
+            del club_house['aerobicsRooms']
+        if 'guestrooms' in club_house:
+            club_house['guestRoom'] = club_house['guestrooms']
+            del club_house['guestrooms']
     else:
         clubHouse = {}
     

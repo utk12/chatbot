@@ -1,6 +1,6 @@
 import copy
 import numpy as np
-import os 
+import os
 import pandas as pd
 
 def countPairs(f):
@@ -36,19 +36,18 @@ def deleteAll(dictionary,f):
             del d[f]
     return dictionary
 
-def nextFeatureSuggestion(temp):
-    print 'Current question is asked from which feature?'
-    start = raw_input()
+def nextFeatureSuggestion(temp,feature):
+    # print 'Current question is asked from which feature?'
+    start = feature
     #print 'Question is being asked from this now'
-    
     try:
         next_feature = max(temp[start],key=temp[start].get)
-        print 'Next best possible features to ask question from:'
-        print temp[start]
+        # print 'Next best possible features to ask question from:'
+        # print temp[start]
         temp = deleteAll(temp,start)
-        print 'Next feature suggestion to ask question from:',next_feature
+        return next_feature
     except:
-        print 'All features are done!'
+        return None
 
 def orderQuestions(temp):
     print 'Enter the feature to start with'
@@ -70,5 +69,5 @@ if __name__ == '__main__':
 
     pair_occurences = formPairs(Q_data)
     temp = copy.deepcopy(pair_occurences)
-    nextFeatureSuggestion(temp)
+    print nextFeatureSuggestion(temp,'possession')
     #orderQuestions(temp)

@@ -1,0 +1,355 @@
+{
+  "projectStatus": "underConstruction",
+  "buy": "",
+  "version": "",
+  "versionCreatedTime": "",
+  "versionLiveTime": "",
+  "versionEndTime": "",
+  "status": "current/editable/submitted/rejected/previous",
+  "versionCreatedBy":"",
+  "admin": {},
+  "ratings":{
+    "num": 67,
+    "average": 3.2
+  },
+  "ranking":{
+    "score": 0.9876
+  },
+  "priceRange":{
+    "buy":{
+    "min": 56765544,
+    "max": 89787677,
+    "average": 78876677
+    },
+    "rent":
+    {
+    "min": 56765,
+    "max": 89787,
+    "average": 78876
+    }
+  },
+  "projectDetails": {
+    "projectName": "",
+    "builderName": "",
+    "builderId": "",
+    "address": {
+      "cityName": "",
+      "cityId":"",
+      "locations": {
+        "locationId": {
+          "locationName":"" ,
+          "locationId": ""
+        }
+      },
+      "address_line1": "",
+      "address_line2": "",
+      "zone": "",
+      "zoneId": "",
+      "pincode": "",
+      "landmark": "",
+      "lat": "",
+      "lng": ""
+    },
+    "partners": {
+      "constructionCompany": {
+        "name": "",
+        "website": ""
+      },
+      "architect": {
+        "name": "",
+        "website": ""
+      },
+      "landscapeDesigner": {
+        "name": "",
+        "website": ""
+      }
+    },
+    "approvedBankLoans": {
+      "AxisBank": "",
+      "HDFC": ""
+    },
+    "projectType": {
+      "apartment": "",
+      "villa": "",
+      "rowHouse": "",
+      "studio": "",
+      "servicedApartment": ""
+    },
+    "totalUnits": "",
+    "totalTowers": "",
+    "greenArea": "",
+    "landArea": "",
+    "floors": {
+      "max": "",
+      "min": ""
+    },
+    "lifts": {
+      "max": "",
+      "min": ""
+    },
+    "carParking": "",
+    "visitorCarParking": "",
+    "vastuCompliant": ""
+  },
+  "rwa": {
+    "contactName": "",
+    "emailAddress": "",
+    "contactNumber": "",
+    "rules": ""
+  },
+  "sportsActivities": {
+    "cricket": "",
+    "football": "",
+    "tennis": "",
+    "basketball": "",
+    "multiPurposeCourt": "",
+    "pitchAndPutt": "",
+    "skatingRink": "",
+    "volleyball": "",
+    "amphitheatre": "",
+    "badminton": "",
+    "tableTennis": "",
+    "squash": "",
+    "swimmingPool": "",
+    "kidsSwimmingPool": "",
+    "kidsPlayAreas": "",
+    "poolTable": "",
+    "snookerTable": "",
+    "bowlingAlley": "",
+    "joggingTrack": ""
+  },
+  "clubHouse": {
+    "operatingTimes": {
+      "start": "",
+      "end": "",
+      "holiday": ""
+    },
+    "multiPurposeHall": "",
+    "restaurant": "",
+    "yogaRoom": "",
+    "aerobicsRooms": "",
+    "danceRoom": "",
+    "musicRoom": "",
+    "salon": "",
+    "spa": "",
+    "gym": "",
+    "videoGames": "",
+    "miniTheatre": "",
+    "kidsZone": "",
+    "bar": "",
+    "cafe": "",
+    "businessCentre": "",
+    "guestrooms": "",
+    "steamRoom": "",
+    "saunaRoom": "",
+    "jacuzzi": ""
+  },
+  "costing": {
+    "powerBackupCharges": "",
+    "maintenanceChargesFixed": "",
+    "maintenanceChargesVariable": "",
+    "moveInCharges": "",
+    "moveOutCharges": "",
+    "cookingChargeOneMeal": "",
+    "cookingChargeTwoMeals": "",
+    "cleaningUtensilsOneTime": "",
+    "cleaningUtensilsTwoTime": "",
+    "maid12Hours": "",
+    "maid24Hours": "",
+    "carWashCharges": ""
+  },
+  "other": {
+    "powerBackup": "",
+    "maintenance": "",
+    "waitingLoungeInTower": "",
+    "airConditioningInWaitingLounge": "",
+    "petFriendly": "",
+    "wheelchairFriendly": "",
+    "playSchool": "",
+    "daycare": "",
+    "atm": "",
+    "grocery": "",
+    "pharmacy": "",
+    "parlour": "",
+    "park": "",
+    "laundry": "",
+    "bank": ""
+  },
+  "security": {
+    "mainGate": {
+      "guards": "",
+      "boomBarriers": "",
+      "intercom": "",
+      "cctv": ""
+    },
+    "tower": {
+      "accessControlled": "",
+      "guard": "",
+      "cctv": ""
+    },
+    "tagsForVehicles": "",
+    "stickersForVehicles": "",
+    "numberOfEntryOrExitPoints": "",
+    "videoDoorPhone": "",
+    "workerClearance": "",
+    "workerPass": ""
+  },
+  "societyShops": {
+    "grocery": {
+      "name": "",
+      "contact": ""
+    },
+    "pharmacy": {
+      "name": "",
+      "contact": ""
+    },
+    "parlour": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    }
+  },
+  "homeDelivery": {
+    "restaurant": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "grocery": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "pharmacy": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "cableProvider": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "isp": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "parlour": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "milkman": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "laundry": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    },
+    "newspaperDelivery": {
+      "id1": {
+        "name": "",
+        "contact": ""
+      }
+    }
+  },
+  "units": {
+    "id1": {
+      "configurations": {
+        "propertyType": "",
+        "type": "",
+        "price": "",
+        "superArea": "",
+        "carpetArea": "",
+        "totalBalconies": "",
+        "kitchen": "",
+        "pujaRoom": "",
+        "storeRoom": "",
+        "totalHalls": "",
+        "studyRoom": "",
+        "familyLounge": "",
+        "totalBedrooms": "",
+        "totalWashrooms": "",
+        "servantRoom": ""
+      },
+      "specifications": {
+        "showerCubicle": "",
+        "homeAutomation": "",
+        "vrvAirConditioning": "",
+        "kitchenAppliances": "",
+        "kitchenOTG": "",
+        "bathTub": "",
+        "kitchenModular": "",
+        "kitchenDishWasher": "",
+        "airConditioning": "",
+        "flooringMasterBedrooms": "",
+        "kitchenChimney": "",
+        "flooringLivingDining": "",
+        "kitchenMicrowaveOven": "",
+        "jacuzzi": "",
+        "kitchenRefrigerator": "",
+        "flooringOtherBedrooms": "",
+        "kitchenHob": "",
+        "fullyFurnished": "",
+        "wardrobes": ""
+      }
+    }
+  },
+  "connectivity": {
+    "airport": {
+      "lat": "",
+      "long": "",
+      "distance": "",
+      "peakTime": "",
+      "offpeakTime": ""
+    },
+    "cabStand": {
+      "lat": "",
+      "long": "",
+      "distance": ""
+    },
+    "autoStand": {
+      "lat": "",
+      "long": "",
+      "distance": ""
+    },
+    "metroStation": {
+      "lat": "",
+      "long": "",
+      "distance": "",
+      "peakTime": "",
+      "offpeakTime": ""
+    },
+    "railwayStation": {
+      "lat": "",
+      "long": "",
+      "distance": "",
+      "peakTime": "",
+      "offpeakTime": ""
+    },
+    "busStand": {
+      "lat": "",
+      "long": "",
+      "distance": "",
+      "peakTime": "",
+      "offpeakTime": ""
+    },
+    "nearestMainRoad": "",
+    "mainRoadDistance": "",
+    "nearestExpressway": "",
+    "expresswayDistance": ""
+  }
+}

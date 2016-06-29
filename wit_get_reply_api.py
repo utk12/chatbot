@@ -27,12 +27,19 @@ def get_output_wit(message):
 	obj = json.loads(r.text)
 	return obj
 
-def get_entities_list_wit():
+def get_all_entities_list_wit():
 	headers = {'Authorization':'Bearer QZBAVFA3VWR3UBH4PDUCGWELMGIE2T4O'}
 	url = 'https://api.wit.ai/entities'
 	r = requests.get(url=url,headers = headers)
 	obj = r.text
 	return obj
+
+def get_entities_from_msg_Wit(message):
+	wit_reply = get_output_wit(message)
+	list1 = []
+	for item in wit_reply['entities']:
+		list1.append(item)
+	return list1
 
 def get_entities_json_wit(message):
 	json_object = get_output_wit(message)
@@ -83,10 +90,9 @@ def interpret_wit_output(json_object):
 		dict1[key] = {}
 		for i in range(len(json_object[key])):
 			dict1[key][json_object[key][i]['value']] = True
-
 	return dict1
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
 	# entity = 'trial'
 	# values = ['1','2']
 	# create_new_entity_wit(entity,values)
@@ -96,3 +102,5 @@ def interpret_wit_output(json_object):
 	# entity = 'project_name'
 	# values = get_project_names()
 	# create_new_entity_wit(entity,values)
+	message = 'I want a row-house with cricket facilities nearby.'
+	print get_entities_from_msg_Wit(message)

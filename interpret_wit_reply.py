@@ -1,6 +1,6 @@
 from user_features import get_feature_dictionary
 import json
-from wit_get_reply_api import get_entities_list_wit
+from wit_get_reply_api import get_all_entities_list_wit
 
 def getFeatures(witReply):
 	witReply = format_wit_reply(witReply)

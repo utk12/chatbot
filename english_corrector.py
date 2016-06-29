@@ -13,14 +13,11 @@ class EnglishCorrector():
 		count_data_file = "Data/count.json"
 		with open(cluster_data_file, 'r') as f:
 			self.clusters = json.load(f)
-		print("Clusters file loaded\n")
 		with open(count_data_file, 'r') as f:
 			self.word_counts = json.load(f)
-		print("Word count file loaded\n")
 		self.cluster_centers = []
 		for i in range(self.n_clusters):
 			self.cluster_centers.append(self.clusters[str(i)]["center"])
-		print("Centers fetched\n")
 
 	def correct(self,sentence):
 		ans = ''

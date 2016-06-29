@@ -7,12 +7,10 @@ es = Elasticsearch([{'host':'localhost','port':9200}])
 
 def getProjects(filters_dict):
 	body = prepareBody(filters_dict)
-	# print json.dumps(body, indent=4)
 	project_list = es_search(body)
 	project_list = applyUnitsFilter(project_list, filters_dict)
 	result = []
 	for i in xrange(len(project_list)):
-		# print json.dumps(project_list[i], indent = 4)
 		result.append(project_list[i]['_id'])
 	return result
 
@@ -68,7 +66,6 @@ def applyUnitsFilter(project_list, filters_dict):
 						if not project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]:
 							flag = 0
 							break
-
 			if flag == 1:
 				result.append(project_list[i])
 				break

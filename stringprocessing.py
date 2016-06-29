@@ -2,10 +2,11 @@ import jellyfish as match
 import regex as re
 from math import log
 
-def stringToWords(s,allow_numeric=False):
+def stringToWords(s,allow_numeric=True):
 	# wordList = s.split()
 	if allow_numeric==True:
 		wordList = re.sub('[^a-zA-Z0-9]',' ',s)
+		wordList = re.sub('([^0-9])(\d+)([^0-9])',r'\1 \2 \3',wordList)
 	else:
 		wordList = re.sub('[^a-zA-Z]',' ',s)
 	wordList = wordList.split()

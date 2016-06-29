@@ -1,4 +1,4 @@
-,Pos,Rating,Ptype,Specs,Price,Amenit,Security,Size,Acco,Nearby
+,possession,rating,projectType,specifications,price,amenities,security,size,accommodation,nearby
 "c1,Buy",3,0,1,7,4,5,0,0,2,6
 "c2,Rent",3,0,1,6,4,8,7,5,2,9
 "c3,buy",1,7,2,0,4,6,5,0,3,0

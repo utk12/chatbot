@@ -7,15 +7,78 @@ es = Elasticsearch([{'host':'localhost','port':9200}])
 
 def getProjects(filters_dict):
 	body = prepareBody(filters_dict)
+	# print json.dumps(body, indent=4)
 	project_list = es_search(body)
+	project_list = applyUnitsFilter(project_list, filters_dict)
 	result = []
 	for i in xrange(len(project_list)):
+		# print json.dumps(project_list[i], indent = 4)
 		result.append(project_list[i]['_id'])
 	return result
-	# project_list = applyUnitsFilter(project_list)
+
+
+def applyUnitsFilter(project_list, filters_dict):
+	result = []
+	if 'specifications' in filters_dict:
+		specs = [i for i in filters_dict['specifications']]
+	if 'configurations' in filters_dict:
+		configs = [i for i in filters_dict['configurations']]
+	for i in range(len(project_list)):
+		for unit in project_list[i]['_source']['units']:
+			flag = 1
+			for spec in specs:
+				if not project_list[i]['_source']['units'][unit]['specifications'][toCamel(spec)]:
+					flag = 0
+					break
+			if flag == 1:
+				for config in configs:
+					if config == 'property_type':
+						x = [toCamel(j) for j in filters_dict['configurations'][config]]
+						if project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)] not in x:
+							flag = 0
+							break
+					elif config == 'type':
+						x = [toCamel(j) for j in filters_dict['configurations'][config]]
+						if ''.join(project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)].split()).lower() not in x:
+							flag = 0
+							break
+					elif config == 'price':
+						price = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
+						price_level = filters_dict['configurations']['price_level']
+						if price_level == 'high':
+							if price < price_level:
+								flag = 0
+								break
+						if price_level == 'low':
+							if price > price_level:
+								flag = 0
+								break
+					elif config == 'area':
+						area = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
+						area_level = filters_dict['configurations']['area_level']
+						if area_level == 'high':
+							if area < area_level:
+								flag = 0
+								break
+						elif area_level == 'low':
+							if area > area_level:
+								flag = 0
+								break
+					elif config == 'store_room' or config == 'servant_room':
+						if not project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]:
+							flag = 0
+							break
+
+			if flag == 1:
+				result.append(project_list[i])
+				break
+	return result
+
+
 
 def es_search(body):
 	return es.search(index = 'projects', doc_type = 'data', body = body)['hits']['hits']
+
 
 def prepareBody(filters_dict):
 	fliterMust = []
@@ -109,63 +172,22 @@ def prepareBody(filters_dict):
 
 
 	body = {
-	  "query": {
-		"filtered" : {
-			"query" : {
-				"match_all" : {}
-			},
-			"filter" : [
-				{
-					"bool" : {
-						"must" : fliterMust
+		"query": {
+			"filtered" : {
+				"query" : {
+					"match_all" : {}
+				},
+				"filter" : [
+					{
+						"bool" : {
+							"must" : fliterMust
+						}
 					}
-				}
-			]
+				]
+			}
 		}
-	  }
 	}
 
 	return body
 
-
-
-filters_dict = {
-	"club_house": {}, 
-	"specifications": {}, 
-	"sports_activities": {
-		"cricket": True
-	}, 
-	"project_details": {
-		"address": {
-			"city": "gurgaon", 
-			"zone": {
-				"sohna road": True,
-				"sector 48" : True
-			},
-			"location" : {
-				"vipul trade centre" : True
-			}
-		},
-		"project_name" : {
-			"Vipul Greens" : True
-		},
-		"project_type": {
-			"row_house" : True
-		}
-	}, 
-	"security": {
-		"place_flag": True, 
-		"tower": {
-			"guards": True
-		}
-	}, 
-	"other": {}, 
-	"configurations": {
-		"property_type": {
-			"row_house": True
-		}
-	}
-}
-
-# print json.dumps(prepareBody(filters_dict), indent=2)
 

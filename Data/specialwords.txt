@@ -12,3 +12,4 @@ ft
 sq
 tt
 ggn
+rs

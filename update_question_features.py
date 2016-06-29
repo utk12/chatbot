@@ -1,9 +1,21 @@
 import json
 import numpy as np
 import pandas as pd
+from map_recommendation import nextFeatureSuggestion
+
 pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/rent_questions.csv')
 data.index = data['sn']
+
+def update_weight(first_feature):
+	order = {}
+	weight = 1.0
+	order[first_feature] = weight
+	while(weight != 0.0):
+		weight = weight - 0.1
+		next_feature = first_feature
+		next_feature = nextFeatureSuggestion(next_feature)
+		order[next_feature] = weight
 
 def lower_columns(name):
 	for item in data[str(name)]:
@@ -108,4 +120,4 @@ if __name__ == '__main__':
 
 	# print get_dict_parent_numchild()
 	# print iterate('amenities',34)
-	write_output('rent')
+	write_output('rent')	

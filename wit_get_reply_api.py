@@ -34,7 +34,7 @@ def get_all_entities_list_wit():
 	obj = r.text
 	return obj
 
-def get_entities_from_msg_Wit(message):
+def get_entities_from_msg_wit(message):
 	wit_reply = get_output_wit(message)
 	list1 = []
 	for item in wit_reply['entities']:

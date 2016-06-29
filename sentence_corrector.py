@@ -16,3 +16,4 @@ def getInput():
 
 def show(text):
 	print(json.dumps(text,indent=2))
+	

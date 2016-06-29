@@ -112,4 +112,4 @@ if __name__ == '__main__':
 
 	# print get_dict_parent_numchild()
 	# print iterate('amenities',34)
-	# write_output('rent')
+	write_output('rent')

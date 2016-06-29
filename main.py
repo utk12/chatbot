@@ -5,6 +5,7 @@ from user_features import *
 from interpret_wit_reply import *
 from getFilters import *
 from applyFilters import *
+from map_recommendation import nextFeatureSuggestion
 
 if __name__ == '__main__':
 	message = 'I want an apartment in which we should have football and vrv'
@@ -21,3 +22,4 @@ if __name__ == '__main__':
 	filters = wit_extract_filters(dict_features)
 	# print filters
 	print getProjects(filters)
+	print get_entities_from_msg_Wit(message)

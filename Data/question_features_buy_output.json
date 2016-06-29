@@ -146,6 +146,7 @@
     }
   },
   "amenities": {
+    
     "user_question": "what amenities are available?",
     "bot_question": "are you also looking for specific amenities available?",
     "children": {

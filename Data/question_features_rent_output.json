@@ -1,0 +1,438 @@
+{
+  "possession": {
+    "user_question": "what's the offered possession time?",
+    "bot_question": "how soon do you want to gain possession of the property?",
+    "children": {
+      "newlyLaunched": {
+        "user_question": "do you have any newly launched properties?",
+        "bot_question": "are you interested in under launched options?"
+      },
+      "underConstruction": {
+        "user_question": "can you show me some under construction properties?",
+        "bot_question": "would you like me to show you under construction alternatives?"
+      },
+      "readyToMove": {
+        "user_question": "can you filter the options to show only ready to move in properties?",
+        "bot_question": "are you specifically looking for ready-to-move-in options?"
+      }
+    }
+  },
+  "rating": {
+    "user_question": "what is the rating?",
+    "bot_question": "can i help you filter properties on the basis of user rating?",
+    "children": {
+      "high": {
+        "user_question": "can you filter out the projects which are highly rated?",
+        "bot_question": "do you wish to see options rated best by previous users?"
+      },
+      "medium": {
+        "user_question": "is there any medium rated property?",
+        "bot_question": NaN
+      },
+      "low": {
+        "user_question": "can you exclude the low rated properties?",
+        "bot_question": NaN
+      }
+    }
+  },
+  "projectType": {
+    "user_question": "what project types are you having?",
+    "bot_question": "okay, what project type is suitable for you?",
+    "children": {
+      "rowHouse": {
+        "user_question": "do you have any row house?",
+        "bot_question": "are you looking for row houses?"
+      },
+      "servicedApartment": {
+        "user_question": "can you show me some service apartments?",
+        "bot_question": "would you like me to search for serviced apartments?"
+      },
+      "apartment": {
+        "user_question": "do you have apartments?",
+        "bot_question": "would you like me to show you apartments?"
+      },
+      "villa": {
+        "user_question": "can you show me some villa?",
+        "bot_question": "is villa a good option for you?"
+      },
+      "studioApartment": {
+        "user_question": "are you having any studio apartments?",
+        "bot_question": "would studio apartment be a preferred choice?"
+      }
+    }
+  },
+  "specifications": {
+    "user_question": "what are the specifications?",
+    "bot_question": "do you have any specific requirements with your choice of project?",
+    "children": {
+      "kitchenDishWasher": {
+        "user_question": "can you provide some options providing kitchen dish washer?",
+        "bot_question": "would you be requiring a kitchen dish washer?"
+      },
+      "powerBackup": {
+        "user_question": "is power backup provided?",
+        "bot_question": "is power back-up a necessity for you?"
+      },
+      "fullyFurnished": {
+        "user_question": "do you have fully furnished projects?",
+        "bot_question": "do you want me to show you fully furnished alternatives?"
+      },
+      "maintenance": {
+        "user_question": "are there any options providing maintenance facility?",
+        "bot_question": "do you want to shortlist options based on maintenance facilities provided?"
+      },
+      "wardrobes": {
+        "user_question": "do you have any properties providing wardrobes?",
+        "bot_question": "is the provision of wardrobes a preference for you?"
+      },
+      "modularKitchen": {
+        "user_question": "is modular kitchen provided?",
+        "bot_question": "is modular kitchen a necessity for you?"
+      },
+      "lift": {
+        "user_question": "is lift being provided?",
+        "bot_question": "do you want to look at societies that provide lift services?"
+      },
+      "vrvAirConditioning": {
+        "user_question": "can you suggest some projects providing vrv air conditioning?",
+        "bot_question": "would you prefer options that provide vrv air conditioning?"
+      },
+      "visitorParking": {
+        "user_question": "do you have any projects providing visitor parking?",
+        "bot_question": "do you want to see options that provide visitor car parking?"
+      },
+      "parking": {
+        "user_question": "can you filter out the projects offering parking?",
+        "bot_question": "may i filter options that provide parking facilities?"
+      },
+      "showerCubicle": {
+        "user_question": "is there any property having shower cubicle?",
+        "bot_question": "would you be requiring a shower cubicle?"
+      },
+      "airConditioning": {
+        "user_question": "are there any options offering air conditioning facility?",
+        "bot_question": "would air-conditioning be a requirement for you?"
+      },
+      "bathTub": {
+        "user_question": "can you provide the details of projects providing bath tub?",
+        "bot_question": "would you prefer options that provide a bath tub?"
+      },
+      "vastuCompliant": {
+        "user_question": "can you filter out the projects which are vastu compliant?",
+        "bot_question": "is vastu compliance a necessity for you?"
+      },
+      "homeAutomation": {
+        "user_question": "is there any project providing home automation?",
+        "bot_question": "would you prefer options providing home automation?"
+      }
+    }
+  },
+  "price": {
+    "user_question": "what's the price of this property?",
+    "bot_question": "how much are you willing to invest in the project?",
+    "children": {
+      "high": {
+        "user_question": "can you show some properties in high budget range?",
+        "bot_question": NaN
+      },
+      "medium": {
+        "user_question": "are there any options in medium budget range?",
+        "bot_question": NaN
+      },
+      "low": {
+        "user_question": "can you show some properties in low budget range?",
+        "bot_question": NaN
+      }
+    }
+  },
+  "amenities": {
+    "user_question": "what amenities are available?",
+    "bot_question": "are you also looking for specific amenities available?",
+    "children": {
+      "salon": {
+        "user_question": "do you have any projects having salon?",
+        "bot_question": "would salons inside the society be a preference?"
+      },
+      "miniTheatre": {
+        "user_question": "is there any project offering mini theatre?",
+        "bot_question": "is mini-theatre facility a preference for you?"
+      },
+      "bowlingAlley": {
+        "user_question": "is bowling alley present?",
+        "bot_question": "would you prefer options providing bowling alleys?"
+      },
+      "saunaRoom": {
+        "user_question": "can you suggest some options having sauna room?",
+        "bot_question": "would sauna rooms inside the society be a necessity?"
+      },
+      "poolTable": {
+        "user_question": "do you have any properties providing pool table?",
+        "bot_question": "should i filter the properties providing pool tables?"
+      },
+      "badminton": {
+        "user_question": "i need a badminton court as well.",
+        "bot_question": "do you need a badminton court?"
+      },
+      "volleyball": {
+        "user_question": "do you any projects having volleyball?",
+        "bot_question": "are you a volleyball enthusiast?"
+      },
+      "snookerTable": {
+        "user_question": "can you suggest projects providing snooker table?",
+        "bot_question": "do you want to see properties providing snooker tables?"
+      },
+      "spa": {
+        "user_question": "is spa available?",
+        "bot_question": "are spa options a necessity for you?"
+      },
+      "cafe": {
+        "user_question": "can you show me properties having cafes?",
+        "bot_question": "would cafes inside the society be a requirement?"
+      },
+      "swimmingPool": {
+        "user_question": "is swimming pool provided?",
+        "bot_question": "should i provide you with the options having swimming pool?"
+      },
+      "aerobicsRoom": {
+        "user_question": "is aerobics room provided?",
+        "bot_question": "do you prefer options with aerobics room facility?"
+      },
+      "steamRoom": {
+        "user_question": "is there any steam room facility?",
+        "bot_question": "is the availability of steam rooms a preference?"
+      },
+      "basketball": {
+        "user_question": "is basketball provided?",
+        "bot_question": "do you play basketball very often?"
+      },
+      "guestRoom": {
+        "user_question": "are there any projects offering guest room?",
+        "bot_question": "would you be requiring guest rooms inside the society?"
+      },
+      "yogaRoom": {
+        "user_question": "are there any projects having yoga room?",
+        "bot_question": "would you be requiring a yoga room?"
+      },
+      "tennis": {
+        "user_question": "can you suggest some projects providing tennis?",
+        "bot_question": "should i show you the properties having tennis?"
+      },
+      "businessCentre": {
+        "user_question": "can you provide options having business centre inside only?",
+        "bot_question": "would a business center inside the society a preference?"
+      },
+      "cricket": {
+        "user_question": "is cricket available?",
+        "bot_question": "are you a cricket enthusiast?"
+      },
+      "gym": {
+        "user_question": "can you suggest some projects having gym?",
+        "bot_question": "would you be requiring a gym inside the society?"
+      },
+      "football": {
+        "user_question": "are you having any properties offering football?",
+        "bot_question": "do you like to play football?"
+      },
+      "squash": {
+        "user_question": "is there any options providing squash?",
+        "bot_question": "is squash court a necessity for you?"
+      },
+      "danceRoom": {
+        "user_question": "can you suggest some options having dance room?",
+        "bot_question": "is the availability of dance room a requirement?"
+      },
+      "pitchAndPutt": {
+        "user_question": "can you suggest some projects offering pitch and putt?",
+        "bot_question": "should i filter the properties having pitch and putt?"
+      },
+      "bar": {
+        "user_question": "do you have any projects having bar?",
+        "bot_question": "is the availability of bars a preference for you?"
+      },
+      "musicRoom": {
+        "user_question": "is music room present?",
+        "bot_question": "is music room availability a preference?"
+      },
+      "joggingTrack": {
+        "user_question": "can you suggest projects offering jogging track?",
+        "bot_question": "do you want a jogging track facility in your project?"
+      },
+      "restaurant": {
+        "user_question": "do you have any properties having restaurant inside?",
+        "bot_question": "would restaurants inside the society be a preference?"
+      },
+      "skatingRink": {
+        "user_question": "are there any options having skating rink?",
+        "bot_question": "do you want skating rink as a facility?"
+      },
+      "tableTennis": {
+        "user_question": "can you suggest properties offering table tennis?",
+        "bot_question": "are you interested in playing table tennis?"
+      },
+      "jacuzzi": {
+        "user_question": "do you have any projects offering jacuzzi?",
+        "bot_question": "do you prefer options which provide jacuzzi facility?"
+      },
+      "kidsZone": {
+        "user_question": "are there any projects having kids zone?",
+        "bot_question": "would you prefer options providing a kid-zone inside the society?"
+      },
+      "videoGames": {
+        "user_question": "do you have options offering video games?",
+        "bot_question": "do you want the facility of video games inside the society?"
+      },
+      "amphitheatre": {
+        "user_question": "is amphitheatre available?",
+        "bot_question": "would you like me to show you the options having amphitheatre?"
+      }
+    }
+  },
+  "security": {
+    "user_question": "what are the security options offered?",
+    "bot_question": "do you want to have a look at the security facilities provided by the society?",
+    "children": {
+      "guardsTower": {
+        "user_question": "can you show me projects having guard room?",
+        "bot_question": "can i show you options facilitated with guard rooms?"
+      },
+      "cctvMaingate": {
+        "user_question": "is cctv available at main gate?",
+        "bot_question": "would you like to see alternatives that provide cctv at the main gate?"
+      },
+      "boomBarriersMaingate": {
+        "user_question": "do you have any alternatives offering boom barriers at main gate?",
+        "bot_question": "may i show you options that provide boom barriers at the main gate?"
+      },
+      "cctvTower": {
+        "user_question": "is cctv tower present in the project?",
+        "bot_question": "do you want to see options that have a cctv tower?"
+      },
+      "intercomMaingate": {
+        "user_question": "is intercom available at main gate?",
+        "bot_question": "do you want to filter options based on intercom services available at the main gate?"
+      },
+      "stickersForVehicles": {
+        "user_question": "are stickers provided for the vehicles?",
+        "bot_question": "would you prefer societies that provide stickers for residents' vehicles?"
+      },
+      "tagsForVehicles": {
+        "user_question": "can you suggest some options providing tags for vehicle?",
+        "bot_question": "would you prefer societies that provide vehicle tags for residents?"
+      },
+      "guardsMaingate": {
+        "user_question": "are guards available at main gate?",
+        "bot_question": "would you like me to show you options that have guards at the main gate?"
+      }
+    }
+  },
+  "nearby": {
+    "user_question": "what are the nearby facilities?",
+    "bot_question": "are there any particular facilities you want nearby?",
+    "children": {
+      "school": {
+        "user_question": "is there any school available?",
+        "bot_question": "do you want to see properties with good schools nearby?"
+      },
+      "daycare": {
+        "user_question": "is daycare facility available nearby?",
+        "bot_question": "do you want daycare centers nearby?"
+      },
+      "restaurant": {
+        "user_question": "can you suggest some projects which are close to restaurant?",
+        "bot_question": "would you like to see options with good restaurants nearby?"
+      },
+      "hospital": {
+        "user_question": "can you filter the properties which are close to hospital?",
+        "bot_question": "do you prefer options with hospitals nearby?"
+      },
+      "atm": {
+        "user_question": "is there any atm available nearby?",
+        "bot_question": "do you prefer the availability of atms nearby?"
+      },
+      "park": {
+        "user_question": "do you have any options which are close to park?",
+        "bot_question": "would you prefer the availability of parks nearby?"
+      },
+      "clubs": {
+        "user_question": "is there any club nearby?",
+        "bot_question": "would the nearness to clubs be a preference?"
+      },
+      "sportsComplex": {
+        "user_question": "can you suggest some projects which are close to sports complex?",
+        "bot_question": "would you be requiring a sports complex nearby?"
+      },
+      "pharmacy": {
+        "user_question": "can you suggest some properties which are close to pharmacy?",
+        "bot_question": "do you require pharmacies nearby?"
+      },
+      "mall": {
+        "user_question": "can you exclude the projects close to mall?",
+        "bot_question": "would the presence of malls nearby be a necessity?"
+      },
+      "market": {
+        "user_question": "is there any market?",
+        "bot_question": "would you require the availability of markets nearby?"
+      },
+      "metroStation": {
+        "user_question": "is there any metro station nearby?",
+        "bot_question": "would the nearness to the metro station a preference?"
+      },
+      "bank": {
+        "user_question": "do you have any properties close to bank?",
+        "bot_question": "would you need bank facilities near your selection?"
+      },
+      "preSchool": {
+        "user_question": "do you have any projects having pre school nearby?",
+        "bot_question": "is the availability of pre-schools nearby a necessity?"
+      }
+    }
+  },
+  "accommodation": {
+    "user_question": "can you show my various accomodaion  types available?",
+    "bot_question": "how many bedrooms do you want in your choice of property?",
+    "children": {
+      "3Bhk": {
+        "user_question": "are you having 3bhk properties?",
+        "bot_question": "would a 3bhk be suitable to you?"
+      },
+      "6+Bhk": {
+        "user_question": "do you have any 6+ bhk options?",
+        "bot_question": "do you want to see options with more than 6 bedrooms?"
+      },
+      "5Bhk": {
+        "user_question": "can you suggest some 5bhk properties?",
+        "bot_question": "would a 5bhk be suitable to your requirement?"
+      },
+      "2Bhk": {
+        "user_question": "do you have 2bhk options?",
+        "bot_question": "would you be interested in a 2bhk?"
+      },
+      "4Bhk": {
+        "user_question": "is there any 4bhk property?",
+        "bot_question": "are you interested in seeing 4bhk options?"
+      },
+      "1Bhk": {
+        "user_question": "can you show me some 1bhk properties?",
+        "bot_question": "are you looking for a 1bhk?"
+      }
+    }
+  },
+  "size": {
+    "user_question": "what size options are you having?",
+    "bot_question": "do you have a preferred range of size in mind?",
+    "children": {
+      "high": {
+        "user_question": "can i see the most spacious apartments available?",
+        "bot_question": NaN
+      },
+      "medium": {
+        "user_question": "what are the medium size ranged apartments available?",
+        "bot_question": NaN
+      },
+      "low": {
+        "user_question": "can you exclude the small sized available apartments?",
+        "bot_question": NaN
+      }
+    }
+  }
+}

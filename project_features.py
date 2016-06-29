@@ -27,7 +27,7 @@ def createProjectsDatabase():
 	projects_all = fire.get()
 	for i in projects_all:
 		createProjectDataIndex(i, projects_all[i])
-		createProjectFeaturesIndex(i])
+		createProjectFeaturesIndex(i)
 		updateProjectFeatures(i)
 
 def updateProjectFeatures(id):
@@ -66,7 +66,6 @@ def updateProjectJson(project, projectDict):
 	es.update(index='projects',doc_type='features',id=project,body=body)
 	
 
->>>>>>> fb7778bc402a88c4480f8f64b2e64900a710ea32
 def updateProject(project):
 	projectDict = getProjectDoc(project)
 	for intent in projectDict:
@@ -95,11 +94,9 @@ def getProjectVector(project, intent):
 		unit_vec = vec
 	return unit_vec
 
-<<<<<<< HEAD
-=======
+
 createProjectsDatabase()
 
->>>>>>> fb7778bc402a88c4480f8f64b2e64900a710ea32
 # createProjectJSON(getProjectId())
 # updateProject('ugzjugjc')
 # print getProjectVector('ugzjugjc', 'buy')

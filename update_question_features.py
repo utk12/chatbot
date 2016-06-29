@@ -45,31 +45,25 @@ def get_children_values(k,num):
 
 def update_question_features_key_level(feature):
 	for key in get_list_distinct_fields(data,'key_2'):
-		#converting into underscore format
-		key_new = ''.join(map(lambda x:x.lower() if x != ' ' else "_",key))
+		# print key
+		key_new = convert_space_to_underscore(key)
 		for k in feature:
 			#k is projectType,.....
-			k_new = ''.join(map(lambda x: x.lower() if not x.isupper() else "_"+x.lower(),k))
+			k_new = convert_camelcase_to_underscore(k)
 			if key_new == k_new:
 				for k1 in feature[k]:
-					data['bot_question'][data.index[data['key_2'] == key]].item()
 					if k1 == 'bot_question':
 						feature[k][k1] = data['bot_question'][data.index[data['key_2'] == key]].item()
 					elif k1 == 'user_question':
 						feature[k][k1] = data['user_question'][data.index[data['key_2'] == key]].item()
-			# json_data.seek(0)
-			# json_data.write(json.dumps(feature,indent = 4,sort_keys = True))
 
 def update_question_features_value_level(feature):
 	for key,num in get_dict_parent_numchild().iteritems():
 		key_new = convert_space_to_underscore(key)
 		for children in get_children_values(key,num):
-			# print children
 			index1 = int(data.index[data['key_2'] == key])
 			index2 = index1 + int(num)
 			data_subset = data.loc[index1:index2]
-			# print data_subset
-			# print '-------------------------------------------------'
 			children_new = convert_space_to_underscore(children)	
 			for k in feature:
 				k_new = convert_camelcase_to_underscore(k)
@@ -85,8 +79,10 @@ def update_question_features_value_level(feature):
 
 def write_output(operation):
 	# operation is buy/rent
+	operation=operation.lower()
 	with open('Data/question_features_'+str(operation)+'.json') as json_data:
 		feature = json.loads(json_data.read())
+	# print json.dumps(feature,indent = 4)
 	update_question_features_key_level(feature)
 	update_question_features_value_level(feature)
 	# print json.dumps(feature,indent = 4)

@@ -22,4 +22,4 @@ if __name__ == '__main__':
 	filters = wit_extract_filters(dict_features)
 	# print filters
 	print getProjects(filters)
-	print get_entities_from_msg_Wit(message)
+	print msg_features

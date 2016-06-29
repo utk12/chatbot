@@ -1,5 +1,5 @@
 sn,key_1,key_2,key_3,bot_question,user_question
-1,Buy,,,Are you looking for property available on rent?,Can you provide the properties available for rent?
+1,Rent,,,Are you looking for property available on rent?,Can you provide the properties available for rent?
 2,,Project Type,5,"Okay, what project type is suitable for you?",What project types are you having?
 3,,,Apartment,Would you like me to show you apartments?,Do you have apartments?
 4,,,Villa,Is Villa a good option for you?,Can you show me some Villa?

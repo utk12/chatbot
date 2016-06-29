@@ -1,543 +1,542 @@
 {
   "possession": {
-    "weight":"",
-    "user_question": "what's the offered possession time?",
-    "bot_question": "how soon do you want to gain possession of the property?",
     "children": {
       "newlyLaunched": {
-        "weight":"",
-        "user_question": "do you have any newly launched properties?",
-        "bot_question": "would you like to see newly launched projects?"
+        "bot_question": "would you like to see newly launched projects?",
+        "weight": "",
+        "user_question": "do you have any newly launched properties?"
       },
       "underConstruction": {
-        "weight":"",
-        "user_question": "can you show me some under construction properties?",
-        "bot_question": "are you interested in under constructed options?"
+        "bot_question": "are you interested in under constructed options?",
+        "weight": "",
+        "user_question": "can you show me some under construction properties?"
       },
       "readyToMove": {
-        "weight":"",
-        "user_question": "do you have any ready to move options?",
-        "bot_question": "would you like me to show you ready-to-move-in alternatives?"
+        "bot_question": "would you like me to show you ready-to-move-in alternatives?",
+        "weight": "",
+        "user_question": "do you have any ready to move options?"
       }
-    }
+    },
+    "bot_question": "how soon do you want to gain possession of the property?",
+    "weight": "",
+    "user_question": "what's the offered possession time?"
   },
   "rating": {
-    "weight":"",
-    "user_question": "what is the rating?",
-    "bot_question": "can i help you filter properties on the basis of user rating?",
     "children": {
       "high": {
-        "weight":"",
-        "user_question": "can you filter out the projects which are highly rated?",
-        "bot_question": "do you wish to see options rated best by previous users?"
+        "bot_question": "do you wish to see options rated best by previous users?",
+        "weight": "",
+        "user_question": "can you filter out the projects which are highly rated?"
       },
       "medium": {
-        "weight":"",
-        "user_question": "is there any medium rated property?",
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "is there any medium rated property?"
       },
       "low": {
-        "weight":"",
-        "user_question": "can you exclude the low rated properties?",
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "can you exclude the low rated properties?"
       }
-    }
+    },
+    "bot_question": "can i help you filter properties on the basis of user rating?",
+    "weight": "",
+    "user_question": "what is the rating?"
   },
   "projectType": {
-    "weight":"",
-    "user_question": "what project types are you having?",
-    "bot_question": "okay, what project type is suitable for you?",
     "children": {
       "rowHouse": {
-        "weight":"",
-        "user_question": "do you have any row house?",
-        "bot_question": "are you looking for row houses?"
+        "bot_question": "are you looking for row houses?",
+        "weight": "",
+        "user_question": "do you have any row house?"
       },
       "servicedApartment": {
-        "weight":"",
-        "user_question": "can you show me some service apartments?",
-        "bot_question": "would you like me to search for serviced apartments?"
+        "bot_question": "would you like me to search for serviced apartments?",
+        "weight": "",
+        "user_question": "can you show me some service apartments?"
       },
       "apartment": {
-        "weight":"",
-        "user_question": "do you have apartments?",
-        "bot_question": "would you like me to show you apartments?"
+        "bot_question": "would you like me to show you apartments?",
+        "weight": "",
+        "user_question": "do you have apartments?"
       },
       "villa": {
-        "weight":"",
-        "user_question": "can you show me some villa?",
-        "bot_question": "is villa a good option for you?"
+        "bot_question": "is villa a good option for you?",
+        "weight": "",
+        "user_question": "can you show me some villa?"
       },
       "studioApartment": {
-        "weight":"",
-        "user_question": "are you having any studio apartments?",
-        "bot_question": "would studio apartment be a preferred choice?"
+        "bot_question": "would studio apartment be a preferred choice?",
+        "weight": "",
+        "user_question": "are you having any studio apartments?"
       }
-    }
+    },
+    "bot_question": "okay, what project type is suitable for you?",
+    "weight": "",
+    "user_question": "what project types are you having?"
   },
   "specifications": {
-    "weight":"",
-    "user_question": "what are the specifications?",
-    "bot_question": "do you have any specific requirements with your choice of project?",
     "children": {
       "kitchenDishWasher": {
-        "weight":"",
-        "user_question": "can you provide some options providing kitchen dish washer?",
-        "bot_question": "would you be requiring a kitchen dish washer?"
+        "bot_question": "would you be requiring a kitchen dish washer?",
+        "weight": "",
+        "user_question": "can you provide some options providing kitchen dish washer?"
       },
       "powerBackup": {
-        "weight":"",
-        "user_question": "is power backup provided?",
-        "bot_question": "is power back-up a necessity for you?"
+        "bot_question": "is power back-up a necessity for you?",
+        "weight": "",
+        "user_question": "is power backup provided?"
       },
       "fullyFurnished": {
-        "weight":"",
-        "user_question": "do you have fully furnished projects?",
-        "bot_question": "do you want me to show you fully furnished alternatives?"
+        "bot_question": "do you want me to show you fully furnished alternatives?",
+        "weight": "",
+        "user_question": "do you have fully furnished projects?"
       },
       "maintenance": {
-        "weight":"",
-        "user_question": "are there any options providing maintenance facility?",
-        "bot_question": "do you want to shortlist options based on maintenance facilities provided?"
+        "bot_question": "do you want to shortlist options based on maintenance facilities provided?",
+        "weight": "",
+        "user_question": "are there any options providing maintenance facility?"
       },
       "wardrobes": {
-        "weight":"",
-        "user_question": "do you have any properties providing wardrobes?",
-        "bot_question": "is the provision of wardrobes a preference for you?"
+        "bot_question": "is the provision of wardrobes a preference for you?",
+        "weight": "",
+        "user_question": "do you have any properties providing wardrobes?"
       },
       "modularKitchen": {
-        "weight":"",
-        "user_question": "is modular kitchen provided?",
-        "bot_question": "is modular kitchen a necessity for you?"
+        "bot_question": "is modular kitchen a necessity for you?",
+        "weight": "",
+        "user_question": "is modular kitchen provided?"
       },
       "lift": {
-        "weight":"",
-        "user_question": "is lift being provided?",
-        "bot_question": "do you want to look at societies that provide lift services?"
+        "bot_question": "do you want to look at societies that provide lift services?",
+        "weight": "",
+        "user_question": "is lift being provided?"
       },
       "vrvAirConditioning": {
-        "weight":"",
-        "user_question": "can you suggest some projects providing vrv air conditioning?",
-        "bot_question": "would you prefer options that provide vrv air conditioning?"
+        "bot_question": "would you prefer options that provide vrv air conditioning?",
+        "weight": "",
+        "user_question": "can you suggest some projects providing vrv air conditioning?"
       },
       "visitorParking": {
-        "weight":"",
-        "user_question": "do you have any projects providing visitor parking?",
-        "bot_question": "do you want to see options that provide visitor car parking?"
+        "bot_question": "do you want to see options that provide visitor car parking?",
+        "weight": "",
+        "user_question": "do you have any projects providing visitor parking?"
       },
       "parking": {
-        "weight":"",
-        "user_question": "can you filter out the projects offering parking?",
-        "bot_question": "may i filter options that provide parking facilities?"
+        "bot_question": "may i filter options that provide parking facilities?",
+        "weight": "",
+        "user_question": "can you filter out the projects offering parking?"
       },
       "showerCubicle": {
-        "weight":"",
-        "user_question": "is there any property having shower cubicle?",
-        "bot_question": "would you be requiring a shower cubicle?"
+        "bot_question": "would you be requiring a shower cubicle?",
+        "weight": "",
+        "user_question": "is there any property having shower cubicle?"
       },
       "airConditioning": {
-        "weight":"",
-        "user_question": "are there any options offering air conditioning facility?",
-        "bot_question": "would air-conditioning be a requirement for you?"
+        "bot_question": "would air-conditioning be a requirement for you?",
+        "weight": "",
+        "user_question": "are there any options offering air conditioning facility?"
       },
       "bathTub": {
-        "weight":"",
-        "user_question": "can you provide the details of projects providing bath tub?",
-        "bot_question": "would you prefer options that provide a bath tub?"
+        "bot_question": "would you prefer options that provide a bath tub?",
+        "weight": "",
+        "user_question": "can you provide the details of projects providing bath tub?"
       },
       "vastuCompliant": {
-        "weight":"",
-        "user_question": "can you filter out the projects which are vastu compliant?",
-        "bot_question": "is vastu compliance a necessity for you?"
+        "bot_question": "is vastu compliance a necessity for you?",
+        "weight": "",
+        "user_question": "can you filter out the projects which are vastu compliant?"
       },
       "homeAutomation": {
-        "weight":"",
-        "user_question": "is there any project providing home automation?",
-        "bot_question": "would you prefer options providing home automation?"
+        "bot_question": "would you prefer options providing home automation?",
+        "weight": "",
+        "user_question": "is there any project providing home automation?"
       }
-    }
+    },
+    "bot_question": "do you have any specific requirements with your choice of project?",
+    "weight": "",
+    "user_question": "what are the specifications?"
   },
   "price": {
-    "weight":"",
-    "user_question": "what's the price of this property?",
-    "bot_question": "how much are you willing to invest in the project?",
     "children": {
       "high": {
-        "weight":"",
-        "user_question": "can you show some properties in high budget range?",
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "can you show some properties in high budget range?"
       },
       "medium": {
-        "weight":"",
-        "user_question": "are there any options in medium budget range?",
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "are there any options in medium budget range?"
       },
       "low": {
-        "weight":"",
-        "user_question": "can you show some properties in low budget range?",
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "can you show some properties in low budget range?"
       }
-    }
+    },
+    "bot_question": "how much are you willing to invest in the project?",
+    "weight": "",
+    "user_question": "what's the price of this property?"
   },
   "amenities": {
-    
-    "weight":"",
-    "user_question": "what amenities are available?",
-    "bot_question": "are you also looking for specific amenities available?",
     "children": {
       "salon": {
-        "weight":"",
-        "user_question": "do you have any projects having salon?",
-        "bot_question": "would salons inside the society be a preference?"
+        "bot_question": "would salons inside the society be a preference?",
+        "weight": "",
+        "user_question": "do you have any projects having salon?"
       },
       "miniTheatre": {
-        "weight":"",
-        "user_question": "is there any project offering mini theatre?",
-        "bot_question": "is mini-theatre facility a preference for you?"
+        "bot_question": "is mini-theatre facility a preference for you?",
+        "weight": "",
+        "user_question": "is there any project offering mini theatre?"
       },
       "bowlingAlley": {
-        "weight":"",
-        "user_question": "is bowling alley present?",
-        "bot_question": "would you prefer options providing bowling alleys?"
+        "bot_question": "would you prefer options providing bowling alleys?",
+        "weight": "",
+        "user_question": "is bowling alley present?"
       },
       "saunaRoom": {
-        "weight":"",
-        "user_question": "can you suggest some options having sauna room?",
-        "bot_question": "would sauna rooms inside the society be a necessity?"
+        "bot_question": "would sauna rooms inside the society be a necessity?",
+        "weight": "",
+        "user_question": "can you suggest some options having sauna room?"
       },
       "poolTable": {
-        "weight":"",
-        "user_question": "do you have any properties providing pool table?",
-        "bot_question": "should i filter the properties providing pool tables?"
+        "bot_question": "should i filter the properties providing pool tables?",
+        "weight": "",
+        "user_question": "do you have any properties providing pool table?"
       },
       "badminton": {
-        "weight":"",
-        "user_question": "i need a badminton court as well.",
-        "bot_question": "do you need a badminton court?"
+        "bot_question": "do you need a badminton court?",
+        "weight": "",
+        "user_question": "i need a badminton court as well."
       },
       "volleyball": {
-        "weight":"",
-        "user_question": "do you any projects having volleyball?",
-        "bot_question": "are you a volleyball enthusiast?"
+        "bot_question": "are you a volleyball enthusiast?",
+        "weight": "",
+        "user_question": "do you any projects having volleyball?"
       },
       "snookerTable": {
-        "weight":"",
-        "user_question": "can you suggest projects providing snooker table?",
-        "bot_question": "do you want to see properties providing snooker tables?"
+        "bot_question": "do you want to see properties providing snooker tables?",
+        "weight": "",
+        "user_question": "can you suggest projects providing snooker table?"
       },
       "spa": {
-        "weight":"",
-        "user_question": "is spa available?",
-        "bot_question": "are spa options a necessity for you?"
+        "bot_question": "are spa options a necessity for you?",
+        "weight": "",
+        "user_question": "is spa available?"
       },
       "cafe": {
-        "weight":"",
-        "user_question": "can you show me properties having cafes?",
-        "bot_question": "would cafes inside the society be a requirement?"
+        "bot_question": "would cafes inside the society be a requirement?",
+        "weight": "",
+        "user_question": "can you show me properties having cafes?"
       },
       "swimmingPool": {
-        "weight":"",
-        "user_question": "is swimming pool provided?",
-        "bot_question": "should i provide you with the options having swimming pool?"
+        "bot_question": "should i provide you with the options having swimming pool?",
+        "weight": "",
+        "user_question": "is swimming pool provided?"
       },
       "aerobicsRoom": {
-        "weight":"",
-        "user_question": "is aerobics room provided?",
-        "bot_question": "do you prefer options with aerobics room facility?"
+        "bot_question": "do you prefer options with aerobics room facility?",
+        "weight": "",
+        "user_question": "is aerobics room provided?"
       },
       "steamRoom": {
-        "weight":"",
-        "user_question": "is there any steam room facility?",
-        "bot_question": "is the availability of steam rooms a preference?"
+        "bot_question": "is the availability of steam rooms a preference?",
+        "weight": "",
+        "user_question": "is there any steam room facility?"
       },
       "basketball": {
-        "weight":"",
-        "user_question": "is basketball provided?",
-        "bot_question": "do you play basketball very often?"
+        "bot_question": "do you play basketball very often?",
+        "weight": "",
+        "user_question": "is basketball provided?"
       },
       "guestRoom": {
-        "weight":"",
-        "user_question": "are there any projects offering guest room?",
-        "bot_question": "would you be requiring guest rooms inside the society?"
+        "bot_question": "would you be requiring guest rooms inside the society?",
+        "weight": "",
+        "user_question": "are there any projects offering guest room?"
       },
       "yogaRoom": {
-        "weight":"",
-        "user_question": "are there any projects having yoga room?",
-        "bot_question": "would you be requiring a yoga room?"
+        "bot_question": "would you be requiring a yoga room?",
+        "weight": "",
+        "user_question": "are there any projects having yoga room?"
       },
       "tennis": {
-        "weight":"",
-        "user_question": "can you suggest some projects providing tennis?",
-        "bot_question": "should i show you the properties having tennis?"
+        "bot_question": "should i show you the properties having tennis?",
+        "weight": "",
+        "user_question": "can you suggest some projects providing tennis?"
       },
       "businessCentre": {
-        "weight":"",
-        "user_question": "can you provide options having business centre inside only?",
-        "bot_question": "would a business center inside the society a preference?"
+        "bot_question": "would a business center inside the society a preference?",
+        "weight": "",
+        "user_question": "can you provide options having business centre inside only?"
       },
       "cricket": {
-        "weight":"",
-        "user_question": "is cricket available?",
-        "bot_question": "are you a cricket enthusiast?"
+        "bot_question": "are you a cricket enthusiast?",
+        "weight": "",
+        "user_question": "is cricket available?"
       },
       "gym": {
-        "weight":"",
-        "user_question": "can you suggest some projects having gym?",
-        "bot_question": "would you be requiring a gym inside the society?"
+        "bot_question": "would you be requiring a gym inside the society?",
+        "weight": "",
+        "user_question": "can you suggest some projects having gym?"
       },
       "football": {
-        "weight":"",
-        "user_question": "are you having any properties offering football?",
-        "bot_question": "do you like to play football?"
+        "bot_question": "do you like to play football?",
+        "weight": "",
+        "user_question": "are you having any properties offering football?"
       },
       "squash": {
-        "weight":"",
-        "user_question": "are there any options providing squash?",
-        "bot_question": "is squash a necessity for you?"
+        "bot_question": "is squash a necessity for you?",
+        "weight": "",
+        "user_question": "are there any options providing squash?"
       },
       "danceRoom": {
-        "weight":"",
-        "user_question": "can you suggest some options having dance room?",
-        "bot_question": "is the availability of dance room a requirement?"
+        "bot_question": "is the availability of dance room a requirement?",
+        "weight": "",
+        "user_question": "can you suggest some options having dance room?"
       },
       "pitchAndPutt": {
-        "weight":"",
-        "user_question": "can you suggest some projects offering pitch and putt?",
-        "bot_question": "should i filter the properties having pitch and putt?"
+        "bot_question": "should i filter the properties having pitch and putt?",
+        "weight": "",
+        "user_question": "can you suggest some projects offering pitch and putt?"
       },
       "bar": {
-        "weight":"",
-        "user_question": "do you have any projects having bar?",
-        "bot_question": "is the availability of bars a preference for you?"
+        "bot_question": "is the availability of bars a preference for you?",
+        "weight": "",
+        "user_question": "do you have any projects having bar?"
       },
       "musicRoom": {
-        "weight":"",
-        "user_question": "is music room present?",
-        "bot_question": "is music room availability a preference?"
+        "bot_question": "is music room availability a preference?",
+        "weight": "",
+        "user_question": "is music room present?"
       },
       "joggingTrack": {
-        "weight":"",
-        "user_question": "can you suggest projects offering jogging track?",
-        "bot_question": "do you want a jogging track facility in your project?"
+        "bot_question": "do you want a jogging track facility in your project?",
+        "weight": "",
+        "user_question": "can you suggest projects offering jogging track?"
       },
       "restaurant": {
-        "weight":"",
-        "user_question": "do you have any properties having restaurant inside?",
-        "bot_question": "would restaurants inside the society be a preference?"
+        "bot_question": "would restaurants inside the society be a preference?",
+        "weight": "",
+        "user_question": "do you have any properties having restaurant inside?"
       },
       "skatingRink": {
-        "weight":"",
-        "user_question": "are there any options having skating rink?",
-        "bot_question": "do you want skating rink as a facility?"
+        "bot_question": "do you want skating rink as a facility?",
+        "weight": "",
+        "user_question": "are there any options having skating rink?"
       },
       "tableTennis": {
-        "weight":"",
-        "user_question": "can you suggest properties offering table tennis?",
-        "bot_question": "are you interested in playing table tennis?"
+        "bot_question": "are you interested in playing table tennis?",
+        "weight": "",
+        "user_question": "can you suggest properties offering table tennis?"
       },
       "jacuzzi": {
-        "weight":"",
-        "user_question": "do you have any projects offering jacuzzi?",
-        "bot_question": "do you prefer options which provide jacuzzi facility?"
+        "bot_question": "do you prefer options which provide jacuzzi facility?",
+        "weight": "",
+        "user_question": "do you have any projects offering jacuzzi?"
       },
       "kidsZone": {
-        "weight":"",
-        "user_question": "are there any projects having kids zone?",
-        "bot_question": "would you prefer options providing a kid-zone inside the society?"
+        "bot_question": "would you prefer options providing a kid-zone inside the society?",
+        "weight": "",
+        "user_question": "are there any projects having kids zone?"
       },
       "videoGames": {
-        "weight":"",
-        "user_question": "do you have options offering video games?",
-        "bot_question": "do you want the facility of video games inside the society?"
+        "bot_question": "do you want the facility of video games inside the society?",
+        "weight": "",
+        "user_question": "do you have options offering video games?"
       },
       "amphitheatre": {
-        "weight":"",
-        "user_question": "is amphitheatre available?",
-        "bot_question": "would you like me to show you the options having amphitheatre?"
+        "bot_question": "would you like me to show you the options having amphitheatre?",
+        "weight": "",
+        "user_question": "is amphitheatre available?"
       }
-    }
+    },
+    "bot_question": "are you also looking for specific amenities available?",
+    "weight": "",
+    "user_question": "what amenities are available?"
   },
   "security": {
-    "weight":"",
-    "user_question": "what are the security options offered?",
-    "bot_question": "do you want to have a look at the security facilities provided by the society?",
     "children": {
       "guardsTower": {
-        "weight":"",
-        "user_question": "can you show me projects having guards at tower?",
-        "bot_question": "do you want to know about the facility of guards' tower?"
+        "bot_question": "do you want to know about the facility of guards' tower?",
+        "weight": "",
+        "user_question": "can you show me projects having guards at tower?"
       },
       "cctvMaingate": {
-        "weight":"",
-        "user_question": "is cctv available at main gate?",
-        "bot_question": "would you like to see alternatives that provide cctv at the main gate?"
+        "bot_question": "would you like to see alternatives that provide cctv at the main gate?",
+        "weight": "",
+        "user_question": "is cctv available at main gate?"
       },
       "boomBarriersMaingate": {
-        "weight":"",
-        "user_question": "do you have any alternatives offering boom barriers at main gate?",
-        "bot_question": "may i show you options that provide boom barriers at the main gate?"
+        "bot_question": "may i show you options that provide boom barriers at the main gate?",
+        "weight": "",
+        "user_question": "do you have any alternatives offering boom barriers at main gate?"
       },
       "cctvTower": {
-        "weight":"",
-        "user_question": "is cctv tower present in the project?",
-        "bot_question": "do you want to see options that have a cctv tower?"
+        "bot_question": "do you want to see options that have a cctv tower?",
+        "weight": "",
+        "user_question": "is cctv tower present in the project?"
       },
       "intercomMaingate": {
-        "weight":"",
-        "user_question": "is intercom available at main gate?",
-        "bot_question": "do you want to filter options based on intercom services available at the main gate?"
+        "bot_question": "do you want to filter options based on intercom services available at the main gate?",
+        "weight": "",
+        "user_question": "is intercom available at main gate?"
       },
       "stickersForVehicles": {
-        "weight":"",
-        "user_question": "are stickers provided for the vehicles?",
-        "bot_question": "would you prefer societies that provide stickers for residents' vehicles?"
+        "bot_question": "would you prefer societies that provide stickers for residents' vehicles?",
+        "weight": "",
+        "user_question": "are stickers provided for the vehicles?"
       },
       "tagsForVehicles": {
-        "weight":"",
-        "user_question": "can you suggest some options providing tags for vehicle?",
-        "bot_question": "would you prefer societies that provide vehicle tags for residents?"
+        "bot_question": "would you prefer societies that provide vehicle tags for residents?",
+        "weight": "",
+        "user_question": "can you suggest some options providing tags for vehicle?"
       },
       "guardsMaingate": {
-        "weight":"",
-        "user_question": "are guards available at main gate?",
-        "bot_question": "would you like me to show you options that have guards at the main gate?"
+        "bot_question": "would you like me to show you options that have guards at the main gate?",
+        "weight": "",
+        "user_question": "are guards available at main gate?"
       }
-    }
+    },
+    "bot_question": "do you want to have a look at the security facilities provided by the society?",
+    "weight": "",
+    "user_question": "what are the security options offered?"
   },
   "nearby": {
-    "weight":"",
-    "user_question": "what are the nearby facilities?",
-    "bot_question": "are there any particular facilities you want nearby?",
     "children": {
       "school": {
-        "weight":"",
-        "user_question": "is there any school available?",
-        "bot_question": "do you want to see properties with good schools nearby?"
+        "bot_question": "do you want to see properties with good schools nearby?",
+        "weight": "",
+        "user_question": "is there any school available?"
       },
       "daycare": {
-        "weight":"",
-        "user_question": "is daycare facility available nearby?",
-        "bot_question": "do you want daycare centers nearby?"
+        "bot_question": "do you want daycare centers nearby?",
+        "weight": "",
+        "user_question": "is daycare facility available nearby?"
       },
       "restaurant": {
-        "weight":"",
-        "user_question": "can you suggest some projects which are close to restaurant?",
-        "bot_question": "would you like to see options with good restaurants nearby?"
+        "bot_question": "would you like to see options with good restaurants nearby?",
+        "weight": "",
+        "user_question": "can you suggest some projects which are close to restaurant?"
       },
       "hospital": {
-        "weight":"",
-        "user_question": "can you filter the properties which are close to hospital?",
-        "bot_question": "do you prefer options with hospitals nearby?"
+        "bot_question": "do you prefer options with hospitals nearby?",
+        "weight": "",
+        "user_question": "can you filter the properties which are close to hospital?"
       },
       "atm": {
-        "weight":"",
-        "user_question": "is there any atm available nearby?",
-        "bot_question": "do you prefer the availability of atms nearby?"
+        "bot_question": "do you prefer the availability of atms nearby?",
+        "weight": "",
+        "user_question": "is there any atm available nearby?"
       },
       "park": {
-        "weight":"",
-        "user_question": "do you have any options which are close to park?",
-        "bot_question": "would you prefer the availability of parks nearby?"
+        "bot_question": "would you prefer the availability of parks nearby?",
+        "weight": "",
+        "user_question": "do you have any options which are close to park?"
       },
       "clubs": {
-        "weight":"",
-        "user_question": "is there any club nearby?",
-        "bot_question": "would the nearness to clubs be a preference?"
+        "bot_question": "would the nearness to clubs be a preference?",
+        "weight": "",
+        "user_question": "is there any club nearby?"
       },
       "sportsComplex": {
-        "weight":"",
-        "user_question": "can you suggest some projects which are close to sports complex?",
-        "bot_question": "would you be requiring a sports complex nearby?"
+        "bot_question": "would you be requiring a sports complex nearby?",
+        "weight": "",
+        "user_question": "can you suggest some projects which are close to sports complex?"
       },
       "pharmacy": {
-        "weight":"",
-        "user_question": "can you suggest some properties which are close to pharmacy?",
-        "bot_question": "do you require pharmacies nearby?"
+        "bot_question": "do you require pharmacies nearby?",
+        "weight": "",
+        "user_question": "can you suggest some properties which are close to pharmacy?"
       },
       "mall": {
-        "weight":"",
-        "user_question": "can you exclude the projects close to mall?",
-        "bot_question": "would the presence of malls nearby be a necessity?"
+        "bot_question": "would the presence of malls nearby be a necessity?",
+        "weight": "",
+        "user_question": "can you exclude the projects close to mall?"
       },
       "market": {
-        "weight":"",
-        "user_question": "is there any market?",
-        "bot_question": "would you require the availability of markets nearby?"
+        "bot_question": "would you require the availability of markets nearby?",
+        "weight": "",
+        "user_question": "is there any market?"
       },
       "metroStation": {
-        "weight":"",
-        "user_question": "is there any metro station nearby?",
-        "bot_question": "would the nearness to the metro station a preference?"
+        "bot_question": "would the nearness to the metro station a preference?",
+        "weight": "",
+        "user_question": "is there any metro station nearby?"
       },
       "bank": {
-        "weight":"",
-        "user_question": "do you have any properties close to bank?",
-        "bot_question": "would you need bank facilities near your selection?"
+        "bot_question": "would you need bank facilities near your selection?",
+        "weight": "",
+        "user_question": "do you have any properties close to bank?"
       },
       "preSchool": {
-        "weight":"",
-        "user_question": "do you have any projects having preschool nearby?",
-        "bot_question": "is the availability of pre-schools nearby a necessity?"
+        "bot_question": "is the availability of pre-schools nearby a necessity?",
+        "weight": "",
+        "user_question": "do you have any projects having preschool nearby?"
       }
-    }
+    },
+    "bot_question": "are there any particular facilities you want nearby?",
+    "weight": "",
+    "user_question": "what are the nearby facilities?"
   },
   "accommodation": {
-    "weight":"",
-    "user_question": "can you show me properties having 1bhk accommodation facilities?",
-    "bot_question": "how many bedrooms do you want in your choice of property?",
     "children": {
       "3Bhk": {
-        "weight":"",
-        "user_question": "are you having 3bhk properties?",
-        "bot_question": "would a 3bhk be suitable to you?"
+        "bot_question": "would a 3bhk be suitable to you?",
+        "weight": "",
+        "user_question": "are you having 3bhk properties?"
       },
       "6+Bhk": {
-        "weight":"",
-        "user_question": "do you have any 6+ bhk options?",
-        "bot_question": "do you want to see options with more than 6 bedrooms?"
+        "bot_question": "do you want to see options with more than 6 bedrooms?",
+        "weight": "",
+        "user_question": "do you have any 6+ bhk options?"
       },
       "5Bhk": {
-        "weight":"",
-        "user_question": "can you suggest some 5bhk properties?",
-        "bot_question": "would a 5bhk be suitable to your requirement?"
+        "bot_question": "would a 5bhk be suitable to your requirement?",
+        "weight": "",
+        "user_question": "can you suggest some 5bhk properties?"
       },
       "2Bhk": {
-        "weight":"",
-        "user_question": "do you have 2bhk options?",
-        "bot_question": "would you be interested in a 2bhk?"
+        "bot_question": "would you be interested in a 2bhk?",
+        "weight": "",
+        "user_question": "do you have 2bhk options?"
       },
       "4Bhk": {
-        "weight":"",
-        "user_question": "is there any 4bhk property?",
-        "bot_question": "are you interested in seeing 4bhk options?"
+        "bot_question": "are you interested in seeing 4bhk options?",
+        "weight": "",
+        "user_question": "is there any 4bhk property?"
       },
       "1Bhk": {
-        "weight":"",
-        "user_question": "can you show me some 1bhk properties?",
-        "bot_question": "are you looking for a 1bhk?"
+        "bot_question": "are you looking for a 1bhk?",
+        "weight": "",
+        "user_question": "can you show me some 1bhk properties?"
       }
-    }
+    },
+    "bot_question": "how many bedrooms do you want in your choice of property?",
+    "weight": "",
+    "user_question": "can you show me properties having 1bhk accommodation facilities?"
   },
   "size": {
-    "weight":"",
-    "user_question": "what size options are you having?",
-    "bot_question": "do you have a preferred range of size in mind?",
     "children": {
       "high": {
-        "weight":"",
-        "user_question": "can i have a look at the most spacious apartments?",
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "can i have a look at the most spacious apartments?"
       },
       "medium": {
-        "weight":"",
-        "user_question": NaN,
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "what are the apartments available in medium size range?"
       },
       "low": {
-        "weight":"",
-        "user_question": NaN,
-        "bot_question": NaN
+        "bot_question": NaN,
+        "weight": "",
+        "user_question": "can you exclude the apartments small in size?"
       }
-    }
+    },
+    "bot_question": "do you have a preferred range of size in mind?",
+    "weight": "",
+    "user_question": "what size options are you having?"
   }
 }

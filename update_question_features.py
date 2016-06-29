@@ -7,13 +7,12 @@ pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/rent_questions.csv')
 data.index = data['sn']
 
-def update_weight(first_feature):
+def update_weight(feature_name)):
 	order = {}
 	weight = 1.0
 	order[first_feature] = weight
 	while(weight != 0.0):
 		weight = weight - 0.1
-		next_feature = first_feature
 		next_feature = nextFeatureSuggestion(next_feature)
 		order[next_feature] = weight
 

@@ -105,9 +105,7 @@ def unit_details_matching(p_data,p_features):
         p_features['specifications']['children']['lift']['foundValue'] = 1
     else:
         p_features['specifications']['children']['lift']['foundValue'] = 0
-    
     return p_features
-
 def get_security_features(p_data):
     security_features = {}
     if 'security' in p_data:
@@ -120,7 +118,6 @@ def get_security_features(p_data):
             security_features['tagsForVehicles'] = 1
         else:
             security_features['tagsForVehicles'] = 0
-    
         for key in security_data:
             if key in ['mainGate','tower']:
                 gt_features = security_data[key]
@@ -140,7 +137,6 @@ def security_features_matching(p_data,p_features):
             p_features['security']['children'][key]['foundValue'] = 1
         else:
             p_features['security']['children'][key]['foundValue'] = 0
-    
     return p_features
 
 def price_size_data(p_data):    # p_data has complete data of all projects
@@ -161,23 +157,22 @@ def price_size_data(p_data):    # p_data has complete data of all projects
                 size[config_data['type']] = [config_data['superArea']]
     return price,size
 
-def price_size_range(price,size):
+def price_size_range(p_data):
+    price,size = price_size_data(p_data)
     price_range ={}
     size_range = {}
     
     for key in price:
         price_L = min(price[key]) + (max(price[key]) - min(price[key]))/3
         price_H = min(price[key]) + 2*(max(price[key]) - min(price[key]))/3
-        
         size_L = min(size[key]) + (max(size[key]) - min(size[key]))/3
         size_H = min(size[key]) + 2*(max(size[key]) - min(size[key]))/3
-        
         price_range[key] = (price_L,price_H)
-        size_range[key] = (size_L,size_H)
-        
+        size_range[key] = (size_L,size_H)        
     return price_range,size_range
 
 def price_size_range_matching(p_data,p_features,price_range,size_range):
+
     for unit_id in p_data['units']:
         config_data = p_data['units'][unit_id]['configurations']
         unit_price = config_data['price']
@@ -201,49 +196,24 @@ def price_size_range_matching(p_data,p_features,price_range,size_range):
 
 def all_features_mapping(project_data,project_features,price_range,size_range):
 
-    #p_data = project_data
     pos = convert_space_to_underscore(project_data['projectStatus'])
     pos = convert_underscore_to_camelcase(pos)
-    
     project_features = possession_matching(pos,project_features)
-    
     project_features = project_type_matching(project_data,project_features)
-    
     project_features = amenities_matching(project_data,project_features)
-
     project_features = unit_details_matching(project_data,project_features)
-
-    project_features = security_features_matching(project_data,project_features)    
-        
+    project_features = security_features_matching(project_data,project_features) 
     project_features = price_size_range_matching(project_data,project_features,price_range,size_range)
-    
     return project_features
-
-
-
-##def all_projects_mapping(project_data,project_features):
-##
-####    for pos in project_data:
-####        possession_data = project_data[pos]
-####        project_featues = possession_matching(pos,project_features)
-##    price,size = price_size_data(project_data)
-##    price_range,size_range = price_size_range(price,size)
-##
-##    for project_id in project_data:
-##        p_features = copy.deepcopy(project_features)
-##        project_features = all_features_mapping(project_data[project_id],p_features)
-##        
-##
-##        return project_features
 
 if __name__ == '__main__':
 
     es = Elasticsearch([{'host':'localhost','port':9200}])
 
-    with open('1.json') as open_file:
+    with open('Data/1.json') as open_file:
         es.index(index='project_data_index',doc_type='project_data_doc',id=1,body=json.load(open_file))
 
-    with open('project_features.json') as open_file:
+    with open('Data/project_features.json') as open_file:
         es.index(index='project_features_index',doc_type='project_features_doc',id=1,body=json.load(open_file))
 
     project_data = es.get(index='project_data_index',doc_type='project_data_doc',id=1)

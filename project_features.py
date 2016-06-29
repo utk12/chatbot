@@ -15,7 +15,7 @@ def createProjectJSON(project):
     with open('Data/project_features.json', 'r') as f:
         data = f.read()
     es.index(index='projects', doc_type='features', id=project, body=data)
-
+    
 def getProjectDoc(project):
     body = {
         "query" : {
@@ -26,15 +26,12 @@ def getProjectDoc(project):
     }
     return es.search(index='projects', doc_type='features', body = body)['hits']['hits'][0]['_source']
 
-
-
 def updateProjectJson(project, projectDict):
     body = {
         "doc" : projectDict
     }
     es.update(index='projects',doc_type='features',id=project,body=body)
     
-
 def updateProject(project):
     projectDict = getProjectDoc(project)
     for intent in projectDict:
@@ -50,7 +47,6 @@ def updateProject(project):
             projectDict[intent][category]['ratioScore'] = weightSum/total
     updateProjectJson(project, projectDict)
 
-
 def getProjectVector(project, intent):
     projectDict = getProjectDoc(project)[intent]
     vec = []
@@ -63,7 +59,6 @@ def getProjectVector(project, intent):
     else:
         unit_vec = vec
     return unit_vec
-
 
 # createProjectJSON(getProjectId())
 # updateProject('ugzjugjc')

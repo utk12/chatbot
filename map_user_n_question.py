@@ -43,9 +43,9 @@ def update_weights(id,operation):
 			feature = load_question_feature_file(operation)
 			weight_list = get_keys_weight(feature)
 			if any(value >= 1 for key,value in user_feature[key]['children'].iteritems()):
-				print key
+				# print key
 				feature[key]['weight'] = min(weight_list)[0]/2
-				print feature[key]['weight']
+				# print feature[key]['weight']
 				update_question_feature_file(operation,feature)
 			else:
 				feature[key]['weight'] = (max(weight_list)[0] + 1)/2

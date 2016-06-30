@@ -31,4 +31,3 @@ if __name__ == '__main__':
 	project_list_sorted = sortProjects(project_list, user)
 	print project_list_sorted
 	# print msg_features
-	

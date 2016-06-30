@@ -71,6 +71,5 @@ def extractFeatures(entity, feature):
 # print get_entities_list_wit()
 # getFeatures({u'security': {u'cctv': True}, u'security_place': {u'tower': True}, u'project_type': {u'row house': True}, u'sentiment': {u'positive': True}}, 'buy')
 
-
 # print get_feature_dictionary()
 # print json.dumps(get_feature_dictionary()['buy'], indent = 4)

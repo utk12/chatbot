@@ -20,6 +20,7 @@ def update_initial_weights(operation):
 	for i,j in weight_list:
 		vec.append(i)
 	vec = np.array(vec)
+	vec = vec[::-1]
 	mag = np.linalg.norm(vec)
 	if mag > 0: 
 		unit_vec = vec/mag
@@ -27,8 +28,8 @@ def update_initial_weights(operation):
 		unit_vec = vec
 	for i in range(len(weight_list)):
 		feature = weight_list[i][1]
-
 		input_json[feature]['weight'] = unit_vec[i]
+
 	with open('Data/question_features_'+str(operation)+'_output.json', 'w') as json_data:
 		json.dump(input_json, json_data, indent=4)
 
@@ -85,25 +86,25 @@ def update_question_features_key_level(feature):
 					elif k1 == 'user_question':
 						feature[k][k1] = data['user_question'][data.index[data['key_2'] == key]].item()
 
-def update_question_features_value_level(feature):
-	for key,num in get_dict_parent_numchild().iteritems():
-		key_new = convert_space_to_underscore(key)
-		for children in get_children_values(key,num):
-			index1 = int(data.index[data['key_2'] == key])
-			index2 = index1 + int(num)
-			data_subset = data.loc[index1:index2]
-			children_new = convert_space_to_underscore(children)	
-			for k in feature:
-				k_new = convert_camelcase_to_underscore(k)
-				if((k_new == key_new) and feature[k].has_key('children')):
-					for k1 in feature[k]['children']:
-						k1_new = convert_camelcase_to_underscore(k1)
-						if(k1_new == children_new):						
-							for k2 in feature[k]['children'][k1]:
-								if k2 == 'bot_question':
-									feature[k]['children'][k1][k2] = data_subset[k2][data_subset.index[data_subset['key_3'] == children]].item()
-								elif k2 == 'user_question':
-									feature[k]['children'][k1][k2] = data_subset[k2][data_subset.index[data_subset['key_3'] == children]].item()
+# def update_question_features_value_level(feature):
+# 	for key,num in get_dict_parent_numchild().iteritems():
+# 		key_new = convert_space_to_underscore(key)
+# 		for children in get_children_values(key,num):
+# 			index1 = int(data.index[data['key_2'] == key])
+# 			index2 = index1 + int(num)
+# 			data_subset = data.loc[index1:index2]
+# 			children_new = convert_space_to_underscore(children)	
+# 			for k in feature:
+# 				k_new = convert_camelcase_to_underscore(k)
+# 				if((k_new == key_new) and feature[k].has_key('children')):
+# 					for k1 in feature[k]['children']:
+# 						k1_new = convert_camelcase_to_underscore(k1)
+# 						if(k1_new == children_new):						
+# 							for k2 in feature[k]['children'][k1]:
+# 								if k2 == 'bot_question':
+# 									feature[k]['children'][k1][k2] = data_subset[k2][data_subset.index[data_subset['key_3'] == children]].item()
+# 								elif k2 == 'user_question':
+# 									feature[k]['children'][k1][k2] = data_subset[k2][data_subset.index[data_subset['key_3'] == children]].item()
 
 def write_output(operation):
 	# operation is buy/rent
@@ -112,7 +113,7 @@ def write_output(operation):
 		feature = json.loads(json_data.read())
 	# print json.dumps(feature,indent = 4)
 	update_question_features_key_level(feature)
-	update_question_features_value_level(feature)
+	# update_question_features_value_level(feature)
 	# print json.dumps(feature,indent = 4)
 	with open('Data/question_features_'+str(operation)+'_output.json','w') as outfile:
 		json.dump(feature,outfile)
@@ -123,7 +124,7 @@ def get_output(operation):
 	with open('Data/question_features_'+str(operation)+'.json') as json_data:
 		feature = json.loads(json_data.read())
 	update_question_features_key_level(feature)
-	update_question_features_value_level(feature)
+	# update_question_features_value_level(feature)
 	return json.dumps(feature,indent = 4)
 
 if __name__ == '__main__':
@@ -137,7 +138,7 @@ if __name__ == '__main__':
 	# print get_dict_parent_numchild()
 	# print iterate('amenities',34)
 	# write_output('buy')
-	update_initial_weights()
+	update_initial_weights('buy')
 	# with open('Data/question_features_buy_output.json','w') as json_data:
 	# 	json.dump(input_json,json_data)
 	# write_output('buy')

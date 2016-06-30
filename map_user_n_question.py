@@ -1,5 +1,6 @@
 import json
 from elasticsearch import Elasticsearch
+import numpy as np
 
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
@@ -15,22 +16,55 @@ def load_question_feature_file(operation):
 	return feature
 
 def update_question_feature_file(operation,feature):
-	with open('Data/question_features_'+str(operation)+'_output.json') as json_data:
-		json.dump(feature,json_data)
+	with open('Data/question_features_'+str(operation)+'_output.json', 'w') as json_data:
+		json.dump(feature,json_data, indent=4)
+
+def normalize_weights(weight_list,input_json,operation):
+	vec = []
+	for i,j in weight_list:
+		vec.append(i)
+	vec = np.array(vec)
+	mag = np.linalg.norm(vec)
+	if mag > 0: 
+		unit_vec = vec/mag
+	else:
+		unit_vec = vec
+	# print input_json
+	for i in range(len(weight_list)):
+		feature = weight_list[i][1]
+		input_json[feature]['weight'] = unit_vec[i]
+	update_question_feature_file(operation,input_json)
 
 def update_weights(id,operation):
 	user_feature = get_user_features(id)
 	for key in user_feature:
-		for sub_keys in user_feature[key]['children']:
-			if int(user_feature[key]['foundValue']) > 0:
-				if any(user_feature[key]['children'][sub_keys] >= 1):
-					feature = load_question_feature_file(operation)
-					feature[key]['weight'] = 0.0
-					update_question_feature_file(operation,feature)
-				else:
-					feature = load_question_feature_file(operation)
-					feature[key]['weight'] = 0.0
-					update_question_feature_file(operation,feature)
+		# for sub_keys in user_feature[key]['children']:
+		if int(user_feature[key]['foundValue']) > 0:
+			feature = load_question_feature_file(operation)
+			weight_list = get_keys_weight(feature)
+			if any(value >= 1 for key,value in user_feature[key]['children'].iteritems()):
+				print key
+				feature[key]['weight'] = min(weight_list)[0]/2
+				print feature[key]['weight']
+				update_question_feature_file(operation,feature)
+			else:
+				feature[key]['weight'] = (max(weight_list)[0] + 1)/2
+				update_question_feature_file(operation,feature)
+			weight_list = get_keys_weight(feature)
+			normalize_weights(weight_list,feature,operation)
+
+def top_three_questions(feature):
+	keys_list = get_keys_weight(feature)
+	new_keys_list = keys_list.sort()
+	print new_keys_list
+
+def get_keys_weight(feature):
+	list1 = []
+	for key in feature:
+		list1.append([feature[key]['weight'],key])
+	return list1
 
 if __name__ == '__main__':
-	get_user_features('prirqlxu')
+	# get_user_features('prirqlxu')
+	update_weights('prirqlxu','buy')
+	top_three_questions(load_question_feature_file('buy'))

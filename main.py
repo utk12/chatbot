@@ -1,12 +1,12 @@
 import json
 from sentence_corrector import main
-from wit_get_reply_api import *
-from user_features import *
-from interpret_wit_reply import *
-from getFilters import *
-from applyFilters import *
-from map_recommendation import nextFeatureSuggestion
-from mapProjectsToUser import *
+from wit_get_reply_api import interpret_wit_output, get_entities_json_wit
+from user_features import updateUser
+from interpret_wit_reply import getFeatures
+from getFilters import wit_extract_filters
+from applyFilters import getProjects
+# from map_recommendation import nextFeatureSuggestion
+from mapProjectsToUser import sortProjects
 
 if __name__ == '__main__':
 	message = 'I want a  house in which we should have tennis and servant room with area less than 1200 sq.ft.'

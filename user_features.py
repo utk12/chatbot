@@ -88,7 +88,7 @@ def getUserVector(user):
 # print getUserVector('uyzpanbd',
 # updateUser('uyzpanbd', ['security', 'amenities', '2BHK'])
 # print getUserDoc('hndwkoiq')
-# createUserJSON("prirqlxu")
+createUserJSON("prirqlxu")
 # print get_feature_dictionary()
 # feature_dict = get_feature_dictionary()
 # features = get_features(user_query)

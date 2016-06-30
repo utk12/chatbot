@@ -66,7 +66,7 @@ def updateProjectJson(project, projectDict):
 	body = {
 		"doc" : projectDict
 	}
-	print projectDict
+	# print projectDict
 	es.update(index='projects',doc_type='features',id=project,body=body)
 	
 
@@ -102,7 +102,7 @@ def getProjectVector(project):
 
 
 # createProjectsDatabase()
-# updateProjectsRatios()
+updateProjectsRatios()
 # createProjectJSON(getProjectId())
 # updateProject('ugzjugjc')
 # print getProjectVector('ugzjugjc', 'buy')

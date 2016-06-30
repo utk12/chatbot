@@ -2,8 +2,12 @@ import copy
 import numpy as np
 import os
 import pandas as pd
+import json
 
 def countPairs(f):
+    Q_data = pd.read_csv('Data/Q_order_CSV2.csv',header=0,index_col=0)    
+    A_data = pd.read_csv('Data/answers_CSV2.csv',header=0,index_col=0)
+
     features = list(Q_data.columns)
     count = {}
     for i,n in enumerate(list(f)):
@@ -26,7 +30,7 @@ def formPairs(Q_data):
     for f in features:
         data = Q_data[f]
         pairs_occurences[f] = countPairs(data)
-    #print pairs_occurences
+    # print pairs_occurences
     return pairs_occurences
 
 def deleteAll(dictionary,f):
@@ -36,15 +40,18 @@ def deleteAll(dictionary,f):
             del d[f]
     return dictionary
 
-def nextFeatureSuggestion(temp,feature):
+def nextFeatureSuggestion(feature):
+    Q_data = pd.read_csv('Data/Q_order_CSV2.csv',header=0,index_col=0)
+    temp = formPairs(Q_data)
     # print 'Current question is asked from which feature?'
     start = feature
     #print 'Question is being asked from this now'
     try:
         next_feature = max(temp[start],key=temp[start].get)
         # print 'Next best possible features to ask question from:'
-        # print temp[start]
+        print json.dumps(temp,indent = 4)
         temp = deleteAll(temp,start)
+        # print json.dumps(temp,indent = 4)
         return next_feature
     except:
         return None
@@ -63,11 +70,5 @@ def orderQuestions(temp):
         print 'End of Loop'
 
 if __name__ == '__main__':
-    
-    Q_data = pd.read_csv('Data/Q_order_CSV2.csv',header=0,index_col=0)
-    A_data = pd.read_csv('Data/answers_CSV2.csv',header=0,index_col=0)
-
-    pair_occurences = formPairs(Q_data)
-    temp = copy.deepcopy(pair_occurences)
-    print nextFeatureSuggestion(temp,'possession')
+    print nextFeatureSuggestion('possession')
     #orderQuestions(temp)

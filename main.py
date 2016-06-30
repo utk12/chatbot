@@ -8,7 +8,6 @@ from applyFilters import *
 from map_recommendation import nextFeatureSuggestion
 from mapProjectsToUser import *
 
-
 if __name__ == '__main__':
 	message = 'I want a  house in which we should have tennis and servant room with area less than 1200 sq.ft.'
 	message =  main(message)
@@ -32,3 +31,4 @@ if __name__ == '__main__':
 	project_list_sorted = sortProjects(project_list, user)
 	print project_list_sorted
 	# print msg_features
+	

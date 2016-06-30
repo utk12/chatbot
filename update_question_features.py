@@ -2,19 +2,49 @@ import json
 import numpy as np
 import pandas as pd
 from map_recommendation import nextFeatureSuggestion
+from interpret_wit_reply import *
 
 pd.set_option('expand_frame_repr', False)
-data = pd.read_csv('Data/rent_questions.csv')
+data = pd.read_csv('Data/buy_questions.csv')
 data.index = data['sn']
 
-def update_weight(feature_name):
-	order = {}
-	weight = 1.0
-	order[first_feature] = weight
-	while(weight != 0.0):
-		weight = weight - 0.1
-		next_feature = nextFeatureSuggestion(next_feature)
-		order[next_feature] = weight
+# def updateQuestion(user, features):
+# 	with open('Data/question_features_'+str(operation)+'_output.json') as json_data:
+# 		input_json = json.loads(json_data.read())
+# 	for i in features:
+# 		i = toCamel(i)
+# 		if i in input_json:
+# 			input_json[i]['weight'] += 0
+# 			nfeatures = len(input_json[i]['children'])
+# 			input_json[i]['preferCount'] = nfeatures/2 + (nfeatures == 1)
+# 			input_json[i]['factorValue'] += 0.5
+# 		else :
+# 			for child in input_json:
+# 				if i in input_json[child]["children"]:
+# 					temp = input_json[child]["children"][i] 
+# 					input_json[child]["children"][i] = 1
+# 					input_json[child]['foundValue'] = 1
+# 					input_json[child]['preferCount'] += abs(temp-1)
+# 					break
+# 	updateJson(user,input_json)
+
+# def update_weight(user_id,feature_list):
+# 	updateQuestion(user_id,feature_list)
+weight = 1.0
+with open('Data/question_features_buy_output.json') as json_data:
+	input_json = json.loads(json_data.read())
+
+def update_initial_weights(feature,input_json,last_feature=None):
+	if last_feature == None:
+		input_json[feature]['weight'] = 1.0
+	else:
+		input_json[feature]['weight'] = float(input_json[last_feature]['weight']) - 0.1
+	if input_json[feature]['weight'] == 0.1:
+		return 0
+	print input_json[feature]['weight']
+	x = nextFeatureSuggestion(feature)
+	if x is not None:
+		update_initial_weights(x,input_json,feature)
 
 def lower_columns(name):
 	for item in data[str(name)]:
@@ -119,4 +149,7 @@ if __name__ == '__main__':
 
 	# print get_dict_parent_numchild()
 	# print iterate('amenities',34)
-	write_output('rent')	
+	# write_output('buy')
+	update_initial_weights('possession',input_json)
+	with open('Data/question_features_buy_output.json','w') as json_data:
+		json.dump(input_json,json_data)

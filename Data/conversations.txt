@@ -1,0 +1,690 @@
+Hi, what are you looking for?
+I want to buy Property in Gurgaon.
+Okay, what project type is suitable for you?
+Do you have apartments?
+Yes, How many bedrooms do you want in your choice of property?
+3bhk apartment will be good for me.
+Would you like to see newly launched projects?
+Sure
+How much are you willing to invest in the project?
+Not fixed the range yet, but want to purchase the best option available.
+Do you have a preferred range of size in mind?
+I think 1450 sq.ft. to 1600 sq ft.
+Ok, Are you also looking for specific amenities available?
+Will it cost extra?
+No, the price will be included in the Total Cost only.
+Then, show the projects offering the basic amenities.
+Do you want to have a look at the security facilities provided by the society?
+What Security Facilities are being provided by the developers?
+The Security facilities vary from developer to developer. Can I show you options facilitated with guard rooms?
+Yes, Sure
+Are there any particular facilities you want nearby?
+If a mall is nearby, then make it a preference.
+Do you have any specific requirements with your choice of project?
+If it’s a Vastu Compliant property and offers power backup then it will be good.
+Ok, generating the results on the basis of your requirements.
+Do you have any properties providing Wardrobes?
+Yes we have many options. Is the provision of wardrobes a preferance for you?
+Yes, please make it a preference.
+Any other filters you want to add?
+Is their any project near metro station?
+Would the nearness to the metro station a preference?
+Of course.
+Can I help you filter properties on the basis of user rating?
+Is the rating genuine?
+Yes, only genuine buyers rate the properties.
+Ok, then select the best rated properties only.
+Sure, generating the best results matching your needs.
+
+Can you suggest some properties which are available on rent?
+Okay, what project type is suitable for you?
+Do you have any Row House?
+Yes, we have many options. How many bedrooms do you want in your choice of property?
+3 bhk will be good.
+How soon do you want to gain possession of the property?
+Existing Properties would be a good option.
+How much are you willing to invest in the project?
+Maximum 55000 per month.
+Do you have a preferred range of size in mind?
+Yes, approximately 1300 to 1500 sq.ft.
+Are you also looking for specific amenities available?
+The general amenities should be their.
+Do you want to have a look at the security facilities provided by the society?
+Its not a necessity, but atleast a guard room must be there.
+Sure, Are there any particular facilities you want nearby?
+It will be good, If a school and metro station is nearby.
+Do you have any specific requirements with your choice of project?
+Do you have any properties providing Wardrobes?
+Is the provision of wardrobes a preferance for you?
+Yes, it will be good if its provided.
+Ok, Can I help you filter properties on the basis of user rating?
+Do you have user rating for properties?
+Yes, we provide ratings for each property.
+So, please exclude the lowest rated properties.
+Ok, Let me show you the results according to your preference.
+
+Hello, How may I help you?
+I am looking for a property in gurgaon.
+Are you looking to buy property?
+Ofcourse
+Okay, what project type is suitable for you?
+What options are available?
+We have many options such as apartment, villa, row house, studio apartment, serviced apartment.Please tell your choice.
+An apartment would be a good option for me.
+How many bedrooms do you want in your choice of property?
+2 bedrooms would be good
+How soon do you want to gain possession of the property?
+Newly launched projects would be a preference as I am looking property for investment purpose.
+How much are you willing to invest in the project?
+80-90 lakhs
+Do you have a preferred range of size in mind?
+1400 to 1600 sq.ft. will be a prefered choice.
+Are you also looking for specific amenities available?
+Not much, but please prefer the options offering atleast the basic amenities.
+Do you want to have a look at the security facilities provided by the society?
+Yes consider the averagely secured society as it increases the rate of the property.
+Are there any particular facilities you want nearby?
+Yes please consider the options having vital necessities nearby.
+Do you have any specific requirements with your choice of project?
+Parking is must.
+Can I help you filter properties on the basis of user rating?
+Yes consider projects only by best rated Developers only.
+Sure, Showing you the best projects according to your needs.
+
+Hello, What are you looking for?
+I want to own a land in gurgaon.
+Are you looking to buy property?
+Yes I am interested in buying.
+Okay, what project type is suitable for you?
+A villa would be nice according to me.
+How many bedrooms do you want in your choice of property?
+Minimum 4 bedrooms.
+How soon do you want to gain possession of the property?
+I am not in a need so newly launched would be good.
+How much are you willing to invest in the project?
+I am looking for affordable property so maximum 60-65 lakhs.
+Do you have a preferred range of size in mind?
+No specific size in mind.
+Are you also looking for specific amenities available?
+What are the specific amenities?
+football, cricket, badminton, skating rink, swimming pool, restaurant, jacuzzi, sauna room, etc are the amenities provided by the project developers.
+Ok, I got it. So, go for the options providing basic amenities.
+Do you want me to short list properties offering any particular amenities?
+No not at all.
+Do you want to have a look at the security facilities provided by the society?
+Sure, what facilities are provided.
+The facilities provided are Cctv tower, guards tower, Cctv Maingate, Guards Maingate, Intercom Maingate, Boom barriers main gate, Tags for Vehicle.
+Ok, I got it.
+Are there any particular facilities you want nearby?
+A school, mall, metro station are the facilities I want nearby.
+Do you have any specific requirements with your choice of project?
+Vastu compliant, Visitor parking should be present.
+Can I help you filter properties on the basis of user rating?
+Does it also affects the cost of the property?
+Yes the best rated property has pretty high cost.
+Ok so consider the options which are medium rated.
+Sure, Is there any more query?
+ No, just show me the results.
+Sure, generating the list of best options matching you needs.
+
+Hi, What are you looking for?
+The most luxurious Studio apartments.
+How soon do you want to gain possession of the property?
+Ready to move in
+How much are you willing to invest in the project?
+50 lakhs only.
+Sorry, we don’t have any project matching your requirements.
+
+Hello, how may I help you?
+Can you suggest me some properties available on rent?
+Okay, what project type is suitable for you?
+Service apartments would be a preference.
+How many bedrooms do you want in your choice of property?
+5 bhk.
+How much are you willing to invest in the project? 
+Maximum upto 60000 only.
+Are you also looking for specific amenities available?
+Skating rink is the priority.
+Do you want to have a look at the security facilities provided by the society?
+No, just show me the results.
+Sure, getting results matching to your needs.
+
+Hello, How may I help you?
+Can you suggest me some propeties to buy?
+Okay, what project type is suitable for you?
+Do you have any under Construction aparments?
+Yes, How many bedrooms do you want in your choice of property?
+I think 4 bhk would be sufficient for me.
+How much are you willing to invest in the project?
+Are their any options in Medium Budget range?
+Yes, we have many options. Are you also looking for specific amenities available?
+Yes, Please filter the projects having Gym and Swimming Pool.
+Do you want to have a look at the security facilities provided by the society?
+Yes, Guards room is must.
+Are there any particular facilities you want nearby?
+Yes, Pharmacy and hospital is the main requirement.
+Do you have any specific requirements with your choice of project?
+Yes, Modular Kitchen and Parking should be present.
+Can I help you filter properties on the basis of user rating?
+Yes, highest rated properties would be a preference. 
+
+Hi, What are you looking for?
+Do you have any Newly launched properties?
+Okay, what project type is suitable for you?
+Do you have any Row House?
+Yes, How many bedrooms do you want in your choice of property?
+Is their any 4bhk property?
+How much are you willing to invest in the project?
+I am looking for a medium Budget property.
+Are you also looking for specific amenities available?
+I want Sauna Room, Aerobics Room and Bar.
+Are there any particular facilities you want nearby?
+A metro station, Daycare and a School.
+Would the nearness to the metro station a preferance?
+Yes, ofcourse.
+Do you want to have a look at the security facilities provided by the society?
+Yes, a project offering medium level Security.
+Do you have any specific requirements with your choice of project?
+Only Vastu compliant.
+Can I help you filter properties on the basis of user rating?
+Yes, ofcourse the highest rated properties.
+Ok let me Generate the results on the basis of your demands.
+
+Can you suggest some properties which are available to buy?
+Okay, what project type is suitable for you?
+Apartment.
+How many bedrooms do you want in your choice of property?
+About 2 bhk.
+How soon do you want to gain possession of the property?
+5 to 6 years.
+How much are you willing to invest in the project?
+Maximum 1.8 Crores .
+Do you have a preferred range of size in mind?
+Minimum 1800-1900 sq.ft.
+Are you also looking for specific amenities available?
+The basic ones must be offered .
+Do you want to have a look at the security facilities provided by the society?
+Prefer the projects offering the best security facilities.
+Ok, Are there any particular facilities you want nearby?
+Atm, pharmacy, Restaurant.
+Do you have any specific requirements with your choice of project?
+Modular kitchen, wardrobes, Kitchen dish washer.
+Ok, Can I help you filter properties on the basis of user rating?
+Yes, exclude lowest rated properties.
+Ok, Let me show you the results according to your preference.
+
+Hello, how may I help you?
+I want to purchase a 5 bhk serviced apartment.
+How soon do you want to gain possession of the property?
+Under Construction property would be good.
+How much are you willing to invest in the project?
+Near about 1.8 Crores.
+Do you have a preferred range of size in mind?
+Around 2000 sq. ft.
+Are you also looking for specific amenities available?
+Yes, gym, swimming pool, jacuzzi, Steam Room should be available.
+Do you want to have a look at the security facilities provided by the society?
+Yes, exclude the options which are less secured.
+Are there any particular facilities you want nearby?
+Pre school, school and hospital.
+Do you have any specific requirements with your choice of project?
+Home Automation, Wardrobes.
+Can I help you filter properties on the basis of user rating?
+Yes, only the best rated properties.
+Sure Generating the best options according to your needs.
+
+Hello, what are you looking for?
+I am in search of a property to buy.
+Okay, what project type is suitable for you?
+I am looking for studio apartment.
+How soon do you want to gain possession of the property?
+Under Construction would be good.
+How much are you willing to invest in the project?
+Maximum upto .
+Do you have a preferred range of size in mind?
+No.
+Are there any other specific amenities you are looking for?
+Amphitheatre, kids zone, bar and Business Centre.
+Do you want to have a look at the security facilities provided by the society?
+Most secured projects only.
+Are there any particular facilities you want nearby?
+Daycare, bank, park.
+Do you wish to see options rated best by previous users?
+Yes, consider only the best rated projects only.
+Great, let me show you the best options suitable to your requirements.
+
+Hello, how may I help you?
+Can you show me any 5 bhk apartment at sohna road available on rent.
+How soon do you want to gain possession of the property?
+My agreement is left for 3 months so please show me existing projects only.
+How much are you willing to invest in the project?
+The maximum amount is 70,000 per month.
+Is it flexible?
+No stick to this limit only.
+Do you have a preferred range of size in mind?
+No, but the property should be spacious.
+Ok, Are you also looking for specific amenities available?
+Cricket, Jacuzzi, Swimming Pool, Guest room must be there.
+Do you want to have a look at the security facilities provided by the society?
+Yes select the option which is totally secured.
+Are there any particular facilities you want nearby?
+Mall, market and club should be available nearby.
+Do you have any specific requirements with your choice of project?
+Yes a fully furnished project would be preferable.
+Ok, Can I help you filter properties on the basis of user rating?
+Yes, select the best rated properties only.
+Sure, Showing the best available options according to your needs.
+
+Hello, What are you looking for?
+I am looking for a 4bhk villa available on rent.
+How soon do you want to gain possession of the property?
+As soon as its possible.
+How much are you willing to invest in the project?
+There is no issue with budget, but the property should be best.
+Do you have a preferred range of size in mind?
+Yes, 1700 to 1800 sq.ft.
+Are you also looking for specific amenities available?
+Yes, sauna room, pitch and putt and a skating rink.
+Do you want to have a look at the security facilities provided by the society?
+Yes a medium secured property would be good.
+Are there any particular facilities you want nearby?
+A school, daycare, market and pharmacy.
+Do you have any specific requirements with your choice of project?
+Fully furnished and vastu compliant.
+Can I help you filter properties on the basis of user rating?
+Yes, a highly rated project would be good.
+Ok, generating the best options available.
+
+Hello, how may I help you?
+I want to purchase a 5 bhk serviced apartment.
+How soon do you want to gain possession of the property?
+Under Construction property would be good.
+How much are you willing to invest in the project?
+Near about 1.8 Crores.
+Do you have a preferred range of size in mind?
+Minimum 2000 sq. ft.
+Are you also looking for specific amenities available?
+Swimming pool, Sauna Room, Steam Room  and a gym.
+Do you want to have a look at the security facilities provided by the society?
+Yes, only highly secured properties would be good.
+Are there any particular facilities you want nearby?
+School and Pharmacy.
+Do you have any specific requirements with your choice of project?
+VRV Air Conditioning, Fully Furnished, Modular Kitchen.
+Can I help you filter properties on the basis of user rating?
+Yes, only the best rated properties.
+Sure Generating the best options according to your needs.
+
+Hey, how may i help you?
+I am looking for a studio apartment.
+Are you looking for property available on rent?
+Yes a studio apartment on rent.
+How soon do you want to gain possession of the property?
+As early as possible.
+Ok, How much are you willing to invest in the project?
+My budget is 20000 per month.
+Are you also looking for specific amenities available?
+Not particularly but prefer projects offering Table tennis and swimming pool.
+Do you want to have a look at the security facilities provided by the society?
+Just consider options having basic security facilities.
+Are there any particular facilities you want nearby?
+Market and mall would be good.
+Do you have any specific requirements with your choice of project?
+Please prefer options having air Conditioner and parking facility.
+Can I help you filter properties on the basis of user rating?
+Yes consider only medium rated options.
+Ok, according to your requirements below is the list of options available.
+
+What are you looking for?
+Do you have options in row houses?
+Are you looking to buy property?
+Yes, show me some options to buy.
+How many bedrooms do you want in your choice of property?
+3 or 4 bhk would be good.
+How soon do you want to gain possession of the property?
+Show me some under construction projects.
+How much are you willing to invest in the project?
+Around 1.6 Crores.
+Do you have a preferred range of size in mind?
+Yes approximately 2000 to 2300 sq.ft.
+Are you also looking for specific amenities available?
+Yes consider the options having great number of amenities available.
+Do you want to have a look at the security facilities provided by the society?
+Yes consider the options having maximum security facilities.
+Are there any particular facilities you want nearby?
+Mall and market preferably.
+Do you have any specific requirements with your choice of project?
+A fully furnished and vastu compliant one would be preferred.
+Do you wish to see options rated best by previous users?
+Yes ofcourse 
+Sure, showing you the options matching your requirements.
+
+Hey, how may I help you?
+I want to buy a property.
+Okay, what project type is suitable for you?
+Serviced apartment would be good.
+How many bedrooms do you want in your choice of property?
+4 bhk.
+How soon do you want to gain possession of the property?
+In 1 year or more.
+How much are you willing to invest in the project?
+Upto 1.9 Cr
+Do you have a preferred range of size in mind?
+Not as such but it should be spacious.
+Are you also looking for specific amenities available?
+Yes squash and swimming pool.
+Do you want to have a look at the security facilities provided by the society?
+Most secured project only.
+Are there any particular facilities you want nearby?
+Mall and clubs.
+Do you have any specific requirements with your choice of project?
+Yes a fully furnished one would be good option.
+Do you wish to see options rated best by previous users?
+Surely, consider the best rated only.
+Ok, filtering the properties according to your demands.
+
+Hi, what are you looking for?
+I want to rent in gurgaon.
+Okay, what project type is suitable for you?
+I am looking for an apartment.
+How many bedrooms do you want?
+3 bhk.
+How soon do you wish to gain possession of the property?
+Show me newly launched properties.
+How much are you ready to invest in the project?
+I can afford 1.2 Cr.
+Do you have a preferred range of size in mind?
+No specific size but please go for the sizes which are easy to sell. 
+Do you have and specific requirements with your choice of project?
+Show me choices that provide power back-up.
+Do you want to have a look at the security facilities provided by the society?
+Yes, Show me societies with good security features.
+Are you also looking for specific amenities available?
+Table tennis, spa and salon.
+Are there any particular facilities you want nearby?
+Clubs, restaurants and bank.
+Great, let me show you the best options available that are suitable to your requirements.
+
+Hello, what are you looking for?
+I am looking for property available on rent.
+Okay, what project type is suitable for you?
+I am looking for a villa.
+How many bedrooms do you want in your choice of property?
+I want a 4BHK.
+How soon do you want to gain possession of the property?
+Show me ready-to-move-in options.
+How much are you willing to invest in the project?
+Maximum upto 60000-65000.
+Do you have a preferred range of size in mind?
+No.
+Are there any other specific amenities you are looking for?
+Snooker table and mini theatre.
+Do you want to have a look at the security facilities provided by the society?
+Project with medium security.
+Are there any particular facilities you want nearby?
+Atm, hospital and daycare. 
+Great, let me show you the best options suitable to your requirements. 
+
+Hey, How may I help you?
+I want to own a property in gurgaon.
+Okay, what project type is suitable for you?
+Serviced apartment.
+How many bedrooms do you want in your choice of property?
+6+ bhk would be good.
+How soon do you want to gain possession of the property?
+In 4 years later.
+How much are you willing to invest in the project?
+Near about 5 crores.
+Is it flexible?
+Yes.
+Do you have a preferred range of size in mind?
+No, but it should be spacious.
+Are you also looking for specific amenities available?
+Yes, as they increase the rate of the property.
+So, what amenities would you like? 
+All the best amenities.
+Do you want to have a look at the security facilities provided by the society?
+The most secured project only.
+Are there any particular facilities you want nearby?
+Not Required.
+Do you have any specific requirements with your choice of project?
+Fully furnished.
+Do you wish to see options rated best by previous users?
+Surely
+Ok, showing the best results available accordingly.
+
+Hey, How may I help you?
+I want to invest in gurgaon.
+Okay, what project type is suitable for you?
+Apartment
+How many bedrooms do you want in your choice of property?
+3 bhk would be good.
+How soon do you want to gain possession of the property?
+2 to 3 years later.
+How much are you willing to invest in the project?
+Approximately 1.5 crores.
+Is it flexible?
+Yes.
+Do you have a preferred range of size in mind?
+1500-1700 sq.ft.
+Are you also looking for specific amenities available?
+Yes, as they increase the rate of the property.
+So, what amenities would you like? 
+Just the basic amenities.
+Do you want to have a look at the security facilities provided by the society?
+Sure, select the options offering good security facilities.
+Are there any particular facilities you want nearby?
+No, not necessary.
+Do you have any specific requirements with your choice of project?
+VRV air conditioning and fully furnished.
+Do you wish to see options rated best by previous users?
+Ofcourse
+Ok, generating the best results available accordingly.
+
+Hey, How may I help you?
+I am looking for a project to invest in gurgaon.
+Okay, what project type is suitable for you?
+Villa would be prefered.
+How soon do you want to gain possession of the property?
+I am looking for investment purpose.
+How much are you willing to invest in the project?
+Around 1.2 Cr.
+Do you have a preferred range of size in mind?
+No I don’t have any idea.
+Are you also looking for specific amenities available?
+What amenities are provided generally?
+Gym, jogging track, badminton, tennis, basketball, volleyball etc are provided generally.
+Ok, check the projects providing these basic amenities.
+Do you want to have a look at the security facilities provided by the society?
+Consider the most secured options only.
+Are there any particular facilities you want nearby?
+Metro Station and Pharmacy.
+Do you have any specific requirements with your choice of project?
+Fully Furnished, Shower cubicle, Bath Tub.
+Do you wish to see options rated best by previous users?
+Yes, consider only the highly rated projects.
+Sure, Here’s the list of projects matching your needs.
+
+Hello, What are you looking for?
+My dream is to own a property in gurgaon.
+Are you looking to buy property?
+Yes I want to invest.
+Okay, what project type is suitable for you?
+A row house would be nice according to me.
+How many bedrooms do you want in your choice of property?
+Minimum 5 bedrooms.
+How soon do you want to gain possession of the property?
+Newly launched would be good as the cost would also be less.
+How much are you willing to invest in the project?
+Maximum 2 Crores.
+Do you have a preferred range of size in mind?
+1700-1800 sq.ft.
+Are you also looking for specific amenities available?
+Yes, atleast the basic properties must be present.
+Do you want to have a look at the security facilities provided by the society?
+Yes, the basic ones should be present.
+Are there any particular facilities you want nearby?
+Clubs, malls, hospitals, school.
+Do you have any specific requirements with your choice of project?
+Visitor Parking should be present.
+Can I help you filter properties on the basis of user rating?
+Yes consider the options which are highly rated.
+Ok, showing the list of best options matching your needs.
+
+Can you suggest some properties which are available to buy?
+Okay, what project type is suitable for you?
+Serviced apartment.
+How many bedrooms do you want in your choice of property?
+Minimum 5 bhk.
+How soon do you want to gain possession of the property?
+1 to 2 years.
+How much are you willing to invest in the project?
+Maximum 3 Crores .
+Do you have a preferred range of size in mind?
+Minimum 2500 sq. ft.
+Are you also looking for specific amenities available?
+The general amenities must be offered.
+Do you want to have a look at the security facilities provided by the society?
+Yes the most secured project only.
+Sure, Are there any particular facilities you want nearby?
+Mall, metro station, pharmacy.
+Do you have any specific requirements with your choice of project?
+Home automation, modular kitchen, wardrobes.
+Ok, Can I help you filter properties on the basis of user rating?
+Yes, exclude lowest and medium rated properties.
+Ok, Let me show you the results according to your preference.
+
+Hey, how may I help you?
+I want to invest in gurgaon.
+Okay, what project type is suitable for you?
+Which type has the best increase in rate?
+Apartments and villas, how many bedrooms do you want in your choice of property?
+3 bhk.
+How soon do you want to gain possession of the property?
+Prefer Newly launched properties.
+How much are you willing to invest in the project?
+Upto 95 lakhs.
+Do you have a preferred range of size in mind?
+No, but a normal size.
+Are you also looking for specific amenities available?
+Yes badminton and table tennis.
+Do you want to have a look at the security facilities provided by the society?
+Most secured property only.
+Are there any particular facilities you want nearby?
+Restaurants, malls, clubs.
+Do you have any specific requirements with your choice of project?
+Yes a fully furnished one would be good option.
+Do you wish to see options rated best by previous users?
+Sure, consider the best rated ones only.
+Ok, filtering the properties according to your demands.
+
+Hello, How may I help you?
+Can you suggest me some propeties to invest?
+Okay, what project type is suitable for you?
+Do you have any newly launched villas?
+Yes, How many bedrooms do you want in your choice of property?
+I think 4 bhk would be sufficient for me.
+How much are you willing to invest in the project?
+Maximum 
+Are you also looking for specific amenities available?
+Gym,Spa, Sauna room,Swimming Pool.
+Do you want to have a look at the security facilities provided by the society?
+Yes, Cctv tower must be present.
+Are there any particular facilities you want nearby?
+The main requirement is hospital, sports complex and a park.
+Do you have any specific requirements with your choice of project?
+Yes, bathtub, maintenance and kitchen dishwasher.
+Can I help you filter properties on the basis of user rating?
+Only highly rated options.
+
+Hello, what are you looking for?
+I am thinking to invest.
+Okay, what project type is suitable for you?
+Studio apartment.
+How soon do you want to gain possession of the property?
+Newly launched only.
+How much are you willing to invest in the project?
+Maximum 2.5 Crores.
+Do you have a preferred range of size in mind?
+Around 800 sq.ft
+Are there any other specific amenities you are looking for?
+Yoga room, Aerobics room, Dance Room, Music room, business centre.
+Do you want to have a look at the security facilities provided by the society?
+Project with highest security facilities.
+Are there any particular facilities you want nearby?
+Park, preschool, daycare.
+Great, let me show you the best options suitable to your requirements. 
+
+Hi, what are you looking for?
+I would like to invest.
+Okay, what project type is suitable for you?
+Do you have rowhouses?
+Yes, How many bedrooms do you want in your choice of property?
+2 bhk.
+Would you like to see newly launched projects?
+Yes, it will be best.
+How much are you willing to invest in the project?
+Not fixed the range yet, but want to purchase the best option available.
+Do you have a preferred range of size in mind?
+No.
+Ok, Are you also looking for specific amenities available?
+Filter the projects offering general amenities.
+Do you want to have a look at the security facilities provided by the society?
+Yes, the basic security facilities must be offered.
+Are there any particular facilities you want nearby?
+If a sports complex is nearby, then make it a preference.
+Do you have any specific requirements with your choice of project?
+Shower cubicle, bath tub.
+Can I help you filter properties on the basis of user rating?
+Is the rating worthy?
+Yes, only genuine buyers rate the properties.
+Ok, then select the best rated properties only.
+Sure, generating the best results matching your needs.
+
+Hello, what are you looking for?
+Need to invest in Gurgaon.
+Okay, what project type is suitable for you?
+Villa
+How many bedrooms do you want in your choice of property?
+5 bhk
+How soon do you want to gain possession of the property?
+After 3 to 4 years.
+How much are you willing to invest in the project?
+Upto 6 Crs.
+Do you have a preferred range of size in mind?
+I want to see options around 2000-2200 sq.ft.
+Are there any other specific amenities you are looking for?
+Jogging track, amphitheatre, video games.
+Are there any particular facilities you want nearby?
+Close to the clubs, bank and metro station.
+Do you have and specific requirements with your choice of project?
+Power backup, maintenance facilities, guest car-parking.
+Do you want to have a look at the security facilities provided by societies?
+Not specifically.
+Do you wish to see options rated best by previous users?
+Yes, consider best only.
+Great, let me show you the best options suitable to your requirements.
+
+Hey, how may I help you?
+I want to invest in gurgaon.
+Okay, what project type is suitable for you?
+Prefer, the type which offers best increament.
+How many bedrooms do you want in your choice of property?
+4 bhk.
+How soon do you want to gain possession of the property?
+Consider under construction properties.
+How much are you willing to invest in the project?
+Upto 1.2 Crores.
+Do you have a preferred range of size in mind?
+No.
+Are you also looking for specific amenities available?
+Yes squash, swimming pool and a gym.
+Do you want to have a look at the security facilities provided by the society?
+Exclude options providing bad facilities.
+Are there any particular facilities you want nearby?
+Market, bank, park.
+What specifications would you like to have in your choice of project?
+Air conditioning and power backup should be present with maintenance.
+Do you wish to see options rated best by previous users?
+Sure, consider the ones with excellent ratings only.
+Ok, filtering the properties according to your demands.

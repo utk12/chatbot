@@ -1,0 +1,10 @@
+,possession,rating,projectType,specifications,price,amenities,security,size,accommodation,nearby
+"c1,Buy",1,-1,1,1,1,1,-1,-1,1,1
+"c2,buy",1,1,1,-1,1,0,1,-1,1,-1
+"c3,buy",1,-1,1,-1,1,1,1,0,1,1
+"c4,buy",1,-1,1,1,1,1,1,-1,1,0
+"c5,buy",1,1,1,1,1,1,-1,-1,1,1
+"c6,buy",1,-1,1,1,-1,1,-1,-1,1,1
+"c7,buy",1,-1,1,1,1,1,1,1,1,1
+"c8,buy",1,1,1,1,1,1,1,-1,1,1
+"c9,buy",-1,-1,1,-1,1,1,0,-1,1,0

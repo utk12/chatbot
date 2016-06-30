@@ -1,0 +1,7 @@
+,possession,rating,projectType,specifications,price,amenities,security,size,accommodation,nearby
+"c1,rent",1,-1,1,1,1,1,1,1,1,1
+"c2,rent",-1,-1,1,1,1,0,0,-1,-1,1
+"c3,rent",1,1,1,1,1,1,1,-1,1,0
+"c4,rent",1,1,1,1,1,1,1,-1,1,1
+"c5,rent",1,-1,1,-1,1,-1,-1,-1,-1,-1
+"c6,rent",1,-1,1,1,1,1,0,1,1,1

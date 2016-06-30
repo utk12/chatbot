@@ -2,17 +2,18 @@
 from elasticsearch import Elasticsearch
 import json
 from update_question_features import convert_underscore_to_camelcase as toCamel
+from mapProjectsToUser import sortProjects
 
 es = Elasticsearch([{'host':'localhost','port':9200}])
 
-def getProjects(filters_dict):
+def getProjects(filters_dict, user):
 	body = prepareBody(filters_dict)
 	project_list = es_search(body)
 	project_list = applyUnitsFilter(project_list, filters_dict)
-	result = []
+	project_ids = []
 	for i in xrange(len(project_list)):
-		result.append(project_list[i]['_id'])
-	return result
+		project_ids.append(project_list[i]['_id'])
+	return sortProjects(project_ids, user)
 
 
 def applyUnitsFilter(project_list, filters_dict):
@@ -56,9 +57,6 @@ def applyUnitsFilter(project_list, filters_dict):
 						area = project_list[i]['_source']['units'][unit]['configurations']['superArea']
 						area_level = filters_dict['configurations']['area_level']
 						area_supposed = filters_dict['configurations']['area']
-						print area
-						print area_supposed
-						print area_level
 						if area_level == 'high':
 							if area < area_supposed:
 								flag = 0

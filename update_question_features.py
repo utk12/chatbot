@@ -1,13 +1,13 @@
 import json
 import numpy as np
 import pandas as pd
-from map_recommendation import nextFeatureSuggestion
+from map_recommendation import getCsvData
 from interpret_wit_reply import *
 
 pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/buy_questions.csv')
 data.index = data['sn']
-
+getCsvData()
 # def updateQuestion(user, features):
 # 	with open('Data/question_features_'+str(operation)+'_output.json') as json_data:
 # 		input_json = json.loads(json_data.read())
@@ -30,21 +30,32 @@ data.index = data['sn']
 
 # def update_weight(user_id,feature_list):
 # 	updateQuestion(user_id,feature_list)
-weight = 1.0
-with open('Data/question_features_buy_output.json') as json_data:
-	input_json = json.loads(json_data.read())
 
-def update_initial_weights(feature,input_json,last_feature=None):
-	if last_feature == None:
-		input_json[feature]['weight'] = 1.0
+def update_initial_weights():
+	Q_data = getCsvData()
+	weight_list = []
+	for i in list(Q_data.columns):
+		a = np.array(Q_data[i])
+		weight_list.append([a.mean(), i])
+	with open('Data/question_features_buy_output.json', 'r') as json_data:
+		input_json = json.loads(json_data.read())
+	weight_list.sort()
+	vec = []
+	for i,j in weight_list:
+		vec.append(i)
+	vec = np.array(vec)
+	mag = np.linalg.norm(vec)
+	if mag > 0: 
+		unit_vec = vec/mag
 	else:
-		input_json[feature]['weight'] = float(input_json[last_feature]['weight']) - 0.1
-	if input_json[feature]['weight'] == 0.1:
-		return 0
-	print input_json[feature]['weight']
-	x = nextFeatureSuggestion(feature)
-	if x is not None:
-		update_initial_weights(x,input_json,feature)
+		unit_vec = vec
+	for i in range(len(weight_list)):
+		feature = weight_list[i][1]
+		input_json[feature]['weight'] = vec[i]
+	with open('Data/question_features_buy_output.json', 'w') as json_data:
+		json.dumps(input_json, json_data, indent=4)
+
+
 
 def lower_columns(name):
 	for item in data[str(name)]:
@@ -149,7 +160,7 @@ if __name__ == '__main__':
 
 	# print get_dict_parent_numchild()
 	# print iterate('amenities',34)
-	# write_output('buy')
-	update_initial_weights('possession',input_json)
-	with open('Data/question_features_buy_output.json','w') as json_data:
-		json.dump(input_json,json_data)
+	write_output('buy')
+	update_initial_weights()
+	# with open('Data/question_features_buy_output.json','w') as json_data:
+	# 	json.dump(input_json,json_data)

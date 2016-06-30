@@ -1,13 +1,15 @@
 from wit_get_reply_api import *
-
-def get_message_conv():
-	results = []
-	entities_list = []
-	with open('') as text_file:
-		results.append(line.split('\n'))
-	for sent in results:
-		entities_list.append(get_entities_from_msg_Wit(sent))
-	print entities_list
+import json
 
 if __name__ == '__main__':
-	get_message_conv()
+	# get_message_conv()
+	conversations = []	
+	with open('Data/conversations.txt') as text_file:
+		text_file = text_file.read()
+		conversations += text_file.split('\n\n')
+	dict1 = {}
+	i = 0
+	for item in conversations:
+		i += 1
+		dict1[i]=item.split('\n')
+	print json.dumps(dict1,indent = 4)

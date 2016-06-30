@@ -44,16 +44,12 @@ def get_feature_dictionary():
 			feature_dict[category_new].append(subcategory)
 	return feature_dict
 
-
-
 def updateJson(user, userDict):
 	body = {
 		"doc" : userDict
 	}
 	es.update(index='users',doc_type='features',id=user,body=body)
 	
-
-
 def updateUser(user, features):
 	userDict = getUserDoc(user)
 	for i in features:
@@ -72,9 +68,6 @@ def updateUser(user, features):
 					userDict[child]['preferCount'] += abs(temp-1)
 					break
 	updateJson(user,userDict)
-
-
-
 
 def getUserVector(user):
 	userDict = getUserDoc(user)
@@ -97,6 +90,5 @@ def getUserVector(user):
 # print getUserDoc('hndwkoiq')
 # createUserJSON("prirqlxu")
 # print get_feature_dictionary()
-
 # feature_dict = get_feature_dictionary()
 # features = get_features(user_query)

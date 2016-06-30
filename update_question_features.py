@@ -2,19 +2,18 @@ import json
 import numpy as np
 import pandas as pd
 from map_recommendation import getCsvData
-from interpret_wit_reply import *
 
 pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/buy_questions.csv')
 data.index = data['sn']
 
-def update_initial_weights():
+def update_initial_weights(operation):
 	Q_data = getCsvData()
 	weight_list = []
 	for i in list(Q_data.columns):
 		a = np.array(Q_data[i])
 		weight_list.append([a.mean(), i])
-	with open('Data/question_features_buy_output.json', 'r') as json_data:
+	with open('Data/question_features_'+str(operation)+'_output.json', 'r') as json_data:
 		input_json = json.loads(json_data.read())
 	weight_list.sort()
 	vec = []
@@ -28,11 +27,9 @@ def update_initial_weights():
 		unit_vec = vec
 	for i in range(len(weight_list)):
 		feature = weight_list[i][1]
-		input_json[feature]['weight'] = vec[i]
-	with open('Data/question_features_buy_output.json', 'w') as json_data:
-		json.dumps(input_json, json_data, indent=4)
-
-
+		input_json[feature]['weight'] = unit_vec[i]
+	with open('Data/question_features_'+str(operation)+'_output.json', 'w') as json_data:
+		json.dump(input_json, json_data, indent=4)
 
 
 def lower_columns(name):
@@ -138,7 +135,7 @@ if __name__ == '__main__':
 
 	# print get_dict_parent_numchild()
 	# print iterate('amenities',34)
-	write_output('buy')
+	# write_output('buy')
 	update_initial_weights()
 	# with open('Data/question_features_buy_output.json','w') as json_data:
 	# 	json.dump(input_json,json_data)

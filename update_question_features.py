@@ -7,7 +7,7 @@ pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/rent_questions.csv')
 data.index = data['sn']
 
-def update_weight(feature_name)):
+def update_weight(feature_name):
 	order = {}
 	weight = 1.0
 	order[first_feature] = weight

@@ -8,12 +8,6 @@ from project_feature_mapping import *
 
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
-def genRandString(n):
-	return (''.join(choice(ascii_lowercase) for i in range(n)))
-
-def getProjectId():
-	return genRandString(8)
-
 def createProjectDataIndex(id, data):
 	es.index(index='projects', doc_type='data', id=id, body=data)
 	
@@ -93,8 +87,8 @@ def updateProjectsRatios():
 			projectDict[category]['ratioScore'] = weightSum/total
 		updateProjectJson(p_id, projectDict)
 
-def getProjectVector(project, intent):
-	projectDict = getProjectFeaturesDoc(project)[intent]
+def getProjectVector(project):
+	projectDict = getProjectFeaturesDoc(project)
 	vec = []
 	for category in projectDict:
 		vec.append(float(projectDict[category]['ratioScore']))

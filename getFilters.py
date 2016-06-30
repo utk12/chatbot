@@ -114,19 +114,16 @@ def getConfigurations(witReply):
 	configurations = {}
 	if 'configurations' in witReply:
 		for i in witReply['configurations']:
-			print i
-			print filters_data['configurations']
 			if i in filters_data['other']:
 				others['i'] = True
 			elif i in filters_data['configurations']:
-				print i
 				configurations[i] = True
 	if 'project_type' in witReply:
 		configurations['property_type'] = {}
 		for i in witReply['project_type']:
 			configurations['property_type'][i] = True
 	if 'accommodation' in witReply:
-		configurations['type']
+		configurations['type'] = {}
 		for i in witReply['accommodation']:
 			configurations['type'][i] = True
 	if 'area' in witReply:

@@ -43,23 +43,28 @@ def applyUnitsFilter(project_list, filters_dict):
 					elif config == 'price':
 						price = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
 						price_level = filters_dict['configurations']['price_level']
+						price_supposed = filters_dict['configurations']['price']
 						if price_level == 'high':
-							if price < price_level:
+							if price < price_supposed:
 								flag = 0
 								break
 						if price_level == 'low':
-							if price > price_level:
+							if price > price_supposed:
 								flag = 0
 								break
 					elif config == 'area':
-						area = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
+						area = project_list[i]['_source']['units'][unit]['configurations']['superArea']
 						area_level = filters_dict['configurations']['area_level']
+						area_supposed = filters_dict['configurations']['area']
+						print area
+						print area_supposed
+						print area_level
 						if area_level == 'high':
-							if area < area_level:
+							if area < area_supposed:
 								flag = 0
 								break
 						elif area_level == 'low':
-							if area > area_level:
+							if area > area_supposed:
 								flag = 0
 								break
 					elif config == 'store_room' or config == 'servant_room':

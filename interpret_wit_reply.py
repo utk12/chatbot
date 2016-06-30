@@ -7,7 +7,6 @@ def getFeatures(witReply):
 	features = []
 	features += (getRelativeFeatures(witReply))
 	features += (getSecurityFeatures(witReply))
-	# print witReply
 	for entity in witReply:
 		for feature in witReply[entity]:
 			f = extractFeatures(entity,feature)
@@ -58,13 +57,14 @@ def getSecurityFeatures(witReply):
 
 def extractFeatures(entity, feature):
 	feature_dict = get_feature_dictionary()
-	# print feature_dict
 	if entity == 'feature':
-		if entity in feature_dict:
+		if feature in feature_dict:
 			return feature
 
-	x = ['project_type', 'configuration', 'specification', 'amenities', 'accommodation']
+	x = ['project_type', 'configurations', 'specifications', 'amenities', 'accommodation', 'possession']
 	if entity in x:
+		if entity == 'configurations':
+			entity = 'specifications'
 		if feature in feature_dict[entity]:
 			return feature
 

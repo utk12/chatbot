@@ -85,7 +85,6 @@ def getUserVector(user):
 		c = float(userDict[category]['factorValue'])
 		vec.append(a*b*c)
 	vec = np.array(vec)
-	print vec
 	mag = np.linalg.norm(vec)
 	if mag > 0:	
 		unit_vec = vec/mag
@@ -96,7 +95,7 @@ def getUserVector(user):
 # print getUserVector('uyzpanbd',
 # updateUser('uyzpanbd', ['security', 'amenities', '2BHK'])
 # print getUserDoc('hndwkoiq')
-# createUserJSON(getUserId())
+# createUserJSON("prirqlxu")
 # print get_feature_dictionary()
 
 # feature_dict = get_feature_dictionary()

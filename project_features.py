@@ -7,6 +7,7 @@ from firebase import Firebase
 from project_feature_mapping import *
 
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+
 def genRandString(n):
 	return (''.join(choice(ascii_lowercase) for i in range(n)))
 
@@ -23,19 +24,27 @@ def createProjectFeaturesIndex(id):
 	
 
 def createProjectsDatabase():
-	fire = Firebase("https://friendlychat-1d26c.firebaseio.com/protectedResidential/9999/projects/")
-	projects_all = fire.get()
-	for i in projects_all:
-		createProjectDataIndex(i, projects_all[i])
-		createProjectFeaturesIndex(i)
-		updateProjectFeatures(i)
+	fire = Firebase("https://friendlychat-1d26c.firebaseio.com/protectedResidential/9999/projects/-KLLdC7joRUmOsT11Efp/")
+	i = '-KLLdC7joRUmOsT11Efp'
+	temp = fire.get()
+	# projects_all = fire.get()
+	# for i in projects_all:
+	# createProjectDataIndex(i, projects_all[i])
+	createProjectDataIndex(i, temp 	)
+	createProjectFeaturesIndex(i)
+	updateProjectFeatures(i)
 
 def updateProjectFeatures(id):
-	fire = Firebase("https://friendlychat-1d26c.firebaseio.com/protectedResidential/9999/projects/")
-	projects_all = fire.get()
-	price_range,size_range = price_size_range(projects_all)
-	updated_features = all_features_mapping(getProjectFeaturesDoc(id), getProjectDataDoc(id), price_range, size_range)
+	fire = Firebase("https://friendlychat-1d26c.firebaseio.com/protectedResidential/9999/projects/-KLLdC7joRUmOsT11Efp")
+	temp = fire.get()
+	# projects_all = fire.get()
+	# print json.dumps(temp, indent = 4)
+	price_range,size_range = price_size_range({"-KLLdC7joRUmOsT11Efp" : temp})
+	# print price_range, size_range
+	updated_features = all_features_mapping(getProjectDataDoc(id), getProjectFeaturesDoc(id), price_range, size_range)
 	es.update(index = 'projects', doc_type = 'features', id = id, body = {"doc" : updated_features})
+	# updateProject(id)
+
 
 def getProjectFeaturesDoc(project):
 	body = {
@@ -63,26 +72,29 @@ def updateProjectJson(project, projectDict):
 	body = {
 		"doc" : projectDict
 	}
+	print projectDict
 	es.update(index='projects',doc_type='features',id=project,body=body)
 	
 
-def updateProject(project):
-	projectDict = getProjectDoc(project)
-	for intent in projectDict:
-		for category in projectDict[intent]:
+def updateProjectsRatios():
+	project_list = es.search(index='projects', doc_type='features', body = {})['hits']['hits']
+	for i in range(len(project_list)):
+		p_id = project_list[i]['_id']
+		projectDict = project_list[i]['_source']
+		for category in projectDict:
 			weightSum = 0.0
 			total = 0.0
-			for feature in projectDict[intent][category]['children']:
-				found = float(projectDict[intent][category]['children'][feature]['foundValue'])
-				weight = float(projectDict[intent][category]['children'][feature]['factorValue'])
+			for feature in projectDict[category]['children']:
+				found = float(projectDict[category]['children'][feature]['foundValue'])
+				weight = float(projectDict[category]['children'][feature]['factorValue'])
 				weightSum += weight*found
 				total += weight
 
-			projectDict[intent][category]['ratioScore'] = weightSum/total
-	updateProjectJson(project, projectDict)
+			projectDict[category]['ratioScore'] = weightSum/total
+		updateProjectJson(p_id, projectDict)
 
 def getProjectVector(project, intent):
-	projectDict = getProjectDoc(project)[intent]
+	projectDict = getProjectFeaturesDoc(project)[intent]
 	vec = []
 	for category in projectDict:
 		vec.append(float(projectDict[category]['ratioScore']))
@@ -95,8 +107,8 @@ def getProjectVector(project, intent):
 	return unit_vec
 
 
-createProjectsDatabase()
-
+# createProjectsDatabase()
+# updateProjectsRatios()
 # createProjectJSON(getProjectId())
 # updateProject('ugzjugjc')
 # print getProjectVector('ugzjugjc', 'buy')

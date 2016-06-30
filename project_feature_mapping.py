@@ -85,9 +85,8 @@ def unit_details_matching(p_data,p_features):
     
     for unit in unit_ids:
         p_type = unit_ids[unit]['configurations']['type']       # type has info about property type like 2BHK etc
-        p_type = '2BHK'      # comment this later
+        p_type = '2BHK'
         p_features['accommodation']['children'][p_type]['foundValue'] = 1
-
         if 'specifications' in unit_ids[unit]:
             specs = unit_ids[unit]['specifications']
             for key in p_features['specifications']['children']:
@@ -112,6 +111,7 @@ def unit_details_matching(p_data,p_features):
     else:
         p_features['specifications']['children']['lift']['foundValue'] = 0
     return p_features
+
 def get_security_features(p_data):
     security_features = {}
     if 'security' in p_data:
@@ -201,7 +201,10 @@ def price_size_range_matching(p_data,p_features,price_range,size_range):
     return p_features
 
 def all_features_mapping(project_data,project_features,price_range,size_range):
-
+    # print json.dumps(project_data, indent=4)
+    # print json.dumps(project_features, indent=4)
+    # print json.dumps(price_range, indent=4)
+    # print json.dumps(size_range, indent=4)
     pos = convert_space_to_underscore(project_data['projectStatus'])
     pos = convert_underscore_to_camelcase(pos)
     project_features = possession_matching(pos,project_features)

@@ -4,6 +4,13 @@ import os
 import pandas as pd
 import json
 
+
+def getCsvData():
+    Q_data = pd.read_csv('Data/Q_order_CSV2.csv',header=0,index_col=0)    
+    return Q_data
+
+
+
 def countPairs(f):
     Q_data = pd.read_csv('Data/Q_order_CSV2.csv',header=0,index_col=0)    
     A_data = pd.read_csv('Data/answers_CSV2.csv',header=0,index_col=0)

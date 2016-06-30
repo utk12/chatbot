@@ -6,7 +6,6 @@ import numpy as np
 from update_question_features import convert_underscore_to_camelcase as toCamel
 
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
-
 def genRandString(n):
 	return (''.join(choice(ascii_lowercase) for i in range(n)))
 

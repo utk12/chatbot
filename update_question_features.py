@@ -7,29 +7,6 @@ from interpret_wit_reply import *
 pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/buy_questions.csv')
 data.index = data['sn']
-getCsvData()
-# def updateQuestion(user, features):
-# 	with open('Data/question_features_'+str(operation)+'_output.json') as json_data:
-# 		input_json = json.loads(json_data.read())
-# 	for i in features:
-# 		i = toCamel(i)
-# 		if i in input_json:
-# 			input_json[i]['weight'] += 0
-# 			nfeatures = len(input_json[i]['children'])
-# 			input_json[i]['preferCount'] = nfeatures/2 + (nfeatures == 1)
-# 			input_json[i]['factorValue'] += 0.5
-# 		else :
-# 			for child in input_json:
-# 				if i in input_json[child]["children"]:
-# 					temp = input_json[child]["children"][i] 
-# 					input_json[child]["children"][i] = 1
-# 					input_json[child]['foundValue'] = 1
-# 					input_json[child]['preferCount'] += abs(temp-1)
-# 					break
-# 	updateJson(user,input_json)
-
-# def update_weight(user_id,feature_list):
-# 	updateQuestion(user_id,feature_list)
 
 def update_initial_weights():
 	Q_data = getCsvData()
@@ -54,6 +31,7 @@ def update_initial_weights():
 		input_json[feature]['weight'] = vec[i]
 	with open('Data/question_features_buy_output.json', 'w') as json_data:
 		json.dumps(input_json, json_data, indent=4)
+
 
 
 
@@ -164,3 +142,5 @@ if __name__ == '__main__':
 	update_initial_weights()
 	# with open('Data/question_features_buy_output.json','w') as json_data:
 	# 	json.dump(input_json,json_data)
+	# write_output('buy')
+	# update_initial_weights('possession',input_json,'buy')

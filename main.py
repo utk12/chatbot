@@ -7,7 +7,7 @@ from getFilters import wit_extract_filters
 from applyFilters import getProjects
 # from map_recommendation import nextFeatureSuggestion
 from mapProjectsToUser import sortProjects
-from map_user_n_question import load_question_feature_file,get_suggestions
+from map_user_n_question import get_suggestions
 
 if __name__ == '__main__':
 	user = "prirqlxu"
@@ -23,13 +23,13 @@ if __name__ == '__main__':
 	# print json.dumps(entities,indent = 4)
 	# print dict_features
 	user_ft =  getFeatures(dict_features) # extract user features to be used from wit reply
-	print user_ft
 	updateUser(user,user_ft) #updated user features in elastic search
 	filters = wit_extract_filters(dict_features) #extract filters from wit reply
 	# print filters
-	project_list = getProjects(filters) #
+	project_list = getProjects(filters, user) #
 	print project_list
-	project_list_sorted = sortProjects(project_list, user)
-	print project_list_sorted
+	# project_list_sorted = sortProjects(project_list, user)
+	# print project_list_sorted
 	# print msg_features
-	print get_suggestions(load_question_feature_file('buy'))
+
+	print get_suggestions(user, 'buy')

@@ -55,8 +55,8 @@ def update_weights(id,operation):
 
 def top_three_questions(feature):
 	keys_list = get_keys_weight(feature)
-	new_keys_list = keys_list.sort()
-	print new_keys_list
+	keys_list.sort(reverse = True)
+	return [j for i,j in keys_list[:3]]
 
 def get_keys_weight(feature):
 	list1 = []
@@ -64,7 +64,13 @@ def get_keys_weight(feature):
 		list1.append([feature[key]['weight'],key])
 	return list1
 
+def get_suggestions(feature):
+	top_features = top_three_questions(feature)
+	questions_list = [feature[key]['bot_question'] for key in top_features]
+	return questions_list
+
 if __name__ == '__main__':
 	# get_user_features('prirqlxu')
-	update_weights('prirqlxu','buy')
-	top_three_questions(load_question_feature_file('buy'))
+	# update_weights('prirqlxu','buy')
+	# top_three_questions(load_question_feature_file('buy'))
+	print get_suggestions(load_question_feature_file('buy'))

@@ -1,51 +1,51 @@
 {
     "possession": {
-        "weight": 0.47198239098530409, 
+        "weight": 0.46572878622039926, 
         "bot_question": "how soon do you want to gain possession of the property?", 
         "user_question": "what's the offered possession time?"
     }, 
     "rating": {
-        "weight": 0.082867137348564837, 
+        "weight": 0.081769176206635014, 
         "bot_question": "can i help you filter properties on the basis of user rating?", 
         "user_question": "what is the rating?"
     }, 
     "projectType": {
-        "weight": 0.51161450015200916, 
+        "weight": 6.2384930577571879e-07, 
         "bot_question": "okay, what project type is suitable for you?", 
         "user_question": "what project types are you having?"
     }, 
     "specifications": {
-        "weight": 0.0025895980421426512, 
+        "weight": 3.9926355569646003e-05, 
         "bot_question": "do you have any specific requirements with your choice of project?", 
         "user_question": "what are the specifications?"
     }, 
     "price": {
-        "weight": 0.39271817265189446, 
+        "weight": 0.65677786991977427, 
         "bot_question": "how much are you willing to invest in the project?", 
         "user_question": "what's the price of this property?"
     }, 
     "amenities": {
-        "weight": 2.4117511158274963e-12, 
+        "weight": 7.7981163221964849e-08, 
         "bot_question": "are you also looking for specific amenities available?", 
         "user_question": "what amenities are available?"
     }, 
     "security": {
-        "weight": 0.2341897359850747, 
+        "weight": 0.23108680232309897, 
         "bot_question": "do you want jto have a look at the security facilities provided by the society?", 
         "user_question": "what are the security options offered?"
     }, 
     "size": {
-        "weight": 0.16213135568197473, 
+        "weight": 0.15998317083906846, 
         "bot_question": "do you have a preferred range of size in mind?", 
         "user_question": "what size options are you having?"
     }, 
     "accommodation": {
-        "weight": 0.42874736280344433, 
+        "weight": 0.42306660732998108, 
         "bot_question": "how many bedrooms do you want in your choice of property?", 
         "user_question": "can you show me properties having 1bhk accommodation facilities?"
     }, 
     "nearby": {
-        "weight": 0.29904227825786456, 
+        "weight": 0.29508007065872632, 
         "bot_question": "are there any particular facilities you want nearby?", 
         "user_question": "what are the nearby facilities?"
     }

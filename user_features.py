@@ -4,6 +4,8 @@ from string import ascii_lowercase
 import json
 import numpy as np
 from update_question_features import convert_underscore_to_camelcase as toCamel
+from firebase import Firebase
+from firebase_token_generator import create_token
 
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 def genRandString(n):
@@ -84,10 +86,18 @@ def getUserVector(user):
 		unit_vec = vec
 	return unit_vec
 
+def createUsersDatabase():
+	auth_payload = {"uid": "bhptnfQoq1eEytRBbjjGDrv40oC2"}
+	token = create_token("neftLmN0eBpzsRLAasLcer70wt6KqM6OZmoHKgFd", auth_payload)
+	fire = Firebase("https://roofpik-948d0.firebaseio.com/users/data/", auth_token = token)
+	users_all = fire.get()
+	for i in users_all:
+		createUserJSON(i)
+createUsersDatabase()
 # print getUserVector('uyzpanbd',
 # updateUser('uyzpanbd', ['security', 'amenities', '2BHK'])
 # print getUserDoc('hndwkoiq')
-createUserJSON("prirqlxu")
+# createUserJSON("prirqlxu")
 # print get_feature_dictionary()
 # feature_dict = get_feature_dictionary()
 # features = get_features(user_query)

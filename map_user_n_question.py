@@ -16,8 +16,12 @@ def load_question_feature_file(operation):
 	return feature
 
 def update_question_feature_file(operation,feature):
-	with open('Data/question_features_'+str(operation)+'_output.json', 'w') as json_data:
-		json.dump(feature,json_data, indent=4)
+	try:
+		with open('Data/question_features_'+str(operation)+'_output.json', 'w') as json_data:
+			json.dump(feature,json_data, indent=4)
+			return "hello"
+	except (OSError, IOError) as e:
+		return str(e)
 
 def normalize_weights(weight_list,input_json,operation):
 	vec = []
@@ -38,14 +42,11 @@ def normalize_weights(weight_list,input_json,operation):
 def update_weights(id,operation):
 	user_feature = get_user_features(id)
 	for key in user_feature:
-		# for sub_keys in user_feature[key]['children']:
 		if int(user_feature[key]['foundValue']) > 0:
 			feature = load_question_feature_file(operation)
 			weight_list = get_keys_weight(feature)
 			if any(value >= 1 for key,value in user_feature[key]['children'].iteritems()):
-				print key
 				feature[key]['weight'] = min(weight_list)[0]/2
-				print feature[key]['weight']
 				update_question_feature_file(operation,feature)
 			else:
 				feature[key]['weight'] = (max(weight_list)[0] + 1)/2
@@ -67,6 +68,7 @@ def get_keys_weight(feature):
 def get_suggestions(id,operation):
 	feature = load_question_feature_file(operation)
 	update_weights(id,operation)
+	# return feature
 	top_features = top_three_questions(feature)
 	questions_list = [feature[key]['bot_question'] for key in top_features]
 	return questions_list

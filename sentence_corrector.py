@@ -1,8 +1,8 @@
 import json
 from english_corrector import EnglishCorrector
-from chatbot import *
+# from chatbot import *
 
-def main(str1):
+def spell_correct(str1):
 	str1 = str1.lower()
 	ec = EnglishCorrector()
 	if(len(str1)>0):

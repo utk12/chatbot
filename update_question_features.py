@@ -2,7 +2,9 @@ import json
 import numpy as np
 import pandas as pd
 from map_recommendation import getCsvData
+import os
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 pd.set_option('expand_frame_repr', False)
 data = pd.read_csv('Data/buy_questions.csv')
 data.index = data['sn']

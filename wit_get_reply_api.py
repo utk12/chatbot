@@ -1,5 +1,5 @@
 import requests,json
-from get_project_names import get_project_names
+# from get_project_names import get_project_names
 #get_message
 #Use different session ids for different users
 

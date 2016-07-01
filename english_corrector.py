@@ -5,6 +5,7 @@ import numpy as np
 import re
 from stringprocessing import *
 
+
 class EnglishCorrector():
 
 	def __init__(self,clusters_to_check=5):

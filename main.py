@@ -15,8 +15,6 @@ from getFilters import wit_extract_filters
 from applyFilters import getProjects
 from mapProjectsToUser import sortProjects
 from map_user_n_question import get_suggestions
-from chatbot import sleep
-import datetime
 
 chat_blueprint = Blueprint('chat_blueprint', __name__)
 
@@ -37,4 +35,10 @@ def post():
 	message =  spell_correct(message) # spell correct
 	entities = get_entities_json_wit(message) #this is json object of entities from wit.
 	dict_features = interpret_wit_output(entities) #structure derived from wit reply.
-
+	user_ft =  getFeatures(dict_features) # extract user features to be used from wit reply
+	updateUser(user,user_ft) #updated user features in elastic search
+	filters = wit_extract_filters(dict_features) #extract filters from wit reply
+	filters = merge(previous_filters, filters)
+	project_list = getProjects(filters, user)
+	suggestions = get_suggestions(user, operation)
+	return  jsonify({"projects" :  project_list, "suggestions" : suggestions, "filters" : filters})

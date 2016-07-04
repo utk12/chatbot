@@ -135,7 +135,7 @@ def get_msim_query(str):
     return matched_document
     
 def get_reply(str):
-    return data.Bot_reply[data.User_query == get_msim_query(str)].values
+    return data.Bot_reply[data.User_query == get_msim_query(str)].values[0]
     
 def get_relevancy(str):
     return data.Relevant[data.User_query == get_msim_query(str)].values

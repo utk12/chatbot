@@ -21,4 +21,5 @@ def post():
 	operation = args['operation']
 	message =  spell_correct(message)
 	reply = get_reply(message)
+	# return reply
 	return  jsonify({"reply" :  reply})

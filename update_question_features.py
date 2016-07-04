@@ -35,7 +35,6 @@ def update_initial_weights(operation):
 	with open('Data/question_features_'+str(operation)+'_output.json', 'w') as json_data:
 		json.dump(input_json, json_data, indent=4)
 
-
 def lower_columns(name):
 	for item in data[str(name)]:
 		item = str(item)

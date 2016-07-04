@@ -15,7 +15,7 @@ from getFilters import wit_extract_filters
 from applyFilters import getProjects
 from mapProjectsToUser import sortProjects
 from map_user_n_question import get_suggestions
-
+from tools import *
 chat_blueprint = Blueprint('chat_blueprint', __name__)
 
 @chat_blueprint.route('/chatbot')
@@ -38,7 +38,10 @@ def post():
 	user_ft =  getFeatures(dict_features) # extract user features to be used from wit reply
 	updateUser(user,user_ft) #updated user features in elastic search
 	filters = wit_extract_filters(dict_features) #extract filters from wit reply
-	filters = merge(previous_filters, filters)
-	project_list = getProjects(filters, user)
+	filters_n1 = to_camelcase(filters)
+	# -------------
+	filters_n2 = merge(previous_filters, filters_n1)
+	filters_n3 = to_underscore(filters_n2)
+	project_list = getProjects(filters_n3, user)
 	suggestions = get_suggestions(user, operation)
-	return  jsonify({"projects" :  project_list, "suggestions" : suggestions, "filters" : filters})
+	return  jsonify({"projects" :  project_list, "suggestions" : suggestions, "filters" : filters_n2})

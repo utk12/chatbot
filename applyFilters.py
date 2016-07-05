@@ -8,6 +8,7 @@ es = Elasticsearch([{'host':'localhost','port':9200}])
 
 def getProjects(filters_dict, user):
 	body = prepareBody(filters_dict)
+	print json.dumps(body, indent=4)
 	project_list = es_search(body)
 	project_list = applyUnitsFilter(project_list, filters_dict)
 	project_ids = []
@@ -129,13 +130,20 @@ def prepareBody(filters_dict):
 	details = {"bool" : {"must" : [] }}
 	
 	for i in filters_dict['project_details']:
-		if i == 'project_name' or i == 'builder':
+		if i == 'builder_id':
 			x = []
 			for j in filters_dict['project_details'][i]:
 				i = toCamel(i)
-				j = toCamel(j)
 				x.append({"match_phrase":{'projectDetails.'+i : j}})
 			details['bool']['must'].append({'bool' : {'should':x}})
+
+		elif i == 'project_id':
+			x = []
+			for j in filters_dict['project_details'][i]:
+				i = toCamel(i)
+				x.append({"match_phrase":{i : j}})
+			details['bool']['must'].append({'bool' : {'should':x}})
+
 
 		elif i == 'project_type':
 			x = []
@@ -153,17 +161,16 @@ def prepareBody(filters_dict):
 			x = []
 			for j in filters_dict['project_details'][i]:
 				if j == 'city':
-					x.append({"match_phrase":{"projectDetails."+toCamel(i)+".cityName" : filters_dict['project_details'][i][j]}})
+					x.append({"match_phrase":{"projectDetails."+toCamel(i)+".cityId" : filters_dict['project_details'][i][j]}})
 				elif j == 'zone':
 					y = {'bool':{'should' : []}}
 					for k in filters_dict['project_details'][i][j]:
-						y['bool']['should'].append({"match_phrase":{"projectDetails."+toCamel(i)+".zoneName" : k}})
+						y['bool']['should'].append({"match_phrase":{"projectDetails."+toCamel(i)+".zoneId" : k}})
 					x.append(y)
 				elif j == 'location':
 					y = {'bool':{'should' : []}}
 					for k in filters_dict['project_details'][i][j]:
-						
-						y['bool']['should'].append({"query_string":{"fields" : ["projectDetails."+toCamel(i)+".locations.*.locationName"], "query" : "\""+k+"\""}})
+						y['bool']['should'].append({"query_string":{"fields" : ["projectDetails."+toCamel(i)+".locations.*.locationId"], "query" : k}})
 					x.append(y)
 			details['bool']['must'].append({'bool' : {'must':x}})
 
@@ -196,3 +203,23 @@ def prepareBody(filters_dict):
 	}
 
 	return body
+
+
+if __name__ == '__main__':
+	filters =  {
+		"club_house": {},
+		"configurations": {},
+		"other": {},
+		"project_details": {
+		  "address": {
+			"zone": {
+			  "sohna_road": True
+			}
+		  }
+		},
+		"project_status": {},
+		"security": {},
+		"specifications": {},
+		"sportsActivities": {}
+	}
+	getProjects(filters, "jehiQ2TFXtTYxa53kKXqFFlDid53")

@@ -1,0 +1,412 @@
+S.No.,User_query,Bot_reply,Relevant
+1,abd villiers aur virat kohli me kaun best hai,"Sorry, I can't interpret that. Please ask me anything related to real estate.",No
+2,I want a place to live in Gurgaon.,"Sure, let me help you choose from a variety of options available. ",Yes
+3,Show me the weather in Gurgaon.,We don't have that facility right now.,No
+4,Can you show me a place where I can play tennis?,"Yes, let me look up the best alternatives available. ",Yes
+5,Hello there.How can you help me?,Hi! I can help you find places to rent or purchase in Gurgaon.,Yes
+6,abds eijf oeljd,"Sorry, I cannot interpret that. Please ask me about real estate projects.",No
+7,I am looking for a 2BHK apartment ,"Alright, let me help you choose from the various options available.",Yes
+8,I want to rent ,"Okay, let me find out some good options for you.",Yes
+9,Want to buy a 4BHK on Sohna Road,Can you help me narrow down your choices by giving me more of your requirement details?,Yes 
+10,Do you have properties on Golf Course Road?,"Yes, we have a number of properties for you to look at. Can you provide further details of your requirements?",Yes
+11,What areas do you have in Gurgaon?,"We have six localities you can chose from: Sohna Road, Golf Course Road, Golf Course Extension Road, Dwarka Expressway, New Gurgaon and M.G Road. Which locality are you interested in?",Yes 
+12,Do you have properties to rent or buy?,We have properties to rent and buy. What are you looking for?,Yes
+13,"I want a penthouse, what is the price?","Let me look that up for you, can you tell me more of what you require?",Yes
+14,I need a PG place on Golf Course Extension,Let me help you look for the best options available.,Yes
+15,"Can I rent a 2BHK for 30,000?","Sure, let me find out suitable options available for you.",Yes 
+16,What is the weather like in Gurgaon?,"I am sorry, we are not currently able to provide this information. Please ask me about real estate projects. ",No 
+17,Do you only have properties in Gurgaon?,"Yes, at the moment. However, we are working on expanding this. Watch this space!",Yes
+18,I want an apartment in Shispal Vihar.,Let me look up the top options for you. what are your other requirements?,Yes 
+19,I want to see apartments available by DLF.,"Sure, can you furnish further details of what you require?",Yes
+20,I need a Vipul Group apartment on Golf Course Road ,"Great, let me look up the best options for you. What are your other requirements?",Yes 
+21,I want an apartment near Heritage School.,"Alright, what are your other requirements?",Yes 
+22,"I want an apartment with a swimming pool, budget of 50,000","Okay, is there anything else that would be a necessity?",Yes 
+23,I want an apartment with a clubhouse which has a gym on M.G. Road,Let me look up the most suitable options for you.,Yes
+24,How many projects are there in Gurgaon?,We currently have multiple projects in Gurgaon. Can we help you find a place?,Yes 
+25,How many under construction projects have DLF got?,Looking for the desired information...,Yes
+26,I want an apartment. Can you show me ones on M.G Road?,"Yes, we have multiple property options to choose from. What else do you require?",Yes 
+27,I need help. Can you help me?,"Yes, what can I help you look for?",Yes 
+28,I want to buy. Can you also show me places in New Gurgaon?,"Yes, of course. We have multiple property options to choose from. What are your requirements? ",Yes 
+29,I want a place in Pune. Can you show me these?,We're only limited to Gurgaon at the moment. Can I help you with anything in Gurgaon?,No
+30,"I want a place to buy. How many places do you have above 70,000?","We have multiple property options to choose from in Gurgaon, what are your other requirements?.",Yes 
+31,I am tired ,I am sorry I am not able to interpret that. Please ask me something else.,No 
+32,Can someone from your team call me?,"I am sorry we do not offer that facility. However, please view our contact us page to get in touch with us.",No
+33,Do you have any jobs?,"I am unable to answer that question, please contact us to speak to someone in the team. ",No 
+34,Is Emaar a good developer?,"We provide an efficient review and rating system, you can view this for all your preferred projects in Gurgaon.",No
+35,I am hot ,I am sorry I am not able to interpret that. Please ask me something else.,No 
+36,Do most projects have worker clearance? ,Let me find out the desired information. ,Yes 
+37,I want an apartment in GGN,Let me help you with that. What are your other requirements?,Yes
+38,I want a flat in gurugram,Let me help you look for what is most suitable. ,Yes
+39,Spacious apartment in GGN,Tell me your other requirements and I'll show you options most suitable for you.,Yes
+40,I want an apartment in ggn with a great golf course.,"Okay, Let me find the best options available.",Yes
+41,I want an apartment near Sohna Road,"Alright, let me look for the best options for you.",Yes
+42,I want to buy an apartment which is under construction.,What are your other requirements from the project?,Yes
+43,"Hey, can you help me out?",Absolutely. What are you looking for?,Yes
+44,I want an office space on Sohna road.,"I am sorry, we currently cover only residential spaces.",Yes
+45,Can you suggest some good brokers to find a flat on M.G.Rad?,I am sorry. We don't deal with brokers.,Yes
+46,Do you deliver food too?,"Sorry, I cannot interpret that. Please ask me about real estate projects.",No
+47,I want a place to stay in Delhi,I am sorry. We currently cover only Gurgaon. Can I help you with anything in Gurgaon?,Yes
+48,Can you suggest a society with good sports facilities?,"Yes, let me filter the best options available. ",Yes
+49,I want an aparmtent in Delhi NCR.,We currently cover only Gurgaon under NCR.,Yes
+50,Who are the top developers in Gurgaon?,We provide an efficient rating and review system for all developers in Gurgaon.,Yes
+51,I want an apartment in Vipul Greens,Great. Let me help you with your selection.,Yes
+52,I am hungry,"I am sorry, I am not able to interpret that. Please ask me something else.",No
+53,abcd efgh ijkl mnop,"Sorry, I cannot interpret that. Please ask me about real estate projects.",No
+54,Does ABW La Lagune provide Power Backup?,Let me check that for you.,Yes
+55,Show me user reviews for Adani aangan.,Watch the space below for the required information,Yes
+56,"Show me fully furnished, ready to move in apartments in GGN",Let me help you make a choice. What are your other requirements?,Yes
+57,I have 3 dogs. Show me societies that are pet friendly.,"Alright, what are your other requirements?",Yes
+58,What are the best schools available near Adani oyster grande?,Let me find that out for you.,Yes
+59,What are the best hospitals available near Gurgaon one ?,Hold on as I look for the required information.,Yes
+60,What are the markets available near Antriksh zeal?,Searching for the desired information..,Yes
+61,What are the best gyms available near Ansal housing Highland park?,Let me quickly find that out for you.,Yes
+62,How far is Ansal API estella from the nearest Metro Station?,Let me look that up.,Yes
+63,How far is Ansals amantre from the nearest Railway Station?,Calculating the requested information..,Yes
+64,How far is Antriksh Heights from the Domestic Airport?,Let me look for what you require.,Yes
+65,What is the nearest bus-stand from Aashiana The center court?,Let me find that out for you.,Yes
+66,What are the nearest Malls around Assotech Breeze?,Searching for the best options for you to choose from.,Yes
+67,How far is the nearest petrol station from Assotech Blith?,Let me look that up for you.,Yes
+68,How far is ATS Kocoon from the Expressway?,Calculating the requested information..,Yes
+69,I want a 3BHK Gurgaon which is Vastu Compliant,"Okay, what are your other requirements?",Yes
+70,How many ATMs are available inside ATS Tourmaline?,Let me find that out for you.,Yes
+71,Looking for a Society in GGN which provides Day Care Services,There are multiple options for you to choose from. What else do you require?,Yes
+72,Does ATS triumph provide Laundry Services?,Let me find out about the required service.,Yes
+73,What societies in GGN provide the best security?,We provide property listings aided by genuine user reviews and ratings. Let me look up the desired information.,Yes
+74,Show me societies which provide multiple parking spaces per apartment.,Let me find out about the required service.,Yes
+75,Does ATS Tangerine have a Squash Court?,Let me check that for you.,Yes
+76,I have a 2BHK in ATS Tangerine. I wish to put it on rent. Find me prospective buyers,"Sorry, we do not provide that facility. I can help you with renting or buying property. ",No
+77,I want to sell my apartment which is in ATS Triumph. ,"Sorry, we do not provide that facility. I can help you with renting or buying property.",No
+78,Find apartment sharing options in GGN for bachelors ,"Sorry, we do not provide that facility. I can help you with renting or buying property.",No
+79,I want an apartment near my office.,Let me help you look for it. What are your other requirements?,Yes
+80,Hi,"Hello there, how can I help you?",Yes
+81,"Looking for an apartment to rent on M.G. Road within 40,000. ",Let me help you make a choice. What are your other requirements?,Yes
+82,"A 3 bedroom house on M.G. Road within 40,000",Let me show you options suitable to your necessity. ,Yes
+83,What are the best underconstruction projects in GGN to invest in?,Let me show you the top options to choose from.,Yes
+84,Restart,"Hello there, how can I help you?",Yes
+85,Can you help me schedule a visit to AWHO Sispal Vihar?,"Sorry, we do not provide that facility. I can help you with renting or buying property.",No
+86,How far is the nearest police station from Central Park I?,Let me find out the required information.,Yes
+87,What are the nearest banks around Bestech park View City 1?,Let me search for the required information,Yes
+88,Give me the configuration of a 2BHK apartment in Bestech Park view ananda.,Looking for information on the selected property...,Yes
+89,What are the best sports and recreational clubs around BTPL Beverly towers?,Let me look for the best options available.,Yes
+90,How long will it take from BTPL Beverly towers to reach the nearest club?,Let me calculate that for you.,Yes
+91,What are the best Cinemas around BPTP Park Prime?,Let me look for the best options available near you.,Yes
+92,How far is PVR from BPTP Park Prime?,Please wait while I generate the required information.,Yes
+93,Cinemas near BPTP Park Prime,Let me look for the best options available near you.,Yes
+94,How long will it take from BPTP Park Prime to reach PVR Cinemas?,Let me calculate that for you,Yes
+95,What are the nearest Cinemas around BPTP Park Prime?,Let me look for the best options available,Yes
+96,Are there any good pre-schools available inside BPTP spacio?,"Yes, let me show you the best options available of your choice of service.",Yes
+97,Pre-schools around BPTP spacio,Let me show you a listing of the best options available for you.,Yes
+98,What are the nearest pre-schools around BPTP spacio?,Let me show you the best options available for you.,Yes
+99,How far is BPTP spacio from the nearest Pre-School?,Calculating the desired information...,Yes
+100,How long will it take from BPTP spacio to reach the nearest pre-School?,Let me calculate that for you,Yes
+101,What are the most prominent pre-schools available near BPTP spacio?,Let me show you the best options available of your choice of service.,Yes
+102,What are the nearest day-care centers around BPTP Park Serene?,Let me look up the best options available of your choice of service.,Yes
+103,What are the most prominent day-care centers available near BPTP Park Serene?,Let me find out the best options available of your choice of service.,Yes
+104,Are there any Day care centers available inside BPTP Park Serene?,Hold on as I enquire about your choice of service.,Yes
+105,Day-care centers around BPTP Park Serene,Let me show you the best options available of your choice of service.,Yes
+106,Show me user ratings for Day Care Centers inside BPTP Park Serene.,Roofpik provides an efficient system of user reviews and ratings for you to make the best decision. Here are the user reviews of your service of choice.,Yes
+107,What are the nearest supermarkets available around BPTP Amstoria?,Let me show you the best options available of your choice of service.,Yes
+108,Super markets around BPTP Amstoria,Let me show you the best options available near your choice of location.,Yes
+109,How far is BPTP Amstoria from the nearest supermarket?,Calculating distance from your choice of location to the nearest super market...,Yes
+110,What is the biggest supermarket near BPTP Amstoria?,Let me look that up for you,Yes
+111,What are the nearest parlours available around BPTP Park Generations?,Showing you the best options available of your choice of service...,Yes
+112,Are there any parlours available inside BPTP Park Generations?,Let me find that out for you,Yes
+113,Show me user reviews for parlours available inside BPTP Park Generations.,Roofpik provides an efficient system of user reviews and ratings for you to make the best decision. Here are the user reviews of your service of choice.,Yes
+114,Best parlours near BPTP Park Generations,Showing you the best options available of your choice of service.,Yes
+115,What are the nearest pharmacies available around BPTP terra?,Generating the results,Yes
+116,Are there any pharmacies available inside BPTP terra?,Let me look that for you,Yes
+117,Pharmacies around BPTP terra,Here's the list,Yes
+118,Most conveniently accessible pharmacies for BPTP terra residents.,The best options available of your choice of service are listed below.,Yes
+119,What are the top rated restaurants around BPTP Chateue?,Checking it for you,Yes
+120,How far is BPTP Chateue from Wendy’s?,Calculating,Yes
+121,Best diners around BPTP Chateue,Give me a second. ,Yes
+122,Are there any restaurants available inside BPTP Chateue?,Searching it for you,Yes
+123,How far is BPTP Park Prime Mansions from the fire station?,Calculating the distance,Yes
+124,Fire station near BPTP Park Prime Mansions,Getting the results,Yes
+125,Are there any fire stations near BPTP Park Prime Mansions?,Looking that for you,Yes
+126,How long will it take from Brisk Lumbini Terrace Homes to reach the nearest Metro Station at peak-time?,Calculating the desired information...,Yes
+127,How long will it take from Brisk Lumbini Terrace Homes to reach the nearest Metro Station off peak-time?,Hold on while I look for the required data,Yes
+128,How long will it take from Brisk Lumbini Terrace Homes to reach the nearest Railway station at peak time?,Let me calculate that for you,Yes
+129,How long will it take from Brisk Lumbini Terrace Homes to reach the nearest Railway station off peak time?,Please wait while I find out about the desired data,Yes
+130,How long will it take from Brisk Lumbini Terrace Homes to reach Domestic Airport at peak time?,Hold on as I check for the same.,Yes
+131,How long will it take from Brisk Lumbini Terrace Homes to reach Domestic Airport off peak time?,Checking for the same.,Yes
+132,How long will it take from Brisk Lumbini Terrace Homes to reach the International Airport at peak time?,Watch the space below for the required information,Yes
+133,How long will it take from Brisk Lumbini Terrace Homes to reach the International Airport off peak time?,Hold on as I look that up for you,Yes
+134,How long will it take from Capital square to reach the nearest but stand?,Finding the best solution to your query...,Yes
+135,What is the total land area covered by CHD Vann?,Wait a minute as I look for the required information,Yes
+136,CHD Vann total area,Hold on as I look for the required information,Yes
+137,How many towers does CHD tee9 have?,Give me a moment,Yes
+138,How many floors does each tower in CHD tee9 have?,Checking the same for you,Yes
+139,How many lifts does each tower in CHD tee9 have?,Getting the details,Yes
+140,Does CHD 106 Golf Avenue provide visitor car parking?,Looking up that for you.,Yes
+141,How many car parkings does CHD 106 Golf Avenue provide?,Checking it for you,Yes
+142,Does Chintels Serenity have a RWA?,Your society of choice provides the required service,Yes
+143,Put me in touch with the RWA of Chintels Serenity,"Sorry, we don�t provide this feature at this moment",No
+144,Are there any good schools available inside Unitech Escape?,"Yes, let me look for the best options available.",Yes
+145,Best schools around Unitech Escape,Looking for the required service near your location of choice..,Yes
+146,What are the nearest schools around Unitech Escape?,Below is the list for the same.,Yes
+147,How far is Unitech Escape from the nearest School?,Calculating ,Yes
+148,How long will it take from Unitech Escape to reach the nearest School?,Checking that for you.,Yes
+149,What are the most prominent schools available near Unitech Escape?,Looking up that for you.,Yes
+150,Prominent schools around Unitech Escape,Below mentioned are the options.,Yes
+151,Show me prominent Schools close to Unitech Escape,Gathering the data for you.,Yes
+152,Show me user ratings for Schools around Unitech Escape,,
+153,I want to look for prominent schools around Unitech Escape,Showing you the best options for the same,Yes
+154,Are there any good hospitals available inside Tulip Pelats?,"Yes, let me look for the best options available.",Yes
+155,Best hospitals around Tulip Pelats,Generating the results for you,Yes
+156,What are the nearest hospitals or clinics around Tulip Pelats?,Looking up that for you.,Yes
+157,How far is Tulip Pelats from the nearest hospital?,Let me calculate that for you,Yes
+158,How long will it take from Tulip Pelats to reach the nearest hospitals,Calculating the same,Yes
+159,What are the most prominent hospitals available near Tulip Pelats?,Give me a second ,Yes
+160,Prominent hospitals around Tulip Pelats,Here's the list for the same.,Yes
+161,Show me prominent medical care centers close to Tulip Pelats,Ok looking up that for you,Yes
+162,Show me user ratings for hospitals around Tulip Pelats,Getting it for you,
+163,I want to look for prominent hospitals around Tulip Pelats,Showing you the list,Yes
+164,Are there any good sports clubs available inside Unitech Harmony?,Checking it for you,Yes
+165,Best recreational centers around Unitech Harmony,Combining the results,Yes
+166,What are the nearest sports or recreational centers around Unitech Harmony?,The best options available of your choice of service are listed below.,Yes
+167,How far is Unitech Harmony from the nearest sports ground?,Calculating that for you,Yes
+168,How long will it take from Unitech Harmony to reach the nearest recreational facility?,Checking the same,Yes
+169,What are the most prominent sports and recreational clubs available near Unitech Harmony?,Let me show you a listing of the best options available of your choice of service.,Yes
+170,Prominent recreational facility around Unitech Harmony,Collecting the data,Yes
+171,Show me prominent sports centers close to Unitech Harmony,Please wait a minute,Yes
+172,Show me user ratings for sports clubs around Unitech Harmony,Gathering the ratings for you.,
+173,I want to look for prominent sports and recreational means around Unitech Harmony,Below is the mentioned list.,Yes
+174,What are the nearest malls available around BPTP Amstoria?,Generating the results,Yes
+175,Best malls around BPTP Amstoria,Hold on as I enquire about your choice of service.,Yes
+176,How far is BPTP Amstoria from the nearest mall?,Let me calculate the required distance for you.,Yes
+177,What is the biggest mall near BPTP Amstoria?,Let me look that up for you,Yes
+178,Find out the best place to shop at malls around BPTP Amstoria,Hold on as I look up the required information,Yes
+179,I want see the nearest malls near BPTP Amstoria,Below mentioned is the list,Yes
+180,Are there any good malls available close to BPTP Amstoria,Let me look up that for you,Yes
+181,Can you look for malls available near BPTP Amstoria,Please hold on for a minute as I look it up for you,Yes
+182,I can’t find any malls around BPTP Amstoria,Let me help you with that.,Yes
+183,How long will it take to reach the nearest mall from BPTP Amstoria,Calculating the time,Yes
+184,Prominent pre-schools around BPTP Spacio,Please wait for a minute while I generate the results,Yes
+185,Show me prominent Pre Schools close to BPTP Spacio,"Yes, let me look for the best options available.",Yes
+186,Show me user ratings for Pre Schools around BPTP Spacio,Wait for a second please,
+187,I want to look for prominent pre-schools around BPTP Spacio,Below is the list for the same.,Yes
+188,Show me user ratings for Day Care Centers around BPTP Park Serene,Gathering the data for you.,
+189,I want to look for Day Care Centers near BPTP Park Serene,Hold on as I look up the required information,Yes
+190,Show me prominent Day Care centers around BPTP Park Serene,"Ok, Generating the list",Yes
+191,Nearest Day Care Centers around BPTP Park Serene,"Sure, Providing you with the options available",Yes
+192,What are the nearest markets available around BPTP Amstoria?,"Yes, hold on while I present a list of the best options available",Yes
+193,Markets around BPTP Amstoria,Please give me a second as I collect the data,Yes
+194,How far is BPTP Amstoria from the nearest market?,Calculating it for you,Yes
+195,What is the biggest market near BPTP Amstoria?,Wait for a second as I search it for you,Yes
+196,Find out the best place to shop around BPTP Amstoria,"Ok, Searching it for you",Yes
+197,I want see the nearest shopping areas near BPTP Amstoria,Let me look for the best options available near your choice of location.,Yes
+198,Are there any good markets available close to BPTP Amstoria,"Please, wait for a minute as I check the same.",Yes
+199,Can you look for the markets available near BPTP Amstoria,"Ok, checking it for you.",Yes
+200,I can't find any marts around BPTP Amstoria,Let me help you with that.,Yes
+201,How long will it take to reach the nearest market from BPTP Amstoria,Calculating the requested information..,Yes
+202,Find out the best supermarkets around BPTP Amstoria,Showing you the best options available for you.,Yes
+203,I want see the nearest supermarkets near BPTP Amstoria,Let me look for the best options available near you.,Yes
+204,Are there any good supermarkets available close to BPTP Amstoria,"Yes, let me show you the best options available for you.",Yes
+205,Can you look for the Supermarkets available near BPTP Amstoria,Yes of course. Please wait while I generate the required information.,Yes
+206,I can't find any supermarts around BPTP Amstoria,Let me help you with that.,Yes
+207,How long will it take to reach the nearest supermarket from BPTP Amstoria,Calculating the desired information...,Yes
+208,Show me the best salons available near BPTP Park Generations,Please wait while I generate the required information.,Yes
+209,Can you find me the nearest salon from BPTP Park Generations?,"Yes, let me show you the best options available for you.",Yes
+210,What are the nearest gyms available around Spaze Privy?,Let me look up the best options available for you.,Yes
+211,Are there any gyms or spas available inside Spaze Privy?,"Yes, let me show you a listing of the best options available for you.",Yes
+212,Show me user reviews for gyms available inside Spaze Privy.,Hold on as I look for the required information.,
+213,Best gyms near Spaze Privy.,Let me search for the required information,Yes
+214,Show me the best gyms available near Spaze Privy,Please wait while I generate the required information.,Yes
+215,Can you find me the nearest gym and spa from Spaze Privy?,"Yes, let me show you the best options available for you.",Yes
+216,Can you help me locate the nearest medical shop near BPTP Terra Residents,"Certainly, let me look up the best options available for you.",Yes
+217,How far is the nearest medical shop from BPTP Terra Residents,Let me calculate the required information.,Yes
+218,Show me the number of pharmacies provided inside BPTP Terra Residents,Hold on as I enquire about that.,Yes
+219,Is Roofpik associated with Zomato?,"No, Roofpik is an independent organization that is here to help you with real estate.",Yes
+220,Can you help me find the top rated restaurants around BPTP Chateau?,"Yes, let me show you a listing of the best options available for you.",Yes
+221,Does BPTP Chateue provide fine dining options inside the society?,Let me quickly look that up for you,Yes
+222,Can you help me locate the nearest fire station to BPTP Park Prime Mansions?,"Certainly, hold on as I find that out for you",Yes
+223,Contact details of the nearest fire station from BPTP Park Prime Mansions,Let me furnish that information for you,Yes
+224,Metro station from Earth Copia,Looking for the required service near your location.,Yes
+225,How quickly can I get to the metro station from Earth Copia at peak time?,Let me calculate that for you,Yes
+226,How quickly can I get to the metro station from Earth Copia off peak time?,Calculating the desired information...,Yes
+227,Can you help me look for the closest metro station from Earth Copia?,"Yes, let me find out the exact information for you",Yes
+228,Find nearest Metro Station from Earth Copia,Hold on as I look up the required information,Yes
+229,Locate closest Metro Station from Earth Copia,Let me locate that for you.,Yes
+230,I want to take the metro closest to Earth Copia,Hold on while I look for the required data,Yes
+231,Nearest metro service from Earth Copia,Let me show you the best option available,Yes
+232,Shortest route to the nearest metro line from Earth Copia at peak time,Finding the best solution to your query...,Yes
+233,Railway station from DLF Primus,Locating the best options available for you.,Yes
+234,How quickly can I get to NDLS railway station from DLF Primus at peak time?,Let me calculate that for you,Yes
+235,How quickly can I get to the NZM railway station from DLF Primus off peak time?,Calculating the desired information...,Yes
+236,Can you help me look for the closest railway station from DLF Primus?,"Yes, let me find out the exact information for you",Yes
+237,Find nearest Railway Station from DLF Primus,Hold on as I look up the required information,Yes
+238,Locate closest Railway Station from DLF Primus,Let me locate that for you.,Yes
+239,I want to go to the Railway Station closest to DLF Primus,Hold on while I look for the required data,Yes
+240,Nearest railway station from DLF Primus,Let me show you the best option available,Yes
+241,Shortest route to the nearest railway station from DLF Primus at peak time,Finding the best solution to your query...,Yes
+242,Domestic Airport from Ireo Skyon,Looking for the required data..,Yes
+243,How quickly can I get to Domestic Airport from Ireo Skyon at peak time?,Let me calculate that for you,Yes
+244,How quickly can I get to the Domestic Airport from Ireo Skyon off peak time?,Calculating the desired information...,Yes
+245,Can you help me look for the Domestic Airport from Ireo Skyon?,"Yes, let me find out the exact information for you",Yes
+246,Find Domestic Airport from Ireo Skyon,Hold on as I look up the required information,Yes
+247,Locate Domestic Airport from Ireo Skyon,Let me locate that for you.,Yes
+248,I want to go to the Domestic Airport closest to Ireo Skyon,Let me help you with that.,Yes
+249,Shortest route to the DomesticAirport from Ireo Skyon at peak time,Finding the best solution to your query...,Yes
+250,International Airport from Ireo Skyon,Looking for the required data near your location of choice.,Yes
+251,How quickly can I get to International Airport from Ireo Skyon at peak time?,Let me calculate that for you,Yes
+252,How quickly can I get to the International Airport from Ireo Skyon off peak time?,Calculating the desired information...,Yes
+253,Can you help me look for the International Airport from Ireo Skyon?,"Yes, let me find out the exact information for you",Yes
+254,Find International Airport from Ireo Skyon,Hold on as I look up the required information,Yes
+255,Locate International Airport from Ireo Skyon,Let me locate the service required by you.,Yes
+256,I want to go to the Int. Airport closest to Ireo Skyon,Let me help you with that.,Yes
+257,Shortest route to the Int. Airport from Ireo Skyon at peak time,Finding the best solution to your query...,Yes
+258,Bus station from Paras Dews,Looking for the required service for you.,Yes
+259,How quickly can I get to the Bus station from Paras Dews at peak time?,Let me calculate that for you,Yes
+260,How quickly can I get to the Bus station from Paras Dews off peak time?,Calculating the desired information...,Yes
+261,Can you help me look for the closest Bus station from Paras Dews?,"Yes, let me find out the exact information for you",Yes
+262,Find nearest Bus Station from Paras Dews,Hold on as I look up the required information,Yes
+263,Locate closest Bus Station from Paras Dews,Let me locate the service required by you.,Yes
+264,I want to take the Bus closest to Paras Dews,Let me help you with that.,Yes
+265,Nearest Bus service from Paras Dews,Let me show you the best option available,Yes
+266,Shortest route to the nearest Bus line from Paras Dews at peak time,Finding the best solution to your query...,Yes
+267,I am looking for a 2BHK with more than 700sqft area,Excellent choice. Let me look up some options for you,Yes
+268,What is the sqft area of a 3BHK in Premia towers,Looking for information desired by you.,Yes
+269,How much should the carpet area be for a 2BHK?,Please wait while I generate the required information,Yes
+270,Can you tell me the carpet area of 3BHKs in New Gurgaon?,"Yes, let me show you the best options available for you.",Yes
+271,Looking for a spacious apartment with more than 1000sqft area on Sohna Road,Let me help you with that. What are your other requirements?,Yes
+272,Show me 3BHKs available on Sohna Road,"Yes, let me show you the best options available at your choice of location.",Yes
+273,How far is Gulmohar Avenue from the main road?,Let me calculate that for you,Yes
+274,What is the nearest main road from Gulmohar Avenue?,Let me find out the information that you require.,Yes
+275,Is Gulmohar Avenue on the main road?,Let me find that out for you,Yes
+276,Show me the google maps location of Gulmohar Avenue,Let me look that up for you.,Yes
+277,I do not want to see societies present on the main road,Okay. Let me look up options suitable to your liking.,Yes
+278,Are there any Auto Stands near Lotus Elise?,"Yes, let me look that up for you",Yes
+279,Can you find me an auto stand near Lotus Elise?,"Certainly, give me a moment as I look for options most suitable for you.",Yes
+280,What is the chance of getting auto services near Lotus Elise?,Finding the best solution to your query...,Yes
+281,What is the availability of autos like near Lotus Elise?,Let me locate the services required by you,Yes
+282,I want to take an auto daily from near Lotus Elise.,"Okay, hold on as I look for the desired information.",Yes
+283,Can you help me locate auto stands near Lotus Elise?,"Definitely, let me locate the best options available.",Yes
+284,Are there any Cab Stands near Landmark residency?,"Yes, let me look that up for you",Yes
+285,Can you find me an cab stand near Landmark residency?,"Certainly, give me a moment as I look for the requested data.",Yes
+286,What is the chance of getting cab services near Landmark residency?,Finding the best solution to your query,Yes
+287,What is the availability of cab like near Landmark residency?,Let me locate the services required by you,Yes
+288,I want to take an cab daily from near Landmark residency,"Okay, hold on as I look for the required data.",Yes
+289,Can you help me locate cab stands near Landmark residency?,"Definitely, let me locate the service available for you.",Yes
+290,Police Station close to Central Park I,Let me locate the service required by you,Yes
+291,Are there any police hold posts near Central Park I?,Looking for the required service available for you.,Yes
+292,Can you help me locate the police station closest to Central Park I?,"Certainly, give me a moment as I look for the desired data.",Yes
+293,Find police station near Central Park I,"Okay, hold on as I look for the data requested by you.",Yes
+294,What are the nearest banks around Bestech park View City 1?,Let me look up the best options available for you.,Yes
+295,Is there a State Bank near Bestech park View City 1?,Let me look up the information required by you,Yes
+296,Can you help me look for bank services available near Bestech park View City 1?,"Certainly, give me a moment as I look for the desired information.",Yes
+297,Bank Services close to Bestech park View City 1,Let me show you the best options available for you.,Yes
+298,Locate Banks near Bestech park View City 1,Locating the best options available.,Yes
+299,How far is the nearest Bank from Central Park I?,Let me calculate that for you.,Yes
+300,What are the nearest Petrol Stations around Mapsco Paradise?,Let me look up the best options available for you.,Yes
+301,Is there a Petrol Pump near Mapsco Paradise?,Let me look up the information required by you,Yes
+302,Can you help me look for Petrol Stations available near Mapsco Paradise?,"Certainly, give me a moment as I look for the requested data.",Yes
+303,Petrol Pumps close to Mapsco Paradise,Let me show you the best options available for you.,Yes
+304,Locate Petrol Pumps near Mapsco Paradise,Locating the best options available for you.,Yes
+305,How far is the nearest Petrol Station from Mapsco Paradise?,Let me calculate that for you,Yes
+306,Show me 3BHKs available on Dwarka Expressway,Let me show you a listing of the best options available for you.,Yes
+307,How far is Manor One from the Expressway?,Calculating the desired information...,Yes
+308,What is the nearest expresway road from Manor One?,Let me find out the information that you require.,Yes
+309,Is Manor One on the Expressway?,Let me find that out for you,Yes
+310,Are you a real robot?,Yes! I am here to help you with your choices in Real Estate. What are you looking for?,Yes
+311,I want to rent an apartment at DLF Camellias,"Great, can you tell me about your other requirements?",Yes
+312,Can you show me 3BHK flats at DLF Camellias?,"Yes, what are your other requirements?",Yes
+313,Show me fully furnished apartments at DLF Camellias,Sure. Let me look up the best options suitable for you.,Yes
+314,Give me information on DLF Camellias,Looking up the desired information.,Yes
+315,Show me good under construction projects to invest in.,"Alright, What are your other requirements?",Yes
+316,Looking for hot properties in Gurgaon to invest in.,Excellent! Let me help you with that.,Yes
+317,Show me projects by Alpha Corp,Sure. Let me look up the best options.,Yes
+318,I want to invest in Alpha Corp projects,Great choice. Let me look up the best options for you,Yes
+319,Give me information on Alpha Corp Group,"Sure, let me look up the information required",Yes
+320,Can you show me under construction projects by Alpha Corp?,Most certainly. What are your other requirements?,Yes
+321,Who is the developer of Heritage One?,Let me find that out for you.,Yes
+322,Is it advisable to invest in property in GGN?,"Yes, Let me help you look for the best options available for you.",Yes
+323,I want to look for apartments in and around Sector 48,Great. Let me help you with that. ,Yes
+324,Are there any under construction projects in sector 34?,Let me generate a listing of the best options available,Yes
+325,Show me fully furnished 3BHK apartments in Sector 50.,Okay. What are your other requirements?,Yes
+326,Housing options in Sector 48,let me help you look for the best options available.,Yes
+327,I want to look for apartments in New Gurgaon,Great choice! What else do you require?,Yes
+328,Show me under construction Projects on Sohna Road,Sure. Let me show you the best options available,Yes
+329,Looking for 2BHK on M.G. Road,Let me help you look for the top alternatives available.,Yes
+330,Can you help me buy property on Dwarka Expressway?,Sure. What are your other requirements?,Yes
+331,Housing options on Golf Course Extension Road,Let me generate a listing of the best options available,Yes
+332,Is New Gurgaon a good location to invest in Real Estate?,"yes, Let me help you look through options to make the best decision.",Yes 
+333,What are the most popular residential locations in Gurgaon?,Let me look that up for you,Yes
+334,Top Rated residential locations in Gurgaon,Searching for the best options for you to choose from,Yes
+335,Show me top rated residential locations on M.G. Road,Showing you the best options for you to make a pick,Yes
+336,Top Rated commercial spaces in Gurgaon,"Sorry, we do not provide the facility yet. Watch this space in future to avail that facility.",No
+337,What are the total acres of land covered by Clarion the Legend?,Hold on as I look for the required information.,Yes
+338,Give me details of the total land area coverage by Clarion the Legend,"Okay, let me find that out for you.",Yes
+339,Clarion the Legend covers how much land area?,Let me look up the requested information.,Yes
+340,Show me the biggest societies in terms of Land Area coverage in GGN.,"Sure, let me show you the best options available",Yes
+341,How many units does DLF Bevery Park have?,Let me find that out.,Yes
+342,Give me details of the number of floors in each tower at Garden Estate.,"Sure, let me quickly look that up.",Yes
+343,No. of floors in Garden Estate towers,Let me quickly look that up,Yes
+344,Are there more than 20 floors in Garden Estate towers?,Let me look up the requested information for you.,Yes
+345,Show me the specification of buildings at Garden Estate,Looking for the desired information regarding your query.,Yes
+346,Data on towers at Garden Estate,Let me look up the data you requested for.,Yes
+347,Can you giveme Garden Estate's detailed profile?,Sure. Let me search for it.,Yes
+348,How many towers does DLF Bevery Park II have?,Let me find that out for you.,Yes
+349,Number of buidings at DLF Beverly Park II.,Searching for the information requested by you.,Yes
+350,Show me lifts per tower at Gurgaon Gateway,Hold on as I look for the required information.,Yes
+351,Can you give me the details of lifts per building at Gurgaon Gateway?,"Sure, let me look for the details required by you.",Yes
+352,Are resident and service lifts separate at Gurgaon Gateway?,Let me quickly find that out.,Yes
+353,How many resident lifts are provided in each building at Gurgaon Gateway?,Let me look up the requested information for you.,Yes
+354,Are there service lifts apart from Residence lifts at Gurgaon Gateway?,Finding out the information requested by you.,Yes
+355,Does Eldeco Mansions provide extra car parking?,"Hold on, let me quickly find that out.",Yes
+356,Show me car parking details at Eldeco Mansions,Okay. Let me look up the requested details.,Yes
+357,Can you help me with information on car parking at Eldeco Mansions?,"Sure, Let me search for the desired information.",Yes
+358,Is there extra parking space provided at Eldeco Mansions?,Let me look up the data you requested for.,Yes
+359,What is the parking area allotment like at Eldeco Mansions?,Let me find that out for you.,Yes
+360,Is there ample parking space provided at Eldeco Mansions?,Hold on as I look for the required information.,Yes
+361,Give me information on resident car parking charges at Eldeco Mansions,"Okay, Let me look up the desired details.",Yes
+362,Guest car parking charges at Eldeco Mansions,Let me search for the details you require.,Yes
+363,Does Eldeco Mansions provide guest car parking service?,Let me find out about your choice of service,Yes
+364,Is there additional parking space for visitor cars at Eldeco Mansions?,Finding information on your selected service.,Yes
+365,Is Visitor car parking service available at Eldeco Mansions?,Looking for the desired information regarding your query.,Yes
+366,What construction company handled Aravali Homes?,Let me look that up.,Yes
+367,Show me construction details of Aravali Homes,"Okay, watch the space below for the answer to your query.",Yes
+368,Can you help me look at the progress made at the construction of Aravali Homes?,Surely. Let me find that out for you.,Yes
+369,Aravali Homes construction update,Checking for the desired updates.,Yes
+370,Aravali Homes construction company details,Looking up the desired information.,Yes
+371,Show me the Construction Company profile that handled Aravali Homes,"Okay, hold on while I look for the requested information.",Yes
+372,I want to see the Developer profile of Aravali Homes,"Alright, let me find that out for you.",Yes
+373,Can you give me the maintenance office details for Chintels Paradiso,"Yes, watch the space below..",Yes
+374,Info on maintenance office at Chintels Paradiso,Finding information on your selected service.,Yes
+375,Show me Chintels Paradiso maintenance office contact details,Showing you the details of the service you require,Yes
+376,Contact Chintels Paradiso maintenance Office for me,"Sorry, we do not provide that facility. Please use the contact information provided below.",No
+377,How do I contact Chintels Paradiso Maintenance Office?,Let me help you with that.,Yes
+378,What the are the working hours for Chintels Paradiso Maintenance office?,Checking for the desired information..,Yes
+379,Can you tell me the timings for the Maintenance office at Chintels Paradiso?,"Yes, let me check for the desired information",Yes
+380,Show me work timings at maintenance office at Chintels Paradiso.,Showing you the details of the data you require,Yes
+381,Chintels Paradiso Maintenance Office working hours.,Let me look that up for you,Yes
+382,Can you give me information on the RWA at DLF Silver Oaks?,"Yes, watch the space below..",Yes
+383,I want contact details of DLF Silver Oaks RWA.,Finding information on your selected service.,Yes
+384,Help me contact the RWA at DLF Silver Oaks,Sure. Let me find out the details you require.,Yes
+385,Is there a website for the RWA of DLF Silver Oaks?,Let me quickly look that up,Yes
+386,What architecture firm is handling the current DLF projects?,Checking for the required data..,Yes
+387,Who was the architect for MGF the Vilas?,Let me quickly find that out for you,Yes
+388,Can you help me find the landscape designer of MGF the Vilas?,"Yes, Hold on as I look for the desired information.",Yes
+389,Looking for MGF the Vilas's Landscapist,Let me help you with that.,Yes
+390,Find the architect and Landscape designer for MGF the Vilas,Wait just a moment as I furnish the requested information,Yes
+391,Give me detail on the designers behind MGF the Vilas,Looking for the details requested by you.,Yes
+392,Show me the configuration of a 4BHK in DLF pinnacle,"Okay, watch the space below..",Yes
+393,Can you help me look at the configuration of apartments at DLF pinnacle?,"Yes, Keep an eye on the place below for it",Yes
+394,What types of property does DLF pinnacle have for purchasing?,Let me quickly find that out for you,Yes
+395,What kinds of apartments are available for rent at DLF pinnacle?,Checking for the requested data..,Yes
+396,Show me the number of washrooms at a 3BHK at DLF pinnacle,"Okay, let me find that out for you.",Yes
+397,Can I see the balconies at a 2BHK at DLF pinnacle?,"Sure, Let me check for the desired information.",Yes
+398,Show me apartments on the Dwarka Expressway that are Vastu Compliant,"Okay, let me show you options most suitable to your requirements.",Yes
+399,I want to look for apartments to buy which are built acording to Vastu Shastra,"Okay, let me help you with that.",Yes
+400,Show only Vastu Compliant homes up for renting,"Alright, let me show you the most suitable options suitable for you.",Yes
+401,Is this apartment constructed according to Vastu rules?,Let me find that out for you.,Yes
+402,Can you help me look for Vastu Compliant homes in GGN?,"Certainly, what are your other requirements?",Yes
+403,What are the number of parking spaces allotted per apartment at Raheja Vanya?,Let me search for the details you require.,Yes
+404,Raheja Vanya car parking per apartment,Hold on as I look for the required information.,Yes
+405,Show me the Parking area provided per apartment at Raheja Vanya,"Okay, let me find that out for you.",Yes
+406,Is there ample parking space provided per apartment at Raheja Vanya?,Hold on as I look for the required information.,Yes
+407,Is there any servant quarter provided inside the 4BHK at Ramprastha Rise?,Looking for the details requested by you.,Yes
+408,Show me apartments with a servant quarter at Ramprastha Rise.,"Okay, let me find the options most suitable according to your requirement.",Yes
+409,Can you help me look for apartments to buy that include a servant room or utility area?,"Yes, let me generate a listing of apartments most suitable to your needs.",Yes
+410,Help me look for apartments at Ramprastha Rise that provide the facility of a separate utility room,"Surely, Let me look for the best options available for you.",Yes
+411,Show me top societies which provide servant accomodation.,"Okay, Watch the space below for the best options suitable for you.",Yes

@@ -1,6 +1,6 @@
 from interpret_wit_reply import format_wit_reply
+from elasticsearchDatabase import *
 import json
-
 
 def getFiltersJson():
 	with open('Data/filters.json', 'r') as f:
@@ -45,22 +45,32 @@ def getPossessionDetails(witReply):
 def getProjectDetails(witReply):
 	details = {}
 	list1 = ['project_name', 'builder']
-	for i in list1:
-		if i in witReply:
-			details[i] = {}
-			for j in witReply[i]: 
-				details[i][j] = True
+	if 'project_name' in witReply:
+		details['project_id'] = {}
+		for i in witReply['project_name']:
+			details['project_id'][getProjectId(i)] = True
+
+	if 'builder' in witReply:
+		details['builder_id'] = {}
+		for i in witReply['builder']:
+			details['builder_id'][getBuilderId(i)] = True
+
 
 	details['address'] = {}
 	if 'loc_city' in witReply:
 		for i in witReply['loc_city']: 
-			details['address']['city'] = i
+			details['address']['city'] = getCityId(i)
 			break
 
 	if 'address_zone' in witReply:
 		details['address']['zone'] = {}
 		for i in witReply['address_zone']:
-			details['address']['zone'][i] = True
+			details['address']['zone'][getZoneId(i)] = True
+
+	if 'location' in witReply:
+		details['address']['location'] = {}
+		for i in witReply['location']:
+			details['address']['zone'][getLocationId(i)] = True
 
 	if 'specifications' in witReply:
 		if 'parking' in witReply['specifications']:

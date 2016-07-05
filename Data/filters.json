@@ -1,10 +1,11 @@
 {
   "projectDetails": {
-    "projectName": "",
-    "builder": "",
+    "projectIds": "",
+    "builderIds": "",
     "address": {
-      "location": "",
-      "zone": "",
+      "location": {
+          "-5684513654" : true
+        },
       "city": ""
     },
     "projectType": {

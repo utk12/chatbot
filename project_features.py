@@ -100,9 +100,9 @@ def getProjectVector(project):
 		unit_vec = vec
 	return unit_vec
 
-
-# createProjectsDatabase()
-updateProjectsRatios()
+if __name__ == '__main__':
+	createProjectsDatabase()
+	updateProjectsRatios()
 # createProjectJSON(getProjectId())
 # updateProject('ugzjugjc')
 # print getProjectVector('ugzjugjc', 'buy')

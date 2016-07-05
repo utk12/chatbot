@@ -31,7 +31,16 @@ def wit_extract_filters(witReply):
 	filters['specifications'] = getSpecifications(witReply)
 	filters['other'], filters['configurations'] = getConfigurations(witReply)
 	filters['security'] = getSecurityFilters(witReply)
+	filters['project_status'] = getPossessionDetails(witReply)
 	return filters
+
+def getPossessionDetails(witReply):
+	project_status = {}
+	if 'possession' in witReply:
+		for i in witReply['possession']:
+			project_status[i] = True
+	return project_status
+
 
 def getProjectDetails(witReply):
 	details = {}

@@ -11,7 +11,7 @@ import pandas as pd
 import math,string,time,sys
 
 pd.set_option('expand_frame_repr', False)
-data = pd.read_csv('Data/data3.csv')
+data = pd.read_csv('Data/data3_edited.csv')
 data = pd.DataFrame(data)
 
 #print(data)

@@ -19,7 +19,9 @@ def post():
 	args = parser.parse_args()
 	message = args['msg']
 	operation = args['operation']
-	message =  spell_correct(message)
-	reply = get_reply(message)
-	# return reply
+	if message == "":
+		reply = "Hey! How may I help you?"
+	else:
+		message =  spell_correct(message)
+		reply = get_reply(message)
 	return  jsonify({"reply" :  reply})

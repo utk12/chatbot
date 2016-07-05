@@ -93,7 +93,9 @@ def createUsersDatabase():
 	users_all = fire.get()
 	for i in users_all:
 		createUserJSON(i)
-# createUsersDatabase()
+
+if __name__ == '__main__':
+	createUsersDatabase()
 # print getUserVector('uyzpanbd',
 # updateUser('uyzpanbd', ['security', 'amenities', '2BHK'])
 # print getUserDoc('hndwkoiq')

@@ -42,9 +42,9 @@ def applyUnitsFilter(project_list, filters_dict):
 							flag = 0
 							break
 					elif config == 'price':
-						price = project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)]
+						price = int(project_list[i]['_source']['units'][unit]['configurations'][toCamel(config)])
 						price_level = filters_dict['configurations']['price_level']
-						price_supposed = filters_dict['configurations']['price']
+						price_supposed = int(filters_dict['configurations']['price'])
 						if price_level == 'high':
 							if price < price_supposed:
 								flag = 0
@@ -96,6 +96,12 @@ def prepareBody(filters_dict):
 	for i in filters_dict['other']:
 		i = toCamel(i)
 		other['bool']['must'].append({"term":{'other.'+i : True}})
+
+	project_status = {"bool" : {"must" : [] }}
+	for i in filters_dict['project_status']:
+		i = toCamel(i)
+		project_status['bool']['must'].append({"term":{'projectStatus.'+i : True}})
+
 
 	sec = {
 		"bool" : {
@@ -169,6 +175,7 @@ def prepareBody(filters_dict):
 	fliterMust.append(sec)
 	fliterMust.append(details)
 	fliterMust.append(other)
+	fliterMust.append(project_status)
 
 
 	body = {
@@ -189,5 +196,3 @@ def prepareBody(filters_dict):
 	}
 
 	return body
-
-

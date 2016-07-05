@@ -17,6 +17,10 @@
     "carParking": "",
     "vastuCompliant": ""
   },
+  "projectStatus": {
+    "underConstruction": true,
+    "readyToMove": true
+  },
   "sportsActivities": {
     "cricket": "",
     "football": "",
@@ -56,6 +60,8 @@
     "saunaRoom": "",
     "jacuzzi": ""
   },
+  "rating": "",
+  "top": "",
   "other": {
     "powerBackup": "",
     "maintenance": "",
@@ -79,7 +85,9 @@
     "propertyType": "",
     "type": "",
     "price": "",
+    "priceLevel" : "high/medium/low",
     "area": "",
+    "areaLevel" : "high/medium/low",
     "storeRoom": "",
     "servantRoom": ""
   },

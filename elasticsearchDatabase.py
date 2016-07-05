@@ -1,4 +1,5 @@
 from elasticsearch import Elasticsearch
+from yo import *
 
 es = Elasticsearch([{'host':'localhost','port':9200}])
 
@@ -67,3 +68,9 @@ def getProjectId(project):
 		}
 	}	
 	return es.search(index = 'projects', doc_type = 'data', body = body)
+
+if __name__ == '__main__':
+	createLocationsDatabase(get_tuple_location())
+	createZonesDatabase(get_tuple_zone())
+	createBuildersDatabase(get_tuple_builders())
+	createCitiesDatabase(get_tuple_city())

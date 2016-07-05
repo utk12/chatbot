@@ -3,9 +3,7 @@
     "projectIds": "",
     "builderIds": "",
     "address": {
-      "location": {
-          "-5684513654" : true
-        },
+      "location": "",
       "city": ""
     },
     "projectType": {
@@ -19,8 +17,8 @@
     "vastuCompliant": ""
   },
   "projectStatus": {
-    "underConstruction": true,
-    "readyToMove": true
+    "underConstruction": "",
+    "readyToMove": ""
   },
   "sportsActivities": {
     "cricket": "",
@@ -86,9 +84,9 @@
     "propertyType": "",
     "type": "",
     "price": "",
-    "priceLevel" : "high/medium/low",
+    "priceLevel" : "",
     "area": "",
-    "areaLevel" : "high/medium/low",
+    "areaLevel" : "",
     "storeRoom": "",
     "servantRoom": ""
   },

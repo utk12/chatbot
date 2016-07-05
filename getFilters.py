@@ -18,7 +18,6 @@ def getFiltersJson():
 					result[cat1][subcat][key] = ''
 			else:
 				result[cat1][subcat] = ''
-	# print json.dumps(result, indent=4)
 	return result
 
 filters_data = getFiltersJson()
@@ -48,29 +47,46 @@ def getProjectDetails(witReply):
 	if 'project_name' in witReply:
 		details['project_id'] = {}
 		for i in witReply['project_name']:
-			details['project_id'][getProjectId(i)] = True
+			i = ' '.join(i.split('_'))
+			_id = getProjectId(i)
+			if _id is not None:
+				details['project_id'][_id] = True
 
 	if 'builder' in witReply:
 		details['builder_id'] = {}
 		for i in witReply['builder']:
-			details['builder_id'][getBuilderId(i)] = True
+			i = ' '.join(i.split('_'))
+			_id = getBuilderId(i)
+			if _id is not None:
+				details['builder_id'][_id] = True
 
 
 	details['address'] = {}
 	if 'loc_city' in witReply:
 		for i in witReply['loc_city']: 
-			details['address']['city'] = getCityId(i)
+			i = ' '.join(i.split('_'))
+			_id = getCityId(i)
+			if _id is not None:
+				details['address']['city'] = _id
 			break
 
 	if 'address_zone' in witReply:
 		details['address']['zone'] = {}
 		for i in witReply['address_zone']:
-			details['address']['zone'][getZoneId(i)] = True
+			i = ' '.join(i.split('_'))
+			_id = getZoneId(i)
+			print i
+			print _id
+			if _id is not None:
+				details['address']['zone'][_id] = True
 
 	if 'location' in witReply:
 		details['address']['location'] = {}
 		for i in witReply['location']:
-			details['address']['zone'][getLocationId(i)] = True
+			i = ' '.join(i.split('_'))
+			_id = getLocationId(i)
+			if _id is not None:
+				details['address']['zone'][_id] = True
 
 	if 'specifications' in witReply:
 		if 'parking' in witReply['specifications']:

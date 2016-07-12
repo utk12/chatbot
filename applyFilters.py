@@ -3,12 +3,19 @@ from elasticsearch import Elasticsearch
 import json
 from update_question_features import convert_underscore_to_camelcase as toCamel
 from mapProjectsToUser import sortProjects
+from boltons.iterutils import remap
 
 es = Elasticsearch([{'host':'localhost','port':9200}])
 
+def noEmptyStrings(data):
+	drop_none = lambda path, key, value: key != "" and value != "" and key is not None and value is not None
+	cleaned = remap(data, visit=drop_none)
+	return cleaned
+
+
 def getProjects(filters_dict, user):
+	filters_dict = noEmptyStrings(filters_dict)
 	body = prepareBody(filters_dict)
-	print json.dumps(body, indent=4)
 	project_list = es_search(body)
 	project_list = applyUnitsFilter(project_list, filters_dict)
 	project_ids = []
@@ -101,7 +108,7 @@ def prepareBody(filters_dict):
 	project_status = {"bool" : {"must" : [] }}
 	for i in filters_dict['project_status']:
 		i = toCamel(i)
-		project_status['bool']['must'].append({"term":{'projectStatus.'+i : True}})
+		project_status['bool']['must'].append({"match_phrase":{'projectStatus': i}})
 
 
 	sec = {
@@ -111,21 +118,21 @@ def prepareBody(filters_dict):
 		}
 	}
 	security = filters_dict['security']
-	if len(security) > 0:
-		if security['place_flag']:
-			for i in security:
-					if i != 'place_flag':
-						for j in security[i]:
-							i = toCamel(i)
-							j = toCamel(j)
-							sec['bool']['must'].append({"term":{"security."+i+"."+j : True}})
-		else:
-			for i in security:
-				if i != 'place_flag':
-					for j in security[i]:
-						i = toCamel(i)
-						j = toCamel(j)
-						sec['bool']['should'].append({"term":{"security."+i+"."+j : True}})
+	# if len(security) > 0:
+	# 	if security['place_flag']:
+	# 		for i in security:
+	# 				if i != 'place_flag':
+	# 					for j in security[i]:
+	# 						i = toCamel(i)
+	# 						j = toCamel(j)
+	# 						sec['bool']['must'].append({"term":{"security."+i+"."+j : True}})
+	# 	else:
+	# 		for i in security:
+	# 			if i != 'place_flag':
+	# 				for j in security[i]:
+	# 					i = toCamel(i)
+	# 					j = toCamel(j)
+	# 					sec['bool']['should'].append({"term":{"security."+i+"."+j : True}})
 
 	details = {"bool" : {"must" : [] }}
 	
